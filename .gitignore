@@ -16,3 +16,10 @@ venv/
 
 # Environment
 .env
+
+# Databas
+*.db
+*.sqlite
+*.sqlite3
+
+*.egg-info/
