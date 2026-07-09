@@ -5,7 +5,12 @@ description = "Hybrid SQL + Vector AI Help Desk Agent built with LangGraph and G
 readme = "README.md"
 requires-python = ">=3.11"
 
-dependencies = []
+dependencies = [
+    "langchain>=0.3",
+    "langchain-google-genai>=2.0",
+    "python-dotenv>=1.0",
+    "pydantic>=2.0"
+]
 
 [build-system]
 requires = ["setuptools>=68"]
