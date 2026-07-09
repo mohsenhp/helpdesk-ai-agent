@@ -1,0 +1,14 @@
+From: olli.lindberg71@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Database
+
+Hello Service Desk,
+
+I am in the Support department in Tampere. I need help with a Database problem.
+The issue started after network maintenance.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Olli Lindberg

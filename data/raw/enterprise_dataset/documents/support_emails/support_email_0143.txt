@@ -1,0 +1,14 @@
+From: alex.korhonen4@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Access Request
+
+Hello Service Desk,
+
+I am in the Finance department in Tampere. I need help with a Access Request problem.
+The issue started after network maintenance.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Alex Korhonen

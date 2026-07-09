@@ -1,0 +1,14 @@
+From: daniel.hassan122@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with CRM
+
+Hello Service Desk,
+
+I am in the Support department in Stockholm. I need help with a CRM problem.
+The issue started after network maintenance.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Daniel Hassan

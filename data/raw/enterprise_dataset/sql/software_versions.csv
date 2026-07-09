@@ -1,0 +1,33 @@
+id,software_name,version,release_date,status
+1,VPN Client,2.1.7,2026-05-03,Deprecated
+2,VPN Client,4.2.0,2026-06-05,Deprecated
+3,VPN Client,3.3.3,2025-10-04,Deprecated
+4,VPN Client,3.4.3,2026-05-08,Active
+5,Outlook,1.1.5,2026-01-06,Active
+6,Outlook,1.2.4,2026-04-09,Deprecated
+7,Outlook,4.3.7,2026-04-08,Rolled Back
+8,Outlook,1.4.0,2026-06-16,Deprecated
+9,CRM Portal,2.1.8,2026-02-28,Rolled Back
+10,CRM Portal,4.2.1,2025-09-21,Deprecated
+11,CRM Portal,3.3.1,2026-02-17,Active
+12,CRM Portal,4.4.9,2026-02-16,Deprecated
+13,Azure SSO,1.1.7,2026-05-17,Rolled Back
+14,Azure SSO,1.2.8,2025-09-17,Rolled Back
+15,Azure SSO,2.3.4,2026-02-15,Deprecated
+16,Azure SSO,5.4.5,2026-06-18,Active
+17,Jenkins,2.1.1,2025-11-17,Rolled Back
+18,Jenkins,1.2.8,2025-12-16,Rolled Back
+19,Jenkins,5.3.8,2025-10-02,Active
+20,Jenkins,4.4.0,2025-12-01,Rolled Back
+21,PostgreSQL,3.1.4,2025-12-02,Rolled Back
+22,PostgreSQL,3.2.1,2026-06-10,Deprecated
+23,PostgreSQL,1.3.9,2026-02-15,Rolled Back
+24,PostgreSQL,2.4.0,2025-12-30,Deprecated
+25,Slack,3.1.2,2025-09-12,Rolled Back
+26,Slack,4.2.2,2025-10-24,Active
+27,Slack,4.3.0,2026-05-17,Deprecated
+28,Slack,1.4.3,2026-03-07,Active
+29,Endpoint Protection,3.1.8,2026-01-08,Deprecated
+30,Endpoint Protection,4.2.4,2025-09-13,Active
+31,Endpoint Protection,3.3.5,2026-03-13,Active
+32,Endpoint Protection,3.4.1,2025-12-31,Deprecated

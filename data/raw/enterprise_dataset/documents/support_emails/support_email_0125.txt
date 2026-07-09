@@ -1,0 +1,14 @@
+From: emma.meyer129@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Email
+
+Hello Service Desk,
+
+I am in the Engineering department in Turku. I need help with a Email problem.
+The issue started after password reset.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Emma Meyer

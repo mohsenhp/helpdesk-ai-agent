@@ -1,0 +1,14 @@
+From: olli.smith99@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with CI/CD
+
+Hello Service Desk,
+
+I am in the Engineering department in Berlin. I need help with a CI/CD problem.
+The issue started after network maintenance.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Olli Smith

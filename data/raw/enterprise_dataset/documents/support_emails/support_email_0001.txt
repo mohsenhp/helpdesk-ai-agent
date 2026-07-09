@@ -1,0 +1,14 @@
+From: aino.virtanen1@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Network
+
+Hello Service Desk,
+
+I am in the Engineering department in Berlin. I need help with a Network problem.
+The issue started after a software update.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Aino Virtanen

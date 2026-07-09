@@ -1,0 +1,151 @@
+id,ticket_id,change_type,status,approved_by,scheduled_at
+1,322,Standard,Implemented,42,2026-06-30T10:19:41
+2,373,Normal,Requested,19,2026-06-15T20:06:41
+3,472,Normal,Failed,66,2026-05-12T21:56:41
+4,144,Standard,Rolled Back,125,2026-07-03T07:01:41
+5,294,Normal,Failed,34,2026-05-13T07:23:41
+6,866,Emergency,Implemented,96,2026-06-27T21:29:41
+7,519,Normal,Implemented,11,2026-04-19T22:52:41
+8,759,Standard,Rolled Back,3,2026-06-19T15:37:41
+9,385,Standard,Rolled Back,103,2026-06-29T11:31:41
+10,896,Normal,Requested,90,2026-05-10T04:14:41
+11,548,Normal,Requested,22,2026-06-14T19:49:41
+12,940,Normal,Failed,52,2026-05-18T08:51:41
+13,325,Normal,Rolled Back,125,2026-06-10T20:08:41
+14,488,Standard,Implemented,117,2026-07-04T01:46:41
+15,972,Normal,Approved,55,2026-05-29T00:53:41
+16,616,Normal,Requested,93,2026-05-14T03:42:41
+17,56,Standard,Requested,109,2026-06-04T10:15:41
+18,181,Standard,Approved,18,2026-06-03T06:50:41
+19,306,Emergency,Failed,108,2026-05-02T12:13:41
+20,915,Normal,Approved,14,2026-06-27T05:34:41
+21,987,Normal,Approved,51,2026-05-25T05:25:41
+22,487,Emergency,Approved,112,2026-05-23T20:19:41
+23,399,Standard,Rolled Back,51,2026-06-28T19:13:41
+24,593,Emergency,Approved,83,2026-04-13T19:08:41
+25,846,Emergency,Implemented,4,2026-06-19T03:56:41
+26,152,Normal,Implemented,30,2026-04-13T05:39:41
+27,534,Emergency,Requested,116,2026-06-21T22:27:41
+28,655,Emergency,Requested,10,2026-06-10T19:43:41
+29,431,Emergency,Rolled Back,43,2026-04-23T06:42:41
+30,357,Standard,Approved,148,2026-07-07T07:03:41
+31,373,Standard,Implemented,79,2026-05-05T15:11:41
+32,512,Emergency,Failed,106,2026-05-17T07:33:41
+33,849,Emergency,Failed,134,2026-05-27T14:56:41
+34,181,Normal,Failed,96,2026-06-16T01:17:41
+35,167,Emergency,Failed,98,2026-06-01T21:11:41
+36,697,Normal,Implemented,26,2026-06-27T15:50:41
+37,666,Standard,Rolled Back,106,2026-06-25T03:08:41
+38,770,Emergency,Rolled Back,26,2026-04-18T04:23:41
+39,596,Standard,Implemented,108,2026-06-11T11:06:41
+40,466,Emergency,Failed,30,2026-06-13T03:48:41
+41,360,Normal,Failed,102,2026-07-08T07:05:41
+42,230,Emergency,Implemented,69,2026-04-15T10:36:41
+43,859,Normal,Approved,2,2026-05-16T17:55:41
+44,27,Standard,Implemented,133,2026-04-23T08:34:41
+45,175,Emergency,Failed,62,2026-04-28T06:43:41
+46,632,Emergency,Failed,14,2026-04-26T05:47:41
+47,962,Emergency,Failed,45,2026-05-18T08:22:41
+48,163,Normal,Approved,26,2026-04-09T14:23:41
+49,122,Emergency,Rolled Back,101,2026-04-19T10:02:41
+50,567,Standard,Implemented,53,2026-06-27T16:54:41
+51,448,Standard,Rolled Back,40,2026-07-04T23:10:41
+52,557,Standard,Rolled Back,98,2026-07-04T19:09:41
+53,134,Normal,Implemented,48,2026-06-07T21:58:41
+54,228,Normal,Approved,138,2026-06-06T19:06:41
+55,827,Normal,Implemented,14,2026-06-03T15:56:41
+56,148,Emergency,Requested,149,2026-06-25T15:26:41
+57,950,Emergency,Requested,28,2026-06-20T09:39:41
+58,917,Standard,Requested,20,2026-05-06T06:57:41
+59,859,Standard,Failed,26,2026-05-07T18:29:41
+60,76,Normal,Requested,54,2026-04-12T05:31:41
+61,912,Normal,Failed,42,2026-06-15T09:55:41
+62,926,Standard,Rolled Back,9,2026-06-23T08:33:41
+63,496,Emergency,Rolled Back,140,2026-07-08T13:22:41
+64,760,Normal,Requested,50,2026-04-22T18:21:41
+65,24,Emergency,Rolled Back,40,2026-06-11T07:48:41
+66,921,Standard,Requested,84,2026-06-21T11:50:41
+67,746,Emergency,Approved,69,2026-06-03T03:43:41
+68,977,Standard,Implemented,142,2026-04-16T09:26:41
+69,764,Normal,Failed,132,2026-05-18T12:39:41
+70,178,Standard,Implemented,101,2026-06-25T00:05:41
+71,785,Emergency,Implemented,43,2026-06-11T19:24:41
+72,444,Normal,Failed,70,2026-05-28T23:49:41
+73,622,Normal,Failed,52,2026-04-27T07:32:41
+74,920,Emergency,Requested,116,2026-06-17T17:23:41
+75,260,Emergency,Failed,76,2026-04-21T22:22:41
+76,361,Normal,Requested,30,2026-06-15T08:28:41
+77,810,Standard,Implemented,63,2026-06-29T12:13:41
+78,381,Normal,Approved,81,2026-06-23T18:35:41
+79,705,Standard,Implemented,55,2026-05-10T00:05:41
+80,330,Standard,Rolled Back,17,2026-05-20T09:17:41
+81,218,Emergency,Approved,27,2026-04-28T10:10:41
+82,623,Emergency,Requested,147,2026-04-17T05:12:41
+83,775,Normal,Implemented,82,2026-06-13T12:52:41
+84,822,Normal,Failed,12,2026-06-03T05:48:41
+85,128,Normal,Approved,84,2026-04-24T06:40:41
+86,591,Standard,Implemented,5,2026-04-17T00:55:41
+87,934,Normal,Implemented,34,2026-05-18T16:58:41
+88,547,Emergency,Requested,87,2026-04-17T18:51:41
+89,482,Standard,Failed,78,2026-06-03T08:07:41
+90,355,Normal,Requested,143,2026-05-29T03:16:41
+91,49,Normal,Implemented,117,2026-05-05T21:57:41
+92,125,Normal,Rolled Back,27,2026-07-05T11:52:41
+93,846,Standard,Approved,27,2026-05-27T20:09:41
+94,447,Standard,Approved,23,2026-06-13T18:58:41
+95,832,Normal,Rolled Back,2,2026-04-11T17:39:41
+96,905,Standard,Requested,13,2026-05-31T16:39:41
+97,338,Emergency,Rolled Back,98,2026-06-03T20:45:41
+98,948,Standard,Rolled Back,118,2026-06-23T14:35:41
+99,883,Standard,Rolled Back,106,2026-04-18T04:13:41
+100,126,Emergency,Rolled Back,62,2026-04-26T03:13:41
+101,502,Normal,Implemented,124,2026-06-10T16:39:41
+102,785,Normal,Requested,91,2026-04-28T11:13:41
+103,663,Emergency,Approved,20,2026-06-29T03:52:41
+104,218,Standard,Approved,120,2026-05-20T12:24:41
+105,108,Normal,Approved,136,2026-05-04T08:07:41
+106,968,Normal,Failed,40,2026-05-05T14:57:41
+107,134,Standard,Implemented,99,2026-05-11T23:23:41
+108,208,Normal,Approved,18,2026-06-03T05:45:41
+109,703,Normal,Rolled Back,27,2026-06-20T03:59:41
+110,110,Emergency,Requested,62,2026-07-06T04:44:41
+111,274,Standard,Failed,136,2026-05-12T07:39:41
+112,122,Emergency,Requested,91,2026-05-14T12:46:41
+113,407,Emergency,Failed,131,2026-05-27T17:27:41
+114,280,Normal,Requested,13,2026-04-16T06:09:41
+115,951,Normal,Approved,76,2026-06-14T06:44:41
+116,609,Normal,Rolled Back,127,2026-05-03T05:49:41
+117,698,Standard,Approved,29,2026-06-10T15:52:41
+118,917,Standard,Rolled Back,69,2026-06-08T16:21:41
+119,104,Normal,Approved,104,2026-05-19T06:49:41
+120,226,Emergency,Implemented,127,2026-06-12T13:05:41
+121,209,Normal,Implemented,74,2026-07-08T15:44:41
+122,516,Emergency,Rolled Back,123,2026-05-29T20:40:41
+123,175,Normal,Requested,43,2026-06-15T07:58:41
+124,467,Standard,Requested,122,2026-05-15T08:54:41
+125,182,Normal,Requested,44,2026-04-13T18:17:41
+126,361,Normal,Rolled Back,1,2026-05-07T11:25:41
+127,113,Standard,Requested,146,2026-04-12T09:02:41
+128,234,Emergency,Rolled Back,43,2026-06-20T15:49:41
+129,312,Emergency,Implemented,116,2026-05-06T19:33:41
+130,559,Normal,Failed,65,2026-05-23T04:55:41
+131,848,Normal,Implemented,86,2026-05-02T21:01:41
+132,886,Emergency,Failed,29,2026-06-03T21:22:41
+133,746,Emergency,Requested,38,2026-05-17T11:13:41
+134,146,Normal,Failed,8,2026-06-07T00:08:41
+135,713,Normal,Implemented,53,2026-06-27T11:57:41
+136,978,Normal,Requested,71,2026-04-18T21:21:41
+137,921,Normal,Rolled Back,45,2026-06-04T21:33:41
+138,910,Normal,Failed,107,2026-06-03T09:43:41
+139,43,Emergency,Rolled Back,88,2026-04-21T15:28:41
+140,815,Normal,Rolled Back,89,2026-06-02T15:55:41
+141,511,Emergency,Approved,120,2026-04-12T14:22:41
+142,990,Normal,Rolled Back,143,2026-04-14T13:36:41
+143,499,Normal,Requested,76,2026-07-07T04:53:41
+144,223,Normal,Rolled Back,32,2026-07-02T03:36:41
+145,6,Normal,Implemented,1,2026-07-02T10:47:41
+146,359,Normal,Rolled Back,144,2026-06-19T16:10:41
+147,278,Standard,Approved,111,2026-04-25T16:37:41
+148,225,Standard,Failed,91,2026-06-06T21:15:41
+149,396,Normal,Failed,26,2026-06-05T09:17:41
+150,319,Standard,Rolled Back,112,2026-04-13T08:04:41

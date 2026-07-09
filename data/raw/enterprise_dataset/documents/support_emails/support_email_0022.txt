@@ -1,0 +1,14 @@
+From: markus.korhonen106@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Network
+
+Hello Service Desk,
+
+I am in the Support department in Turku. I need help with a Network problem.
+The issue started after a laptop reboot.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Markus Korhonen

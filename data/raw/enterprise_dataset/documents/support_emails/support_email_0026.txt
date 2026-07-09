@@ -1,0 +1,14 @@
+From: mina.koskinen79@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with CI/CD
+
+Hello Service Desk,
+
+I am in the Support department in Helsinki. I need help with a CI/CD problem.
+The issue started after a laptop reboot.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Mina Koskinen

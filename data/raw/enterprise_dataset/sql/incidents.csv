@@ -1,0 +1,181 @@
+id,ticket_id,severity,impact,root_cause,resolved
+1,41,SEV1,Department,Disk space exhaustion,true
+2,132,SEV2,Company-wide,Database connection pool exhaustion,false
+3,589,SEV1,Multiple departments,Disk space exhaustion,true
+4,212,SEV4,Company-wide,Misconfigured access policy,false
+5,669,SEV3,Company-wide,Database connection pool exhaustion,false
+6,166,SEV3,Company-wide,Database connection pool exhaustion,true
+7,90,SEV3,Single user,Network routing failure,false
+8,576,SEV3,Single user,Disk space exhaustion,true
+9,263,SEV1,Department,Expired certificate,true
+10,872,SEV1,Single user,Disk space exhaustion,false
+11,772,SEV4,Single user,Software regression,true
+12,36,SEV4,Company-wide,Database connection pool exhaustion,true
+13,87,SEV4,Single user,Database connection pool exhaustion,true
+14,128,SEV1,Company-wide,Disk space exhaustion,false
+15,519,SEV2,Single user,Database connection pool exhaustion,false
+16,306,SEV2,Department,Misconfigured access policy,true
+17,373,SEV3,Department,Database connection pool exhaustion,false
+18,558,SEV1,Company-wide,Software regression,false
+19,176,SEV2,Multiple departments,Expired certificate,false
+20,434,SEV2,Single user,Network routing failure,false
+21,968,SEV4,Multiple departments,Network routing failure,true
+22,674,SEV1,Company-wide,Misconfigured access policy,false
+23,1,SEV1,Company-wide,Database connection pool exhaustion,false
+24,255,SEV1,Multiple departments,Expired certificate,false
+25,308,SEV3,Multiple departments,Network routing failure,true
+26,48,SEV1,Multiple departments,Disk space exhaustion,true
+27,969,SEV4,Multiple departments,Expired certificate,true
+28,974,SEV4,Company-wide,Misconfigured access policy,true
+29,532,SEV2,Company-wide,Expired certificate,false
+30,927,SEV1,Department,Disk space exhaustion,false
+31,802,SEV2,Company-wide,Software regression,false
+32,301,SEV3,Multiple departments,Software regression,true
+33,675,SEV3,Single user,Software regression,false
+34,547,SEV2,Department,Network routing failure,false
+35,456,SEV1,Multiple departments,Disk space exhaustion,true
+36,144,SEV1,Department,Network routing failure,true
+37,591,SEV2,Company-wide,Software regression,false
+38,503,SEV1,Department,Disk space exhaustion,true
+39,712,SEV4,Multiple departments,Expired certificate,false
+40,321,SEV4,Company-wide,Disk space exhaustion,true
+41,536,SEV3,Company-wide,Database connection pool exhaustion,false
+42,933,SEV2,Single user,Expired certificate,true
+43,361,SEV2,Department,Network routing failure,true
+44,621,SEV2,Single user,Disk space exhaustion,false
+45,552,SEV4,Single user,Software regression,false
+46,523,SEV3,Multiple departments,Software regression,true
+47,215,SEV4,Department,Database connection pool exhaustion,true
+48,705,SEV2,Department,Network routing failure,true
+49,102,SEV3,Department,Disk space exhaustion,false
+50,679,SEV2,Company-wide,Disk space exhaustion,true
+51,840,SEV2,Department,Database connection pool exhaustion,true
+52,46,SEV2,Single user,Misconfigured access policy,false
+53,243,SEV1,Multiple departments,Misconfigured access policy,true
+54,38,SEV4,Single user,Database connection pool exhaustion,true
+55,193,SEV1,Single user,Software regression,false
+56,146,SEV3,Department,Misconfigured access policy,false
+57,307,SEV4,Company-wide,Expired certificate,false
+58,877,SEV1,Multiple departments,Expired certificate,false
+59,853,SEV3,Multiple departments,Network routing failure,false
+60,221,SEV2,Multiple departments,Expired certificate,true
+61,138,SEV1,Single user,Expired certificate,false
+62,617,SEV2,Multiple departments,Software regression,false
+63,566,SEV1,Company-wide,Misconfigured access policy,false
+64,222,SEV4,Multiple departments,Network routing failure,false
+65,606,SEV1,Single user,Disk space exhaustion,true
+66,368,SEV2,Multiple departments,Network routing failure,false
+67,285,SEV3,Department,Disk space exhaustion,false
+68,999,SEV2,Company-wide,Expired certificate,true
+69,747,SEV2,Single user,Expired certificate,true
+70,638,SEV2,Company-wide,Expired certificate,true
+71,433,SEV3,Multiple departments,Disk space exhaustion,false
+72,77,SEV2,Department,Expired certificate,true
+73,564,SEV2,Company-wide,Database connection pool exhaustion,false
+74,262,SEV3,Multiple departments,Software regression,true
+75,267,SEV4,Single user,Software regression,false
+76,391,SEV1,Department,Database connection pool exhaustion,false
+77,666,SEV2,Multiple departments,Expired certificate,true
+78,168,SEV2,Company-wide,Software regression,true
+79,410,SEV2,Company-wide,Database connection pool exhaustion,false
+80,468,SEV4,Company-wide,Database connection pool exhaustion,false
+81,86,SEV2,Department,Expired certificate,true
+82,261,SEV2,Single user,Database connection pool exhaustion,false
+83,693,SEV3,Multiple departments,Misconfigured access policy,false
+84,436,SEV3,Single user,Misconfigured access policy,true
+85,962,SEV1,Department,Network routing failure,true
+86,147,SEV2,Multiple departments,Misconfigured access policy,false
+87,549,SEV1,Department,Misconfigured access policy,true
+88,209,SEV1,Multiple departments,Disk space exhaustion,false
+89,73,SEV3,Single user,Disk space exhaustion,false
+90,645,SEV2,Company-wide,Database connection pool exhaustion,false
+91,751,SEV3,Single user,Disk space exhaustion,true
+92,276,SEV3,Department,Disk space exhaustion,false
+93,649,SEV2,Multiple departments,Expired certificate,true
+94,714,SEV4,Multiple departments,Disk space exhaustion,true
+95,662,SEV4,Department,Network routing failure,false
+96,198,SEV2,Company-wide,Misconfigured access policy,false
+97,732,SEV2,Company-wide,Network routing failure,true
+98,382,SEV4,Single user,Software regression,true
+99,578,SEV4,Department,Misconfigured access policy,true
+100,979,SEV4,Department,Disk space exhaustion,false
+101,664,SEV1,Multiple departments,Misconfigured access policy,true
+102,841,SEV4,Department,Expired certificate,true
+103,524,SEV1,Company-wide,Misconfigured access policy,false
+104,620,SEV4,Single user,Disk space exhaustion,true
+105,923,SEV1,Single user,Software regression,false
+106,430,SEV1,Single user,Expired certificate,true
+107,842,SEV2,Department,Expired certificate,false
+108,158,SEV2,Single user,Expired certificate,true
+109,324,SEV3,Single user,Misconfigured access policy,true
+110,807,SEV4,Company-wide,Misconfigured access policy,false
+111,445,SEV3,Company-wide,Misconfigured access policy,true
+112,389,SEV1,Multiple departments,Disk space exhaustion,true
+113,27,SEV1,Single user,Expired certificate,false
+114,619,SEV1,Company-wide,Misconfigured access policy,true
+115,254,SEV2,Single user,Misconfigured access policy,false
+116,80,SEV4,Department,Network routing failure,false
+117,277,SEV2,Company-wide,Disk space exhaustion,true
+118,987,SEV4,Department,Expired certificate,true
+119,545,SEV1,Multiple departments,Network routing failure,true
+120,113,SEV3,Single user,Network routing failure,true
+121,701,SEV1,Department,Misconfigured access policy,false
+122,562,SEV3,Department,Disk space exhaustion,false
+123,417,SEV2,Multiple departments,Database connection pool exhaustion,false
+124,68,SEV3,Single user,Network routing failure,false
+125,338,SEV3,Multiple departments,Disk space exhaustion,true
+126,656,SEV1,Department,Disk space exhaustion,true
+127,92,SEV3,Department,Software regression,false
+128,372,SEV4,Single user,Expired certificate,false
+129,342,SEV3,Department,Expired certificate,false
+130,797,SEV2,Department,Software regression,false
+131,280,SEV3,Company-wide,Software regression,false
+132,150,SEV4,Multiple departments,Misconfigured access policy,true
+133,818,SEV4,Company-wide,Database connection pool exhaustion,false
+134,232,SEV4,Department,Software regression,true
+135,281,SEV4,Department,Disk space exhaustion,true
+136,11,SEV2,Multiple departments,Expired certificate,true
+137,101,SEV1,Multiple departments,Database connection pool exhaustion,false
+138,387,SEV2,Single user,Expired certificate,false
+139,228,SEV3,Department,Network routing failure,false
+140,388,SEV2,Company-wide,Misconfigured access policy,true
+141,108,SEV2,Single user,Disk space exhaustion,true
+142,970,SEV1,Department,Software regression,true
+143,127,SEV4,Multiple departments,Expired certificate,true
+144,180,SEV1,Company-wide,Database connection pool exhaustion,true
+145,540,SEV1,Department,Network routing failure,true
+146,746,SEV1,Department,Expired certificate,true
+147,314,SEV4,Department,Misconfigured access policy,false
+148,603,SEV2,Multiple departments,Software regression,false
+149,894,SEV3,Company-wide,Disk space exhaustion,true
+150,827,SEV3,Single user,Misconfigured access policy,true
+151,502,SEV1,Department,Database connection pool exhaustion,true
+152,98,SEV1,Company-wide,Software regression,false
+153,542,SEV3,Multiple departments,Disk space exhaustion,true
+154,358,SEV4,Department,Network routing failure,true
+155,718,SEV4,Department,Disk space exhaustion,true
+156,586,SEV4,Single user,Misconfigured access policy,false
+157,289,SEV2,Single user,Disk space exhaustion,false
+158,565,SEV4,Multiple departments,Disk space exhaustion,false
+159,278,SEV4,Department,Expired certificate,false
+160,623,SEV4,Department,Network routing failure,true
+161,952,SEV1,Single user,Network routing failure,false
+162,50,SEV1,Department,Network routing failure,true
+163,175,SEV1,Single user,Misconfigured access policy,true
+164,326,SEV3,Department,Database connection pool exhaustion,true
+165,770,SEV1,Department,Network routing failure,true
+166,399,SEV1,Company-wide,Expired certificate,true
+167,186,SEV3,Single user,Network routing failure,true
+168,354,SEV3,Multiple departments,Software regression,true
+169,826,SEV3,Company-wide,Disk space exhaustion,false
+170,760,SEV2,Single user,Network routing failure,false
+171,695,SEV1,Department,Expired certificate,false
+172,808,SEV4,Single user,Network routing failure,true
+173,882,SEV2,Company-wide,Expired certificate,true
+174,843,SEV2,Department,Disk space exhaustion,true
+175,609,SEV2,Multiple departments,Software regression,true
+176,413,SEV3,Multiple departments,Network routing failure,false
+177,489,SEV1,Company-wide,Misconfigured access policy,true
+178,607,SEV1,Department,Database connection pool exhaustion,false
+179,131,SEV1,Single user,Misconfigured access policy,false
+180,266,SEV1,Company-wide,Expired certificate,false

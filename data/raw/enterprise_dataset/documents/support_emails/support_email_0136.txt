@@ -1,0 +1,14 @@
+From: aino.virtanen109@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Printer
+
+Hello Service Desk,
+
+I am in the Support department in Tallinn. I need help with a Printer problem.
+The issue started after the latest release.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Aino Virtanen

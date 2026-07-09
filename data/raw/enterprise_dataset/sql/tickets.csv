@@ -1,0 +1,1001 @@
+id,user_id,category,priority,status,created_at,updated_at,summary,assigned_team
+1,112,Network,Low,Closed,2025-12-30T03:58:41,2026-01-01T03:58:41,Network issue reported by Finance user in Stockholm,Endpoint Team
+2,128,CRM,High,Closed,2025-12-16T02:38:41,2025-12-17T02:38:41,CRM issue reported by Engineering user in London,Endpoint Team
+3,47,Database,Medium,Open,2026-04-24T08:49:41,2026-04-28T08:49:41,Database issue reported by Legal user in Tampere,Endpoint Team
+4,110,Laptop,High,Resolved,2026-01-13T04:33:41,2026-01-27T04:33:41,Laptop issue reported by Sales user in Berlin,Network Team
+5,112,Azure Login,Medium,Resolved,2026-01-26T17:51:41,2026-02-03T17:51:41,Azure Login issue reported by Finance user in Stockholm,Identity Team
+6,8,Laptop,Low,Resolved,2026-02-02T21:05:41,2026-02-05T21:05:41,Laptop issue reported by IT user in Turku,Network Team
+7,93,Network,Medium,In Progress,2026-02-13T17:17:41,2026-02-18T17:17:41,Network issue reported by Operations user in Turku,Network Team
+8,114,Email,Low,Resolved,2026-02-12T14:22:41,2026-02-16T14:22:41,Email issue reported by Sales user in Tampere,Identity Team
+9,30,VPN,Critical,Resolved,2026-01-01T13:24:41,2026-01-02T13:24:41,VPN issue reported by Support user in Tallinn,Network Team
+10,67,CI/CD,Critical,Resolved,2026-05-14T23:37:41,2026-05-17T23:37:41,CI/CD issue reported by IT user in Turku,Service Desk
+11,35,Email,Critical,Closed,2026-03-15T12:58:41,2026-03-27T12:58:41,Email issue reported by Engineering user in Tallinn,Network Team
+12,89,Email,High,Closed,2026-02-18T01:37:41,2026-03-01T01:37:41,Email issue reported by Operations user in London,Identity Team
+13,93,Database,Low,Closed,2026-05-12T15:43:41,2026-05-19T15:43:41,Database issue reported by Operations user in Turku,Service Desk
+14,93,Database,Medium,Closed,2026-02-12T07:26:41,2026-02-21T07:26:41,Database issue reported by Operations user in Turku,Service Desk
+15,17,Azure Login,Medium,Resolved,2026-03-28T20:09:41,2026-04-03T20:09:41,Azure Login issue reported by HR user in Turku,Platform Team
+16,19,Laptop,Medium,Resolved,2026-04-17T22:51:41,2026-04-22T22:51:41,Laptop issue reported by HR user in Stockholm,Identity Team
+17,142,Access Request,High,Resolved,2026-05-23T14:28:41,2026-06-05T14:28:41,Access Request issue reported by HR user in Tampere,Service Desk
+18,133,Laptop,High,In Progress,2026-04-22T13:45:41,2026-04-27T13:45:41,Laptop issue reported by HR user in London,Platform Team
+19,73,Email,Low,Closed,2026-05-05T12:15:41,2026-05-15T12:15:41,Email issue reported by Support user in Tallinn,Network Team
+20,137,Email,Medium,Resolved,2026-03-01T22:45:41,2026-03-03T22:45:41,Email issue reported by Sales user in Stockholm,Platform Team
+21,87,Access Request,Medium,Open,2026-06-28T18:50:41,2026-07-07T18:50:41,Access Request issue reported by HR user in Tampere,Network Team
+22,54,Access Request,High,Open,2026-03-23T23:15:41,2026-03-31T23:15:41,Access Request issue reported by Legal user in Tampere,Network Team
+23,78,CI/CD,Low,In Progress,2026-05-06T21:30:41,2026-05-06T21:30:41,CI/CD issue reported by Support user in London,Identity Team
+24,113,Network,Low,In Progress,2026-03-07T04:42:41,2026-03-20T04:42:41,Network issue reported by Sales user in Berlin,Network Team
+25,89,Network,Low,Resolved,2026-06-05T07:23:41,2026-06-12T07:23:41,Network issue reported by Operations user in London,Service Desk
+26,69,CI/CD,Critical,Open,2026-05-06T14:49:41,2026-05-19T14:49:41,CI/CD issue reported by Legal user in Turku,Platform Team
+27,108,Printer,Low,Resolved,2026-05-29T07:56:41,2026-06-10T07:56:41,Printer issue reported by Legal user in London,Identity Team
+28,128,Database,Low,In Progress,2026-03-11T02:59:41,2026-03-17T02:59:41,Database issue reported by Engineering user in London,Platform Team
+29,118,Printer,Low,Open,2026-05-14T00:33:41,2026-05-23T00:33:41,Printer issue reported by IT user in London,Endpoint Team
+30,74,Database,Low,Open,2026-07-06T15:28:41,2026-07-11T15:28:41,Database issue reported by Support user in Berlin,Endpoint Team
+31,94,VPN,Medium,Resolved,2026-03-28T17:19:41,2026-04-01T17:19:41,VPN issue reported by Support user in Turku,Service Desk
+32,99,Database,Medium,Closed,2026-03-15T01:38:41,2026-03-24T01:38:41,Database issue reported by Engineering user in Berlin,Service Desk
+33,33,Email,Medium,Closed,2026-03-30T07:05:41,2026-04-04T07:05:41,Email issue reported by HR user in Tallinn,Identity Team
+34,51,Access Request,Low,Open,2026-02-28T06:23:41,2026-03-11T06:23:41,Access Request issue reported by Finance user in Helsinki,Network Team
+35,122,Database,Low,Closed,2026-03-14T14:17:41,2026-03-28T14:17:41,Database issue reported by Support user in Stockholm,Platform Team
+36,82,Laptop,Medium,Closed,2026-03-29T23:08:41,2026-04-06T23:08:41,Laptop issue reported by Engineering user in London,Platform Team
+37,137,CI/CD,Low,Resolved,2026-01-08T00:36:41,2026-01-13T00:36:41,CI/CD issue reported by Sales user in Stockholm,Service Desk
+38,107,Access Request,Low,Resolved,2026-04-20T19:00:41,2026-04-27T19:00:41,Access Request issue reported by IT user in Stockholm,Network Team
+39,149,Access Request,Low,Resolved,2026-05-10T19:52:41,2026-05-20T19:52:41,Access Request issue reported by IT user in Tallinn,Platform Team
+40,98,Laptop,Critical,Open,2025-12-09T21:40:41,2025-12-10T21:40:41,Laptop issue reported by Finance user in Stockholm,Identity Team
+41,5,CI/CD,Low,Resolved,2026-04-19T05:46:41,2026-04-27T05:46:41,CI/CD issue reported by Engineering user in Tallinn,Platform Team
+42,121,VPN,Low,In Progress,2026-01-09T14:22:41,2026-01-19T14:22:41,VPN issue reported by Support user in London,Endpoint Team
+43,135,Network,Low,Closed,2026-04-19T13:26:41,2026-04-24T13:26:41,Network issue reported by Finance user in Berlin,Network Team
+44,124,Printer,Critical,In Progress,2026-05-06T10:20:41,2026-05-10T10:20:41,Printer issue reported by Finance user in Tampere,Network Team
+45,54,CI/CD,Critical,Resolved,2026-04-18T03:33:41,2026-04-29T03:33:41,CI/CD issue reported by Legal user in Tampere,Network Team
+46,74,Email,Critical,Resolved,2026-02-11T21:21:41,2026-02-24T21:21:41,Email issue reported by Support user in Berlin,Network Team
+47,38,Azure Login,Critical,Open,2026-06-28T09:10:41,2026-07-08T09:10:41,Azure Login issue reported by Finance user in London,Network Team
+48,123,Printer,Medium,Closed,2026-05-18T01:38:41,2026-05-20T01:38:41,Printer issue reported by Sales user in Turku,Service Desk
+49,62,Printer,Medium,Resolved,2026-06-25T20:58:41,2026-06-25T20:58:41,Printer issue reported by Engineering user in Helsinki,Service Desk
+50,106,CRM,Low,Resolved,2026-01-06T03:49:41,2026-01-14T03:49:41,CRM issue reported by Support user in Turku,Identity Team
+51,105,CI/CD,Low,Closed,2026-03-07T22:43:41,2026-03-11T22:43:41,CI/CD issue reported by Support user in Stockholm,Service Desk
+52,23,Access Request,Critical,Closed,2026-05-10T01:08:41,2026-05-24T01:08:41,Access Request issue reported by IT user in Tampere,Identity Team
+53,107,Laptop,Critical,Resolved,2026-06-29T06:05:41,2026-07-12T06:05:41,Laptop issue reported by IT user in Stockholm,Network Team
+54,10,VPN,Critical,Open,2026-04-23T00:17:41,2026-04-27T00:17:41,VPN issue reported by IT user in Tallinn,Endpoint Team
+55,140,Database,Low,Resolved,2026-03-04T14:01:41,2026-03-16T14:01:41,Database issue reported by Sales user in Berlin,Service Desk
+56,85,Laptop,Low,In Progress,2026-01-02T04:14:41,2026-01-13T04:14:41,Laptop issue reported by Sales user in Berlin,Network Team
+57,76,Access Request,Medium,Resolved,2026-01-17T12:44:41,2026-01-23T12:44:41,Access Request issue reported by HR user in Turku,Endpoint Team
+58,132,CRM,Critical,Open,2026-06-16T06:13:41,2026-06-23T06:13:41,CRM issue reported by Legal user in Helsinki,Network Team
+59,64,VPN,Low,Resolved,2026-05-03T06:40:41,2026-05-08T06:40:41,VPN issue reported by Finance user in Tallinn,Network Team
+60,150,Access Request,Low,Resolved,2026-07-06T10:14:41,2026-07-16T10:14:41,Access Request issue reported by Finance user in Tallinn,Service Desk
+61,120,Azure Login,High,Resolved,2026-05-29T06:12:41,2026-06-09T06:12:41,Azure Login issue reported by Legal user in Stockholm,Network Team
+62,31,Azure Login,Low,In Progress,2026-04-04T23:41:41,2026-04-06T23:41:41,Azure Login issue reported by Support user in London,Endpoint Team
+63,96,Network,Medium,Resolved,2026-01-10T00:57:41,2026-01-20T00:57:41,Network issue reported by HR user in Tallinn,Identity Team
+64,64,Access Request,High,Resolved,2025-12-19T16:22:41,2025-12-20T16:22:41,Access Request issue reported by Finance user in Tallinn,Platform Team
+65,29,VPN,Low,Resolved,2026-02-18T02:43:41,2026-02-23T02:43:41,VPN issue reported by Finance user in Stockholm,Platform Team
+66,114,Email,Low,Resolved,2026-01-15T12:10:41,2026-01-23T12:10:41,Email issue reported by Sales user in Tampere,Endpoint Team
+67,15,CI/CD,Low,Resolved,2026-06-05T02:29:41,2026-06-12T02:29:41,CI/CD issue reported by Finance user in London,Network Team
+68,6,Network,Low,In Progress,2026-05-04T18:08:41,2026-05-10T18:08:41,Network issue reported by Operations user in Tampere,Network Team
+69,17,Database,Low,Resolved,2026-06-23T15:56:41,2026-06-25T15:56:41,Database issue reported by HR user in Turku,Identity Team
+70,108,CRM,Medium,Closed,2026-04-02T04:00:41,2026-04-03T04:00:41,CRM issue reported by Legal user in London,Platform Team
+71,35,CRM,Low,Resolved,2026-06-08T13:21:41,2026-06-11T13:21:41,CRM issue reported by Engineering user in Tallinn,Service Desk
+72,6,Azure Login,Medium,Resolved,2026-03-11T21:09:41,2026-03-24T21:09:41,Azure Login issue reported by Operations user in Tampere,Identity Team
+73,64,CI/CD,High,In Progress,2026-04-11T14:38:41,2026-04-23T14:38:41,CI/CD issue reported by Finance user in Tallinn,Service Desk
+74,9,Network,Low,In Progress,2026-02-01T18:40:41,2026-02-01T18:40:41,Network issue reported by Finance user in Helsinki,Endpoint Team
+75,13,Printer,Medium,Resolved,2025-12-31T17:30:41,2026-01-12T17:30:41,Printer issue reported by IT user in Tallinn,Service Desk
+76,36,Database,Medium,Closed,2026-04-25T11:03:41,2026-05-04T11:03:41,Database issue reported by Finance user in Turku,Platform Team
+77,83,Printer,Medium,Resolved,2026-04-22T14:13:41,2026-04-26T14:13:41,Printer issue reported by HR user in Stockholm,Service Desk
+78,143,Access Request,Medium,Resolved,2026-01-01T13:15:41,2026-01-01T13:15:41,Access Request issue reported by Sales user in Stockholm,Network Team
+79,98,Database,Low,Resolved,2026-04-17T20:29:41,2026-04-19T20:29:41,Database issue reported by Finance user in Stockholm,Platform Team
+80,122,Printer,High,Closed,2026-05-12T09:01:41,2026-05-26T09:01:41,Printer issue reported by Support user in Stockholm,Service Desk
+81,144,Network,Low,Open,2026-03-24T01:22:41,2026-03-27T01:22:41,Network issue reported by HR user in Tallinn,Network Team
+82,21,CI/CD,Low,Closed,2026-04-05T16:21:41,2026-04-09T16:21:41,CI/CD issue reported by Sales user in London,Endpoint Team
+83,11,Email,Low,Resolved,2026-05-21T00:09:41,2026-05-24T00:09:41,Email issue reported by Legal user in Tallinn,Network Team
+84,78,VPN,Critical,Open,2026-05-15T12:08:41,2026-05-22T12:08:41,VPN issue reported by Support user in London,Identity Team
+85,53,Network,Medium,Closed,2026-05-08T01:35:41,2026-05-16T01:35:41,Network issue reported by Legal user in Tampere,Network Team
+86,79,Azure Login,Low,Resolved,2026-04-07T01:59:41,2026-04-18T01:59:41,Azure Login issue reported by Support user in Helsinki,Endpoint Team
+87,82,Printer,High,Open,2026-04-05T08:29:41,2026-04-16T08:29:41,Printer issue reported by Engineering user in London,Identity Team
+88,5,Azure Login,Low,Closed,2026-02-17T00:18:41,2026-02-20T00:18:41,Azure Login issue reported by Engineering user in Tallinn,Network Team
+89,59,Network,Critical,Resolved,2026-02-13T11:24:41,2026-02-18T11:24:41,Network issue reported by Support user in London,Network Team
+90,126,CI/CD,Low,Closed,2026-03-13T13:09:41,2026-03-24T13:09:41,CI/CD issue reported by Operations user in Turku,Platform Team
+91,126,Laptop,High,Resolved,2026-02-19T22:52:41,2026-02-20T22:52:41,Laptop issue reported by Operations user in Turku,Service Desk
+92,2,Network,Low,Open,2026-06-02T22:41:41,2026-06-05T22:41:41,Network issue reported by HR user in Berlin,Platform Team
+93,117,CRM,Medium,Resolved,2026-06-22T23:15:41,2026-06-29T23:15:41,CRM issue reported by Legal user in Tampere,Endpoint Team
+94,5,VPN,Medium,Open,2026-02-22T01:29:41,2026-02-26T01:29:41,VPN issue reported by Engineering user in Tallinn,Platform Team
+95,74,VPN,Critical,Resolved,2026-03-01T20:12:41,2026-03-03T20:12:41,VPN issue reported by Support user in Berlin,Service Desk
+96,25,Database,Low,Resolved,2026-05-31T11:43:41,2026-06-05T11:43:41,Database issue reported by Support user in Berlin,Network Team
+97,102,Email,Critical,Resolved,2026-04-04T06:26:41,2026-04-07T06:26:41,Email issue reported by Support user in Berlin,Network Team
+98,21,VPN,Medium,Resolved,2026-06-15T06:31:41,2026-06-25T06:31:41,VPN issue reported by Sales user in London,Service Desk
+99,44,Email,Medium,Closed,2026-03-03T05:14:41,2026-03-16T05:14:41,Email issue reported by Sales user in Tallinn,Service Desk
+100,136,VPN,High,Closed,2026-05-11T11:58:41,2026-05-18T11:58:41,VPN issue reported by HR user in Helsinki,Network Team
+101,12,Email,Medium,Resolved,2026-01-14T09:58:41,2026-01-16T09:58:41,Email issue reported by Finance user in Tallinn,Network Team
+102,5,Printer,High,Closed,2026-02-08T14:07:41,2026-02-22T14:07:41,Printer issue reported by Engineering user in Tallinn,Service Desk
+103,77,Laptop,Medium,Closed,2026-02-14T11:19:41,2026-02-28T11:19:41,Laptop issue reported by IT user in Tampere,Platform Team
+104,85,Network,Medium,Closed,2025-12-26T19:47:41,2025-12-27T19:47:41,Network issue reported by Sales user in Berlin,Platform Team
+105,89,VPN,Low,Closed,2026-06-13T05:41:41,2026-06-25T05:41:41,VPN issue reported by Operations user in London,Platform Team
+106,102,CRM,Medium,Closed,2026-06-30T22:38:41,2026-07-03T22:38:41,CRM issue reported by Support user in Berlin,Network Team
+107,142,Network,Medium,Resolved,2026-03-20T13:12:41,2026-04-01T13:12:41,Network issue reported by HR user in Tampere,Platform Team
+108,76,Printer,Medium,In Progress,2026-01-07T16:50:41,2026-01-19T16:50:41,Printer issue reported by HR user in Turku,Identity Team
+109,100,CRM,Low,Open,2026-04-07T15:50:41,2026-04-12T15:50:41,CRM issue reported by Sales user in Turku,Network Team
+110,27,Laptop,Medium,Resolved,2026-06-16T13:28:41,2026-06-22T13:28:41,Laptop issue reported by Legal user in Helsinki,Service Desk
+111,7,Email,High,Resolved,2026-04-09T01:50:41,2026-04-22T01:50:41,Email issue reported by Engineering user in London,Endpoint Team
+112,4,Azure Login,Critical,Open,2026-03-25T06:06:41,2026-04-08T06:06:41,Azure Login issue reported by Finance user in Tampere,Identity Team
+113,147,Database,Low,In Progress,2026-05-25T21:31:41,2026-05-29T21:31:41,Database issue reported by Finance user in Tallinn,Endpoint Team
+114,38,Email,Medium,Resolved,2026-05-27T05:38:41,2026-05-28T05:38:41,Email issue reported by Finance user in London,Network Team
+115,65,Printer,Low,Resolved,2026-01-04T22:24:41,2026-01-05T22:24:41,Printer issue reported by Operations user in Helsinki,Identity Team
+116,78,VPN,High,Resolved,2026-03-29T08:02:41,2026-04-03T08:02:41,VPN issue reported by Support user in London,Endpoint Team
+117,86,Network,Low,Open,2025-12-11T22:17:41,2025-12-22T22:17:41,Network issue reported by IT user in London,Identity Team
+118,123,CRM,Medium,In Progress,2026-05-24T06:35:41,2026-05-31T06:35:41,CRM issue reported by Sales user in Turku,Platform Team
+119,63,CRM,Medium,Closed,2026-04-03T10:03:41,2026-04-17T10:03:41,CRM issue reported by HR user in Helsinki,Platform Team
+120,52,Access Request,Low,Closed,2026-02-19T13:12:41,2026-03-02T13:12:41,Access Request issue reported by Finance user in Tampere,Endpoint Team
+121,54,CI/CD,High,Resolved,2025-12-16T09:02:41,2025-12-28T09:02:41,CI/CD issue reported by Legal user in Tampere,Endpoint Team
+122,128,Laptop,Low,In Progress,2026-01-27T09:40:41,2026-02-02T09:40:41,Laptop issue reported by Engineering user in London,Endpoint Team
+123,19,CI/CD,Medium,Resolved,2026-02-05T03:18:41,2026-02-19T03:18:41,CI/CD issue reported by HR user in Stockholm,Endpoint Team
+124,140,VPN,Medium,Closed,2025-12-18T07:11:41,2025-12-28T07:11:41,VPN issue reported by Sales user in Berlin,Service Desk
+125,28,Printer,Medium,In Progress,2026-01-20T21:33:41,2026-01-29T21:33:41,Printer issue reported by HR user in Berlin,Endpoint Team
+126,85,Network,Medium,In Progress,2026-06-11T18:49:41,2026-06-19T18:49:41,Network issue reported by Sales user in Berlin,Platform Team
+127,149,Access Request,High,Resolved,2026-05-13T04:32:41,2026-05-22T04:32:41,Access Request issue reported by IT user in Tallinn,Platform Team
+128,39,CRM,Critical,In Progress,2026-07-02T03:49:41,2026-07-03T03:49:41,CRM issue reported by HR user in Berlin,Service Desk
+129,37,CRM,Medium,Closed,2026-04-20T08:26:41,2026-04-25T08:26:41,CRM issue reported by Sales user in Tallinn,Endpoint Team
+130,25,CI/CD,Low,In Progress,2026-01-04T20:27:41,2026-01-16T20:27:41,CI/CD issue reported by Support user in Berlin,Service Desk
+131,6,CRM,Critical,Closed,2026-01-24T15:12:41,2026-02-04T15:12:41,CRM issue reported by Operations user in Tampere,Identity Team
+132,133,Laptop,Critical,Resolved,2026-02-17T13:34:41,2026-02-20T13:34:41,Laptop issue reported by HR user in London,Endpoint Team
+133,48,Laptop,High,Resolved,2026-01-25T21:28:41,2026-02-08T21:28:41,Laptop issue reported by Legal user in Tampere,Identity Team
+134,116,Access Request,Low,Closed,2026-03-21T06:55:41,2026-04-02T06:55:41,Access Request issue reported by Legal user in Helsinki,Service Desk
+135,148,Email,Low,Resolved,2025-12-16T01:44:41,2025-12-17T01:44:41,Email issue reported by Finance user in London,Network Team
+136,126,Database,Medium,Resolved,2026-01-26T08:17:41,2026-01-27T08:17:41,Database issue reported by Operations user in Turku,Network Team
+137,91,CI/CD,High,Resolved,2026-01-31T13:03:41,2026-02-14T13:03:41,CI/CD issue reported by Sales user in Tampere,Platform Team
+138,22,Laptop,Low,In Progress,2026-04-19T15:40:41,2026-04-30T15:40:41,Laptop issue reported by Operations user in Turku,Identity Team
+139,131,Network,Medium,Resolved,2026-03-22T23:47:41,2026-03-29T23:47:41,Network issue reported by Sales user in Stockholm,Platform Team
+140,45,Database,Low,Open,2026-05-27T03:37:41,2026-06-03T03:37:41,Database issue reported by Engineering user in Tampere,Platform Team
+141,14,CRM,Medium,In Progress,2026-07-06T03:47:41,2026-07-14T03:47:41,CRM issue reported by Engineering user in Berlin,Platform Team
+142,127,Network,Medium,Closed,2026-01-14T03:29:41,2026-01-16T03:29:41,Network issue reported by Engineering user in Tampere,Service Desk
+143,145,VPN,Low,Open,2025-12-17T11:37:41,2025-12-21T11:37:41,VPN issue reported by HR user in Turku,Identity Team
+144,118,Access Request,Medium,Resolved,2025-12-30T03:20:41,2026-01-03T03:20:41,Access Request issue reported by IT user in London,Platform Team
+145,94,Database,Medium,Closed,2025-12-10T17:07:41,2025-12-16T17:07:41,Database issue reported by Support user in Turku,Service Desk
+146,64,Azure Login,High,In Progress,2026-06-30T04:39:41,2026-07-07T04:39:41,Azure Login issue reported by Finance user in Tallinn,Service Desk
+147,61,Printer,High,Resolved,2025-12-12T19:18:41,2025-12-21T19:18:41,Printer issue reported by Engineering user in Tallinn,Endpoint Team
+148,43,Access Request,Low,In Progress,2026-06-03T12:03:41,2026-06-08T12:03:41,Access Request issue reported by Sales user in Helsinki,Platform Team
+149,72,Access Request,Low,Closed,2026-02-21T13:35:41,2026-03-02T13:35:41,Access Request issue reported by Sales user in Turku,Network Team
+150,132,Email,Low,Open,2026-06-04T04:57:41,2026-06-14T04:57:41,Email issue reported by Legal user in Helsinki,Identity Team
+151,34,Printer,High,Closed,2026-05-31T20:35:41,2026-06-10T20:35:41,Printer issue reported by Sales user in Tampere,Endpoint Team
+152,126,Laptop,Medium,Resolved,2026-02-10T22:38:41,2026-02-11T22:38:41,Laptop issue reported by Operations user in Turku,Service Desk
+153,104,Database,Medium,Closed,2025-12-29T10:11:41,2026-01-05T10:11:41,Database issue reported by Operations user in Berlin,Network Team
+154,149,VPN,Medium,Closed,2025-12-21T19:50:41,2025-12-31T19:50:41,VPN issue reported by IT user in Tallinn,Network Team
+155,17,Database,Medium,Closed,2026-03-29T12:28:41,2026-04-03T12:28:41,Database issue reported by HR user in Turku,Network Team
+156,87,Database,High,Closed,2026-02-11T14:19:41,2026-02-25T14:19:41,Database issue reported by HR user in Tampere,Service Desk
+157,12,Email,High,Open,2026-01-29T04:54:41,2026-02-05T04:54:41,Email issue reported by Finance user in Tallinn,Endpoint Team
+158,1,Network,Medium,Open,2026-05-17T19:57:41,2026-05-19T19:57:41,Network issue reported by Engineering user in Berlin,Network Team
+159,24,CRM,Medium,Resolved,2026-05-05T16:32:41,2026-05-05T16:32:41,CRM issue reported by HR user in Turku,Endpoint Team
+160,79,Printer,Low,Closed,2026-03-20T22:50:41,2026-03-27T22:50:41,Printer issue reported by Support user in Helsinki,Service Desk
+161,34,Access Request,Low,Resolved,2026-05-12T02:12:41,2026-05-17T02:12:41,Access Request issue reported by Sales user in Tampere,Service Desk
+162,109,Laptop,High,Resolved,2026-03-08T16:41:41,2026-03-09T16:41:41,Laptop issue reported by Support user in Tallinn,Service Desk
+163,81,CRM,High,Closed,2026-04-23T14:31:41,2026-04-25T14:31:41,CRM issue reported by Engineering user in Helsinki,Identity Team
+164,18,Database,Medium,Resolved,2026-02-14T18:16:41,2026-02-25T18:16:41,Database issue reported by Finance user in Tallinn,Identity Team
+165,39,Network,Low,Closed,2026-01-31T21:27:41,2026-02-01T21:27:41,Network issue reported by HR user in Berlin,Identity Team
+166,32,Access Request,Low,Closed,2026-01-03T06:33:41,2026-01-05T06:33:41,Access Request issue reported by Operations user in Tampere,Identity Team
+167,71,Email,Medium,Resolved,2026-05-06T01:17:41,2026-05-18T01:17:41,Email issue reported by Support user in Tampere,Service Desk
+168,78,Printer,Medium,In Progress,2026-02-25T23:23:41,2026-03-07T23:23:41,Printer issue reported by Support user in London,Service Desk
+169,62,CI/CD,Medium,Resolved,2026-04-01T15:40:41,2026-04-09T15:40:41,CI/CD issue reported by Engineering user in Helsinki,Service Desk
+170,93,CRM,Medium,Closed,2026-06-05T06:00:41,2026-06-13T06:00:41,CRM issue reported by Operations user in Turku,Identity Team
+171,121,Email,Low,Open,2026-07-04T00:51:41,2026-07-18T00:51:41,Email issue reported by Support user in London,Service Desk
+172,102,Database,Medium,Resolved,2026-04-25T22:10:41,2026-05-06T22:10:41,Database issue reported by Support user in Berlin,Endpoint Team
+173,22,Database,Low,In Progress,2026-02-20T23:46:41,2026-02-28T23:46:41,Database issue reported by Operations user in Turku,Identity Team
+174,40,Database,High,Resolved,2026-04-16T06:18:41,2026-04-26T06:18:41,Database issue reported by Support user in Tallinn,Service Desk
+175,80,Network,Critical,In Progress,2026-01-03T11:52:41,2026-01-04T11:52:41,Network issue reported by Support user in Tampere,Endpoint Team
+176,15,Azure Login,Low,Closed,2026-01-18T19:13:41,2026-01-29T19:13:41,Azure Login issue reported by Finance user in London,Identity Team
+177,3,Laptop,High,Resolved,2026-03-03T07:22:41,2026-03-07T07:22:41,Laptop issue reported by Finance user in Tallinn,Identity Team
+178,96,Laptop,High,Closed,2025-12-29T10:09:41,2025-12-29T10:09:41,Laptop issue reported by HR user in Tallinn,Network Team
+179,110,Azure Login,Medium,Closed,2026-02-24T16:39:41,2026-02-25T16:39:41,Azure Login issue reported by Sales user in Berlin,Endpoint Team
+180,117,Database,Low,Closed,2026-04-07T17:24:41,2026-04-09T17:24:41,Database issue reported by Legal user in Tampere,Network Team
+181,27,Access Request,Medium,In Progress,2026-01-16T19:48:41,2026-01-16T19:48:41,Access Request issue reported by Legal user in Helsinki,Service Desk
+182,63,VPN,Low,Closed,2026-03-10T07:31:41,2026-03-23T07:31:41,VPN issue reported by HR user in Helsinki,Service Desk
+183,142,Network,High,Resolved,2026-05-12T08:40:41,2026-05-16T08:40:41,Network issue reported by HR user in Tampere,Service Desk
+184,147,CRM,Low,Closed,2026-06-08T02:12:41,2026-06-20T02:12:41,CRM issue reported by Finance user in Tallinn,Platform Team
+185,12,Network,High,In Progress,2026-06-21T04:00:41,2026-06-26T04:00:41,Network issue reported by Finance user in Tallinn,Service Desk
+186,142,CI/CD,High,In Progress,2026-07-06T07:43:41,2026-07-17T07:43:41,CI/CD issue reported by HR user in Tampere,Platform Team
+187,63,CI/CD,High,Closed,2026-04-05T00:24:41,2026-04-16T00:24:41,CI/CD issue reported by HR user in Helsinki,Platform Team
+188,63,Laptop,Low,In Progress,2026-07-07T05:54:41,2026-07-20T05:54:41,Laptop issue reported by HR user in Helsinki,Service Desk
+189,86,VPN,High,Closed,2025-12-25T21:31:41,2025-12-26T21:31:41,VPN issue reported by IT user in London,Identity Team
+190,136,Printer,Low,Closed,2026-03-23T03:52:41,2026-03-27T03:52:41,Printer issue reported by HR user in Helsinki,Service Desk
+191,12,Printer,Medium,Closed,2026-02-25T05:11:41,2026-03-08T05:11:41,Printer issue reported by Finance user in Tallinn,Service Desk
+192,149,Email,Low,Closed,2026-03-01T14:15:41,2026-03-10T14:15:41,Email issue reported by IT user in Tallinn,Service Desk
+193,112,Laptop,Critical,Closed,2026-05-09T09:39:41,2026-05-15T09:39:41,Laptop issue reported by Finance user in Stockholm,Network Team
+194,82,CI/CD,Low,Closed,2026-04-30T11:51:41,2026-05-12T11:51:41,CI/CD issue reported by Engineering user in London,Platform Team
+195,28,Laptop,Medium,Resolved,2026-06-11T13:27:41,2026-06-19T13:27:41,Laptop issue reported by HR user in Berlin,Network Team
+196,54,CI/CD,Low,Closed,2026-04-21T04:39:41,2026-05-03T04:39:41,CI/CD issue reported by Legal user in Tampere,Network Team
+197,11,Printer,Critical,Closed,2026-04-16T14:50:41,2026-04-22T14:50:41,Printer issue reported by Legal user in Tallinn,Platform Team
+198,13,Azure Login,High,Closed,2026-05-03T13:54:41,2026-05-11T13:54:41,Azure Login issue reported by IT user in Tallinn,Platform Team
+199,64,Email,Low,Closed,2026-03-12T15:04:41,2026-03-12T15:04:41,Email issue reported by Finance user in Tallinn,Identity Team
+200,34,Printer,Critical,Resolved,2025-12-10T06:32:41,2025-12-11T06:32:41,Printer issue reported by Sales user in Tampere,Platform Team
+201,67,Email,Medium,Closed,2026-07-03T16:43:41,2026-07-05T16:43:41,Email issue reported by IT user in Turku,Service Desk
+202,85,Email,Medium,In Progress,2026-06-28T04:52:41,2026-07-11T04:52:41,Email issue reported by Sales user in Berlin,Endpoint Team
+203,128,VPN,Low,In Progress,2026-04-01T21:28:41,2026-04-03T21:28:41,VPN issue reported by Engineering user in London,Network Team
+204,72,CI/CD,Low,Resolved,2026-05-31T17:16:41,2026-06-04T17:16:41,CI/CD issue reported by Sales user in Turku,Endpoint Team
+205,106,Database,Low,In Progress,2026-03-08T17:50:41,2026-03-11T17:50:41,Database issue reported by Support user in Turku,Platform Team
+206,64,Database,Medium,Closed,2025-12-17T18:31:41,2025-12-25T18:31:41,Database issue reported by Finance user in Tallinn,Endpoint Team
+207,89,Access Request,Low,In Progress,2026-03-02T08:31:41,2026-03-11T08:31:41,Access Request issue reported by Operations user in London,Identity Team
+208,8,Azure Login,Medium,Resolved,2026-06-24T03:22:41,2026-06-27T03:22:41,Azure Login issue reported by IT user in Turku,Identity Team
+209,26,Printer,High,Resolved,2026-01-21T11:38:41,2026-02-01T11:38:41,Printer issue reported by Operations user in Turku,Service Desk
+210,57,Access Request,Critical,Closed,2025-12-16T06:33:41,2025-12-18T06:33:41,Access Request issue reported by Legal user in Stockholm,Identity Team
+211,61,Access Request,Medium,Resolved,2026-04-17T19:11:41,2026-04-28T19:11:41,Access Request issue reported by Engineering user in Tallinn,Network Team
+212,146,Access Request,High,Closed,2026-06-02T00:43:41,2026-06-09T00:43:41,Access Request issue reported by Support user in Tallinn,Platform Team
+213,80,Laptop,Medium,Open,2026-03-05T17:50:41,2026-03-05T17:50:41,Laptop issue reported by Support user in Tampere,Platform Team
+214,123,VPN,Low,Closed,2026-04-14T23:43:41,2026-04-16T23:43:41,VPN issue reported by Sales user in Turku,Network Team
+215,16,VPN,High,Closed,2026-06-01T00:10:41,2026-06-14T00:10:41,VPN issue reported by Operations user in Turku,Platform Team
+216,94,Email,Low,Resolved,2026-04-03T20:13:41,2026-04-07T20:13:41,Email issue reported by Support user in Turku,Network Team
+217,35,Laptop,Medium,Resolved,2026-01-02T05:05:41,2026-01-07T05:05:41,Laptop issue reported by Engineering user in Tallinn,Identity Team
+218,144,Access Request,High,Resolved,2025-12-19T07:41:41,2025-12-25T07:41:41,Access Request issue reported by HR user in Tallinn,Network Team
+219,76,Laptop,Critical,Closed,2026-05-23T19:55:41,2026-05-29T19:55:41,Laptop issue reported by HR user in Turku,Platform Team
+220,9,Laptop,Medium,Closed,2026-02-04T07:57:41,2026-02-14T07:57:41,Laptop issue reported by Finance user in Helsinki,Platform Team
+221,27,CI/CD,Low,Open,2026-06-02T08:08:41,2026-06-07T08:08:41,CI/CD issue reported by Legal user in Helsinki,Identity Team
+222,23,CRM,Medium,In Progress,2026-03-16T18:39:41,2026-03-21T18:39:41,CRM issue reported by IT user in Tampere,Network Team
+223,28,VPN,Critical,Closed,2026-06-26T06:27:41,2026-07-10T06:27:41,VPN issue reported by HR user in Berlin,Endpoint Team
+224,127,Network,Medium,Open,2026-04-10T01:31:41,2026-04-23T01:31:41,Network issue reported by Engineering user in Tampere,Platform Team
+225,58,Laptop,Low,Closed,2026-03-15T16:04:41,2026-03-20T16:04:41,Laptop issue reported by Engineering user in Tampere,Network Team
+226,27,Email,High,Resolved,2026-04-12T12:59:41,2026-04-20T12:59:41,Email issue reported by Legal user in Helsinki,Service Desk
+227,87,Access Request,Critical,Open,2026-02-01T03:10:41,2026-02-03T03:10:41,Access Request issue reported by HR user in Tampere,Platform Team
+228,112,Laptop,Low,In Progress,2026-06-25T15:34:41,2026-07-06T15:34:41,Laptop issue reported by Finance user in Stockholm,Platform Team
+229,139,Azure Login,Low,In Progress,2026-01-20T09:36:41,2026-01-29T09:36:41,Azure Login issue reported by Legal user in Helsinki,Platform Team
+230,126,Laptop,Low,Resolved,2026-06-25T07:55:41,2026-07-05T07:55:41,Laptop issue reported by Operations user in Turku,Platform Team
+231,123,Printer,Low,In Progress,2026-06-14T18:42:41,2026-06-15T18:42:41,Printer issue reported by Sales user in Turku,Endpoint Team
+232,30,Azure Login,Medium,Resolved,2025-12-20T06:25:41,2025-12-21T06:25:41,Azure Login issue reported by Support user in Tallinn,Platform Team
+233,100,Laptop,Low,In Progress,2026-04-05T06:32:41,2026-04-12T06:32:41,Laptop issue reported by Sales user in Turku,Endpoint Team
+234,68,Printer,Medium,In Progress,2026-05-01T00:52:41,2026-05-02T00:52:41,Printer issue reported by Sales user in Turku,Service Desk
+235,89,Database,High,Resolved,2026-03-25T00:41:41,2026-04-07T00:41:41,Database issue reported by Operations user in London,Platform Team
+236,108,Database,Medium,Closed,2026-01-14T03:19:41,2026-01-15T03:19:41,Database issue reported by Legal user in London,Endpoint Team
+237,9,Database,Critical,Resolved,2026-02-12T02:04:41,2026-02-14T02:04:41,Database issue reported by Finance user in Helsinki,Service Desk
+238,115,Laptop,Low,In Progress,2026-05-27T12:04:41,2026-05-28T12:04:41,Laptop issue reported by Operations user in Tampere,Endpoint Team
+239,52,Laptop,Critical,Closed,2026-02-06T10:35:41,2026-02-07T10:35:41,Laptop issue reported by Finance user in Tampere,Service Desk
+240,100,Database,Medium,Closed,2026-03-29T01:35:41,2026-04-12T01:35:41,Database issue reported by Sales user in Turku,Service Desk
+241,134,Network,Medium,Open,2026-06-10T05:46:41,2026-06-22T05:46:41,Network issue reported by Engineering user in Stockholm,Service Desk
+242,28,Access Request,Medium,In Progress,2025-12-21T15:05:41,2025-12-26T15:05:41,Access Request issue reported by HR user in Berlin,Endpoint Team
+243,68,Network,Low,Resolved,2026-01-22T03:19:41,2026-01-26T03:19:41,Network issue reported by Sales user in Turku,Endpoint Team
+244,37,Access Request,Medium,Resolved,2026-02-02T21:11:41,2026-02-16T21:11:41,Access Request issue reported by Sales user in Tallinn,Network Team
+245,61,VPN,Medium,In Progress,2025-12-30T02:57:41,2026-01-04T02:57:41,VPN issue reported by Engineering user in Tallinn,Network Team
+246,80,Azure Login,High,Open,2026-03-04T20:12:41,2026-03-06T20:12:41,Azure Login issue reported by Support user in Tampere,Network Team
+247,114,CRM,Low,Resolved,2026-04-30T19:29:41,2026-05-07T19:29:41,CRM issue reported by Sales user in Tampere,Identity Team
+248,105,CI/CD,Low,Resolved,2025-12-26T02:00:41,2026-01-07T02:00:41,CI/CD issue reported by Support user in Stockholm,Identity Team
+249,17,Azure Login,High,Open,2026-01-08T02:30:41,2026-01-22T02:30:41,Azure Login issue reported by HR user in Turku,Platform Team
+250,8,Laptop,Low,Open,2026-05-20T12:02:41,2026-05-20T12:02:41,Laptop issue reported by IT user in Turku,Network Team
+251,51,Azure Login,Critical,Resolved,2026-04-05T04:23:41,2026-04-15T04:23:41,Azure Login issue reported by Finance user in Helsinki,Service Desk
+252,62,CRM,High,In Progress,2026-03-04T23:27:41,2026-03-13T23:27:41,CRM issue reported by Engineering user in Helsinki,Platform Team
+253,90,CRM,Low,Closed,2026-05-28T10:08:41,2026-05-28T10:08:41,CRM issue reported by Finance user in Stockholm,Endpoint Team
+254,13,Laptop,Low,In Progress,2026-02-12T12:01:41,2026-02-15T12:01:41,Laptop issue reported by IT user in Tallinn,Network Team
+255,105,Database,Low,Resolved,2026-07-02T21:55:41,2026-07-04T21:55:41,Database issue reported by Support user in Stockholm,Platform Team
+256,3,Printer,High,Closed,2026-05-04T23:04:41,2026-05-15T23:04:41,Printer issue reported by Finance user in Tallinn,Network Team
+257,109,Network,Low,In Progress,2026-04-10T04:39:41,2026-04-18T04:39:41,Network issue reported by Support user in Tallinn,Platform Team
+258,102,Access Request,Critical,Closed,2026-06-12T18:23:41,2026-06-25T18:23:41,Access Request issue reported by Support user in Berlin,Network Team
+259,144,Access Request,Medium,Resolved,2026-02-03T09:36:41,2026-02-08T09:36:41,Access Request issue reported by HR user in Tallinn,Network Team
+260,84,Azure Login,Medium,Closed,2026-05-02T22:10:41,2026-05-05T22:10:41,Azure Login issue reported by IT user in London,Identity Team
+261,133,Printer,Medium,Resolved,2026-06-23T23:30:41,2026-07-04T23:30:41,Printer issue reported by HR user in London,Service Desk
+262,128,Azure Login,Low,Resolved,2026-05-03T05:30:41,2026-05-14T05:30:41,Azure Login issue reported by Engineering user in London,Platform Team
+263,49,CRM,Medium,Resolved,2026-01-03T20:41:41,2026-01-10T20:41:41,CRM issue reported by Sales user in Helsinki,Network Team
+264,130,Azure Login,Low,Resolved,2026-05-25T20:59:41,2026-06-01T20:59:41,Azure Login issue reported by Operations user in Tallinn,Identity Team
+265,67,Database,Medium,Closed,2025-12-25T13:12:41,2025-12-28T13:12:41,Database issue reported by IT user in Turku,Network Team
+266,58,Azure Login,Low,In Progress,2026-03-23T08:32:41,2026-04-05T08:32:41,Azure Login issue reported by Engineering user in Tampere,Service Desk
+267,121,VPN,Low,Closed,2026-01-27T00:18:41,2026-02-10T00:18:41,VPN issue reported by Support user in London,Identity Team
+268,129,Email,Low,In Progress,2026-01-15T06:22:41,2026-01-28T06:22:41,Email issue reported by Engineering user in Turku,Identity Team
+269,36,Printer,Critical,Closed,2026-04-12T05:19:41,2026-04-14T05:19:41,Printer issue reported by Finance user in Turku,Network Team
+270,47,Email,Low,Closed,2026-03-06T08:15:41,2026-03-06T08:15:41,Email issue reported by Legal user in Tampere,Service Desk
+271,116,Azure Login,Medium,Closed,2026-05-16T13:19:41,2026-05-28T13:19:41,Azure Login issue reported by Legal user in Helsinki,Service Desk
+272,34,Access Request,Critical,Resolved,2026-03-18T22:28:41,2026-03-24T22:28:41,Access Request issue reported by Sales user in Tampere,Service Desk
+273,10,Database,High,Closed,2026-05-17T19:32:41,2026-05-29T19:32:41,Database issue reported by IT user in Tallinn,Platform Team
+274,49,VPN,Low,Closed,2026-01-16T18:15:41,2026-01-30T18:15:41,VPN issue reported by Sales user in Helsinki,Network Team
+275,80,Laptop,Low,Resolved,2026-06-12T06:23:41,2026-06-25T06:23:41,Laptop issue reported by Support user in Tampere,Service Desk
+276,77,Azure Login,Low,Resolved,2026-03-13T19:22:41,2026-03-27T19:22:41,Azure Login issue reported by IT user in Tampere,Identity Team
+277,88,CI/CD,Critical,Closed,2026-04-08T12:45:41,2026-04-14T12:45:41,CI/CD issue reported by Operations user in Helsinki,Service Desk
+278,59,Printer,Medium,Closed,2026-01-03T14:42:41,2026-01-05T14:42:41,Printer issue reported by Support user in London,Service Desk
+279,94,VPN,Medium,Closed,2026-04-02T22:39:41,2026-04-11T22:39:41,VPN issue reported by Support user in Turku,Service Desk
+280,28,VPN,Medium,Resolved,2026-06-25T20:48:41,2026-07-03T20:48:41,VPN issue reported by HR user in Berlin,Network Team
+281,122,Laptop,Low,Resolved,2026-05-16T20:12:41,2026-05-26T20:12:41,Laptop issue reported by Support user in Stockholm,Service Desk
+282,134,Azure Login,High,Open,2026-01-29T23:11:41,2026-01-30T23:11:41,Azure Login issue reported by Engineering user in Stockholm,Platform Team
+283,31,Azure Login,Low,In Progress,2026-06-09T15:24:41,2026-06-13T15:24:41,Azure Login issue reported by Support user in London,Platform Team
+284,52,CRM,Medium,In Progress,2026-01-09T05:37:41,2026-01-23T05:37:41,CRM issue reported by Finance user in Tampere,Identity Team
+285,124,CRM,Critical,Resolved,2026-05-09T18:55:41,2026-05-22T18:55:41,CRM issue reported by Finance user in Tampere,Platform Team
+286,127,Laptop,Low,Closed,2026-06-15T02:51:41,2026-06-19T02:51:41,Laptop issue reported by Engineering user in Tampere,Identity Team
+287,117,Azure Login,Low,Open,2026-05-02T04:52:41,2026-05-02T04:52:41,Azure Login issue reported by Legal user in Tampere,Network Team
+288,93,CRM,High,Open,2026-03-20T19:48:41,2026-03-20T19:48:41,CRM issue reported by Operations user in Turku,Service Desk
+289,36,Laptop,Medium,Resolved,2026-04-15T06:58:41,2026-04-29T06:58:41,Laptop issue reported by Finance user in Turku,Service Desk
+290,96,CRM,Medium,Resolved,2026-05-23T15:30:41,2026-06-05T15:30:41,CRM issue reported by HR user in Tallinn,Endpoint Team
+291,123,Network,High,Open,2026-01-23T13:48:41,2026-02-05T13:48:41,Network issue reported by Sales user in Turku,Identity Team
+292,27,Network,Medium,Resolved,2026-02-07T03:04:41,2026-02-16T03:04:41,Network issue reported by Legal user in Helsinki,Endpoint Team
+293,92,Access Request,Critical,Closed,2026-06-30T20:59:41,2026-07-02T20:59:41,Access Request issue reported by Sales user in Tampere,Endpoint Team
+294,125,Email,Medium,Open,2026-03-25T04:53:41,2026-03-25T04:53:41,Email issue reported by HR user in Berlin,Platform Team
+295,148,Access Request,Medium,In Progress,2026-05-11T21:00:41,2026-05-22T21:00:41,Access Request issue reported by Finance user in London,Platform Team
+296,25,Network,Medium,Resolved,2026-01-19T19:40:41,2026-01-29T19:40:41,Network issue reported by Support user in Berlin,Endpoint Team
+297,39,Database,Low,Resolved,2026-02-02T17:55:41,2026-02-15T17:55:41,Database issue reported by HR user in Berlin,Endpoint Team
+298,127,Laptop,Critical,In Progress,2026-06-19T03:35:41,2026-06-19T03:35:41,Laptop issue reported by Engineering user in Tampere,Platform Team
+299,58,Database,Low,Closed,2026-01-25T06:30:41,2026-02-01T06:30:41,Database issue reported by Engineering user in Tampere,Platform Team
+300,115,Email,Medium,Open,2026-03-03T04:35:41,2026-03-13T04:35:41,Email issue reported by Operations user in Tampere,Service Desk
+301,27,Network,High,Resolved,2026-03-25T17:20:41,2026-04-06T17:20:41,Network issue reported by Legal user in Helsinki,Platform Team
+302,78,Database,Critical,Resolved,2026-02-15T12:14:41,2026-02-20T12:14:41,Database issue reported by Support user in London,Service Desk
+303,58,CI/CD,Medium,Resolved,2026-04-15T01:06:41,2026-04-25T01:06:41,CI/CD issue reported by Engineering user in Tampere,Network Team
+304,116,Email,Medium,Open,2026-06-13T21:41:41,2026-06-23T21:41:41,Email issue reported by Legal user in Helsinki,Network Team
+305,141,Database,Low,Open,2026-04-03T20:49:41,2026-04-05T20:49:41,Database issue reported by Engineering user in Tampere,Endpoint Team
+306,28,Azure Login,High,Open,2026-02-02T12:43:41,2026-02-05T12:43:41,Azure Login issue reported by HR user in Berlin,Endpoint Team
+307,49,CRM,High,Closed,2026-06-11T05:53:41,2026-06-20T05:53:41,CRM issue reported by Sales user in Helsinki,Service Desk
+308,116,CI/CD,Medium,Open,2026-01-21T00:23:41,2026-01-29T00:23:41,CI/CD issue reported by Legal user in Helsinki,Service Desk
+309,142,Network,Critical,Resolved,2026-02-09T02:56:41,2026-02-11T02:56:41,Network issue reported by HR user in Tampere,Platform Team
+310,45,Laptop,High,Resolved,2026-06-12T06:13:41,2026-06-20T06:13:41,Laptop issue reported by Engineering user in Tampere,Endpoint Team
+311,108,Access Request,Low,Resolved,2026-01-12T11:38:41,2026-01-16T11:38:41,Access Request issue reported by Legal user in London,Endpoint Team
+312,35,Laptop,Medium,Closed,2026-03-24T23:11:41,2026-04-06T23:11:41,Laptop issue reported by Engineering user in Tallinn,Platform Team
+313,81,Database,High,In Progress,2026-01-28T12:43:41,2026-02-07T12:43:41,Database issue reported by Engineering user in Helsinki,Network Team
+314,34,Laptop,High,Resolved,2026-03-02T01:11:41,2026-03-14T01:11:41,Laptop issue reported by Sales user in Tampere,Network Team
+315,144,CI/CD,Medium,Closed,2026-02-09T00:13:41,2026-02-23T00:13:41,CI/CD issue reported by HR user in Tallinn,Platform Team
+316,74,Network,Medium,Open,2025-12-14T18:22:41,2025-12-14T18:22:41,Network issue reported by Support user in Berlin,Service Desk
+317,52,Azure Login,Low,Resolved,2025-12-28T13:37:41,2025-12-28T13:37:41,Azure Login issue reported by Finance user in Tampere,Network Team
+318,53,Database,Medium,Resolved,2026-06-30T07:03:41,2026-07-10T07:03:41,Database issue reported by Legal user in Tampere,Platform Team
+319,58,Database,High,Closed,2026-03-31T11:23:41,2026-04-04T11:23:41,Database issue reported by Engineering user in Tampere,Service Desk
+320,98,Network,Low,Closed,2026-03-23T21:35:41,2026-04-03T21:35:41,Network issue reported by Finance user in Stockholm,Network Team
+321,52,Access Request,Medium,In Progress,2025-12-21T04:02:41,2026-01-01T04:02:41,Access Request issue reported by Finance user in Tampere,Network Team
+322,140,Access Request,Low,In Progress,2026-05-18T19:43:41,2026-05-28T19:43:41,Access Request issue reported by Sales user in Berlin,Service Desk
+323,48,Laptop,Medium,Resolved,2026-01-01T02:48:41,2026-01-09T02:48:41,Laptop issue reported by Legal user in Tampere,Network Team
+324,34,Laptop,High,In Progress,2026-02-09T10:55:41,2026-02-11T10:55:41,Laptop issue reported by Sales user in Tampere,Service Desk
+325,40,CRM,Medium,Closed,2026-02-06T17:06:41,2026-02-16T17:06:41,CRM issue reported by Support user in Tallinn,Network Team
+326,126,Access Request,Low,Closed,2026-02-18T07:51:41,2026-02-21T07:51:41,Access Request issue reported by Operations user in Turku,Identity Team
+327,134,Email,Medium,Resolved,2025-12-19T02:45:41,2025-12-20T02:45:41,Email issue reported by Engineering user in Stockholm,Network Team
+328,57,Printer,Low,Resolved,2026-01-20T08:34:41,2026-02-01T08:34:41,Printer issue reported by Legal user in Stockholm,Platform Team
+329,136,CI/CD,Low,Open,2026-02-14T22:55:41,2026-02-17T22:55:41,CI/CD issue reported by HR user in Helsinki,Platform Team
+330,63,VPN,Critical,Closed,2026-01-15T08:31:41,2026-01-21T08:31:41,VPN issue reported by HR user in Helsinki,Network Team
+331,139,Azure Login,Medium,Closed,2026-07-02T02:03:41,2026-07-10T02:03:41,Azure Login issue reported by Legal user in Helsinki,Endpoint Team
+332,125,VPN,Low,In Progress,2026-04-23T22:43:41,2026-04-24T22:43:41,VPN issue reported by HR user in Berlin,Identity Team
+333,138,Database,Medium,In Progress,2026-07-06T22:51:41,2026-07-09T22:51:41,Database issue reported by Support user in London,Endpoint Team
+334,27,Printer,High,Closed,2026-02-20T19:59:41,2026-03-02T19:59:41,Printer issue reported by Legal user in Helsinki,Service Desk
+335,40,VPN,Low,Open,2026-03-12T20:34:41,2026-03-14T20:34:41,VPN issue reported by Support user in Tallinn,Network Team
+336,143,Email,Medium,In Progress,2026-02-11T10:57:41,2026-02-21T10:57:41,Email issue reported by Sales user in Stockholm,Endpoint Team
+337,111,CRM,Low,Open,2026-07-04T06:12:41,2026-07-15T06:12:41,CRM issue reported by HR user in Helsinki,Platform Team
+338,17,Access Request,Critical,Open,2026-06-26T20:01:41,2026-06-27T20:01:41,Access Request issue reported by HR user in Turku,Network Team
+339,78,Access Request,Medium,Closed,2026-06-16T09:07:41,2026-06-29T09:07:41,Access Request issue reported by Support user in London,Service Desk
+340,122,Laptop,High,Closed,2026-02-22T11:47:41,2026-03-07T11:47:41,Laptop issue reported by Support user in Stockholm,Platform Team
+341,76,Laptop,High,Closed,2026-04-22T20:59:41,2026-05-03T20:59:41,Laptop issue reported by HR user in Turku,Network Team
+342,3,Database,Medium,Open,2026-02-16T14:48:41,2026-02-22T14:48:41,Database issue reported by Finance user in Tallinn,Platform Team
+343,141,Email,High,Closed,2026-04-21T12:08:41,2026-04-24T12:08:41,Email issue reported by Engineering user in Tampere,Endpoint Team
+344,132,Laptop,Low,Resolved,2026-05-28T13:41:41,2026-05-29T13:41:41,Laptop issue reported by Legal user in Helsinki,Identity Team
+345,146,VPN,Low,Resolved,2025-12-28T01:26:41,2026-01-07T01:26:41,VPN issue reported by Support user in Tallinn,Service Desk
+346,65,Email,Low,Resolved,2026-05-18T19:18:41,2026-05-20T19:18:41,Email issue reported by Operations user in Helsinki,Identity Team
+347,26,Azure Login,Medium,In Progress,2026-01-31T15:58:41,2026-02-05T15:58:41,Azure Login issue reported by Operations user in Turku,Platform Team
+348,79,Access Request,Low,Resolved,2026-05-30T00:19:41,2026-06-05T00:19:41,Access Request issue reported by Support user in Helsinki,Identity Team
+349,2,CRM,Medium,Closed,2026-05-06T11:10:41,2026-05-19T11:10:41,CRM issue reported by HR user in Berlin,Network Team
+350,35,CRM,Low,Resolved,2026-03-08T04:27:41,2026-03-16T04:27:41,CRM issue reported by Engineering user in Tallinn,Service Desk
+351,45,Access Request,High,Closed,2026-06-18T10:01:41,2026-06-21T10:01:41,Access Request issue reported by Engineering user in Tampere,Network Team
+352,20,Email,Medium,Open,2026-07-04T02:15:41,2026-07-10T02:15:41,Email issue reported by Sales user in Berlin,Platform Team
+353,55,VPN,Medium,Closed,2026-02-17T10:21:41,2026-02-27T10:21:41,VPN issue reported by Finance user in Helsinki,Identity Team
+354,94,Network,Low,Closed,2026-05-12T00:09:41,2026-05-20T00:09:41,Network issue reported by Support user in Turku,Platform Team
+355,24,Network,High,Resolved,2026-04-06T02:55:41,2026-04-18T02:55:41,Network issue reported by HR user in Turku,Platform Team
+356,43,Database,Critical,In Progress,2026-06-03T04:45:41,2026-06-13T04:45:41,Database issue reported by Sales user in Helsinki,Identity Team
+357,124,CRM,Low,Resolved,2026-06-28T11:07:41,2026-07-03T11:07:41,CRM issue reported by Finance user in Tampere,Identity Team
+358,11,Printer,Medium,Resolved,2026-02-26T07:31:41,2026-02-26T07:31:41,Printer issue reported by Legal user in Tallinn,Service Desk
+359,83,Email,High,Closed,2026-01-09T02:15:41,2026-01-13T02:15:41,Email issue reported by HR user in Stockholm,Platform Team
+360,140,Access Request,Medium,Resolved,2026-05-25T06:14:41,2026-06-08T06:14:41,Access Request issue reported by Sales user in Berlin,Service Desk
+361,133,Azure Login,High,Resolved,2026-04-03T11:22:41,2026-04-08T11:22:41,Azure Login issue reported by HR user in London,Endpoint Team
+362,124,Access Request,Low,Open,2026-07-07T01:59:41,2026-07-08T01:59:41,Access Request issue reported by Finance user in Tampere,Platform Team
+363,72,Printer,High,Resolved,2026-05-31T13:45:41,2026-06-01T13:45:41,Printer issue reported by Sales user in Turku,Identity Team
+364,107,CRM,Medium,Resolved,2026-01-05T15:25:41,2026-01-14T15:25:41,CRM issue reported by IT user in Stockholm,Identity Team
+365,106,VPN,Low,Resolved,2026-05-07T17:47:41,2026-05-17T17:47:41,VPN issue reported by Support user in Turku,Platform Team
+366,11,Access Request,Low,In Progress,2026-06-01T17:45:41,2026-06-07T17:45:41,Access Request issue reported by Legal user in Tallinn,Platform Team
+367,145,VPN,Critical,Closed,2026-01-04T19:13:41,2026-01-07T19:13:41,VPN issue reported by HR user in Turku,Endpoint Team
+368,121,CI/CD,Low,Resolved,2026-05-26T11:02:41,2026-06-04T11:02:41,CI/CD issue reported by Support user in London,Identity Team
+369,131,Azure Login,Medium,In Progress,2026-05-26T19:12:41,2026-06-04T19:12:41,Azure Login issue reported by Sales user in Stockholm,Service Desk
+370,59,Network,Medium,Open,2026-04-01T14:49:41,2026-04-15T14:49:41,Network issue reported by Support user in London,Platform Team
+371,108,Laptop,Medium,Resolved,2026-02-03T15:44:41,2026-02-03T15:44:41,Laptop issue reported by Legal user in London,Platform Team
+372,129,Email,Medium,Open,2026-06-15T03:13:41,2026-06-28T03:13:41,Email issue reported by Engineering user in Turku,Service Desk
+373,111,Database,Medium,Open,2026-03-23T07:00:41,2026-03-26T07:00:41,Database issue reported by HR user in Helsinki,Endpoint Team
+374,98,CRM,Medium,Closed,2026-02-07T18:57:41,2026-02-08T18:57:41,CRM issue reported by Finance user in Stockholm,Endpoint Team
+375,35,Azure Login,Low,Closed,2026-03-08T10:57:41,2026-03-22T10:57:41,Azure Login issue reported by Engineering user in Tallinn,Platform Team
+376,105,Azure Login,Low,Closed,2026-05-21T18:10:41,2026-05-29T18:10:41,Azure Login issue reported by Support user in Stockholm,Service Desk
+377,134,VPN,Low,Resolved,2026-04-02T22:42:41,2026-04-07T22:42:41,VPN issue reported by Engineering user in Stockholm,Service Desk
+378,40,Network,Medium,In Progress,2026-01-23T00:39:41,2026-02-01T00:39:41,Network issue reported by Support user in Tallinn,Network Team
+379,71,Network,Medium,Resolved,2025-12-27T12:29:41,2025-12-29T12:29:41,Network issue reported by Support user in Tampere,Network Team
+380,144,Database,High,Resolved,2026-03-07T10:36:41,2026-03-13T10:36:41,Database issue reported by HR user in Tallinn,Identity Team
+381,31,Printer,Medium,Open,2026-03-15T20:45:41,2026-03-27T20:45:41,Printer issue reported by Support user in London,Network Team
+382,141,Access Request,Medium,Open,2026-01-10T21:10:41,2026-01-20T21:10:41,Access Request issue reported by Engineering user in Tampere,Service Desk
+383,24,Laptop,Low,Open,2026-03-09T23:28:41,2026-03-14T23:28:41,Laptop issue reported by HR user in Turku,Service Desk
+384,10,Network,High,Resolved,2026-03-27T23:14:41,2026-04-05T23:14:41,Network issue reported by IT user in Tallinn,Service Desk
+385,45,CI/CD,Critical,Closed,2026-03-18T18:43:41,2026-03-26T18:43:41,CI/CD issue reported by Engineering user in Tampere,Network Team
+386,50,VPN,Low,Resolved,2025-12-19T23:23:41,2025-12-21T23:23:41,VPN issue reported by IT user in Stockholm,Service Desk
+387,93,Printer,Low,Open,2026-01-22T18:45:41,2026-01-28T18:45:41,Printer issue reported by Operations user in Turku,Network Team
+388,102,Network,High,Open,2026-02-08T12:22:41,2026-02-22T12:22:41,Network issue reported by Support user in Berlin,Service Desk
+389,141,Azure Login,Low,Resolved,2026-01-04T00:57:41,2026-01-17T00:57:41,Azure Login issue reported by Engineering user in Tampere,Network Team
+390,58,Access Request,Low,Resolved,2026-05-20T03:56:41,2026-05-22T03:56:41,Access Request issue reported by Engineering user in Tampere,Endpoint Team
+391,130,Email,Critical,In Progress,2026-02-15T16:23:41,2026-02-27T16:23:41,Email issue reported by Operations user in Tallinn,Platform Team
+392,66,Database,Critical,Resolved,2025-12-12T00:39:41,2025-12-21T00:39:41,Database issue reported by Engineering user in Tallinn,Endpoint Team
+393,63,CRM,Medium,Resolved,2025-12-22T04:12:41,2025-12-22T04:12:41,CRM issue reported by HR user in Helsinki,Endpoint Team
+394,30,Azure Login,Low,Closed,2026-06-21T06:15:41,2026-07-02T06:15:41,Azure Login issue reported by Support user in Tallinn,Identity Team
+395,81,Network,High,Open,2026-04-09T02:21:41,2026-04-12T02:21:41,Network issue reported by Engineering user in Helsinki,Network Team
+396,24,Network,Medium,In Progress,2026-01-16T19:03:41,2026-01-18T19:03:41,Network issue reported by HR user in Turku,Endpoint Team
+397,81,CRM,High,In Progress,2026-05-14T00:38:41,2026-05-28T00:38:41,CRM issue reported by Engineering user in Helsinki,Identity Team
+398,128,Printer,Low,Closed,2026-05-08T19:40:41,2026-05-11T19:40:41,Printer issue reported by Engineering user in London,Identity Team
+399,92,Laptop,Medium,Closed,2025-12-21T15:48:41,2025-12-31T15:48:41,Laptop issue reported by Sales user in Tampere,Endpoint Team
+400,2,Database,Medium,Resolved,2026-06-28T03:32:41,2026-07-12T03:32:41,Database issue reported by HR user in Berlin,Platform Team
+401,71,CI/CD,High,Resolved,2026-05-23T02:38:41,2026-05-25T02:38:41,CI/CD issue reported by Support user in Tampere,Service Desk
+402,135,Network,Medium,Resolved,2026-03-08T01:53:41,2026-03-18T01:53:41,Network issue reported by Finance user in Berlin,Identity Team
+403,118,Email,Low,In Progress,2026-01-11T02:26:41,2026-01-21T02:26:41,Email issue reported by IT user in London,Identity Team
+404,98,Access Request,Low,Resolved,2026-06-13T08:32:41,2026-06-21T08:32:41,Access Request issue reported by Finance user in Stockholm,Network Team
+405,61,Azure Login,Medium,Resolved,2026-03-09T23:34:41,2026-03-12T23:34:41,Azure Login issue reported by Engineering user in Tallinn,Endpoint Team
+406,96,CRM,Low,In Progress,2026-03-28T10:27:41,2026-04-06T10:27:41,CRM issue reported by HR user in Tallinn,Identity Team
+407,26,Azure Login,Medium,Resolved,2025-12-15T11:20:41,2025-12-17T11:20:41,Azure Login issue reported by Operations user in Turku,Identity Team
+408,122,VPN,High,Open,2026-05-24T05:24:41,2026-06-03T05:24:41,VPN issue reported by Support user in Stockholm,Platform Team
+409,137,CRM,High,In Progress,2025-12-19T03:36:41,2025-12-19T03:36:41,CRM issue reported by Sales user in Stockholm,Endpoint Team
+410,26,Laptop,High,In Progress,2026-06-23T12:03:41,2026-06-24T12:03:41,Laptop issue reported by Operations user in Turku,Endpoint Team
+411,86,Azure Login,High,Resolved,2026-04-07T07:20:41,2026-04-12T07:20:41,Azure Login issue reported by IT user in London,Service Desk
+412,106,Email,Medium,In Progress,2026-04-09T21:17:41,2026-04-19T21:17:41,Email issue reported by Support user in Turku,Platform Team
+413,45,Azure Login,High,Resolved,2026-04-09T08:12:41,2026-04-16T08:12:41,Azure Login issue reported by Engineering user in Tampere,Service Desk
+414,98,Access Request,High,Closed,2026-04-26T04:15:41,2026-05-06T04:15:41,Access Request issue reported by Finance user in Stockholm,Network Team
+415,108,Access Request,Low,Closed,2026-02-12T06:01:41,2026-02-17T06:01:41,Access Request issue reported by Legal user in London,Identity Team
+416,81,CRM,Medium,In Progress,2026-01-22T09:10:41,2026-01-26T09:10:41,CRM issue reported by Engineering user in Helsinki,Endpoint Team
+417,93,Access Request,High,In Progress,2026-02-25T04:29:41,2026-02-27T04:29:41,Access Request issue reported by Operations user in Turku,Identity Team
+418,65,Email,Low,Open,2026-05-16T13:30:41,2026-05-30T13:30:41,Email issue reported by Operations user in Helsinki,Endpoint Team
+419,141,VPN,Low,Closed,2026-07-02T06:22:41,2026-07-06T06:22:41,VPN issue reported by Engineering user in Tampere,Platform Team
+420,40,Email,High,In Progress,2026-01-22T06:36:41,2026-01-29T06:36:41,Email issue reported by Support user in Tallinn,Identity Team
+421,34,Database,High,Resolved,2026-05-26T18:53:41,2026-05-31T18:53:41,Database issue reported by Sales user in Tampere,Endpoint Team
+422,120,Database,Critical,Open,2026-04-30T01:27:41,2026-05-08T01:27:41,Database issue reported by Legal user in Stockholm,Identity Team
+423,117,Access Request,Low,Resolved,2026-03-19T02:15:41,2026-03-24T02:15:41,Access Request issue reported by Legal user in Tampere,Endpoint Team
+424,139,Printer,Medium,In Progress,2025-12-14T16:27:41,2025-12-16T16:27:41,Printer issue reported by Legal user in Helsinki,Network Team
+425,3,VPN,Medium,In Progress,2026-02-25T14:33:41,2026-03-08T14:33:41,VPN issue reported by Finance user in Tallinn,Endpoint Team
+426,123,Azure Login,Low,In Progress,2026-07-06T05:04:41,2026-07-06T05:04:41,Azure Login issue reported by Sales user in Turku,Platform Team
+427,96,Printer,Low,Resolved,2026-03-25T01:28:41,2026-04-05T01:28:41,Printer issue reported by HR user in Tallinn,Endpoint Team
+428,97,Printer,Medium,Resolved,2026-05-02T16:28:41,2026-05-14T16:28:41,Printer issue reported by Operations user in Turku,Platform Team
+429,70,Azure Login,Medium,Closed,2026-01-22T19:21:41,2026-02-04T19:21:41,Azure Login issue reported by Finance user in Helsinki,Service Desk
+430,47,Laptop,Medium,Resolved,2026-04-25T15:15:41,2026-05-06T15:15:41,Laptop issue reported by Legal user in Tampere,Platform Team
+431,126,Printer,Medium,Open,2026-04-17T18:46:41,2026-04-19T18:46:41,Printer issue reported by Operations user in Turku,Service Desk
+432,73,Azure Login,Low,Closed,2026-06-05T20:27:41,2026-06-07T20:27:41,Azure Login issue reported by Support user in Tallinn,Service Desk
+433,127,Printer,Medium,Closed,2026-04-12T05:36:41,2026-04-17T05:36:41,Printer issue reported by Engineering user in Tampere,Endpoint Team
+434,9,CRM,Medium,In Progress,2026-06-18T14:52:41,2026-06-26T14:52:41,CRM issue reported by Finance user in Helsinki,Endpoint Team
+435,47,Printer,Critical,Open,2026-05-05T06:02:41,2026-05-16T06:02:41,Printer issue reported by Legal user in Tampere,Identity Team
+436,99,CI/CD,High,In Progress,2026-05-05T19:53:41,2026-05-06T19:53:41,CI/CD issue reported by Engineering user in Berlin,Platform Team
+437,54,CI/CD,Low,Closed,2026-03-30T21:36:41,2026-04-10T21:36:41,CI/CD issue reported by Legal user in Tampere,Service Desk
+438,141,Database,Low,Resolved,2026-06-07T10:25:41,2026-06-21T10:25:41,Database issue reported by Engineering user in Tampere,Service Desk
+439,56,Email,Low,In Progress,2026-05-08T22:28:41,2026-05-12T22:28:41,Email issue reported by Finance user in London,Platform Team
+440,31,Network,Medium,Closed,2025-12-18T11:55:41,2025-12-29T11:55:41,Network issue reported by Support user in London,Endpoint Team
+441,40,CRM,Low,In Progress,2025-12-23T16:40:41,2026-01-01T16:40:41,CRM issue reported by Support user in Tallinn,Network Team
+442,16,VPN,High,Closed,2026-04-07T22:46:41,2026-04-09T22:46:41,VPN issue reported by Operations user in Turku,Endpoint Team
+443,60,CRM,High,In Progress,2026-02-15T22:07:41,2026-02-26T22:07:41,CRM issue reported by Legal user in Tampere,Identity Team
+444,6,Network,Low,In Progress,2026-04-07T19:47:41,2026-04-18T19:47:41,Network issue reported by Operations user in Tampere,Endpoint Team
+445,144,Azure Login,Low,In Progress,2026-02-19T20:24:41,2026-02-24T20:24:41,Azure Login issue reported by HR user in Tallinn,Network Team
+446,120,Azure Login,Low,Open,2026-02-05T01:45:41,2026-02-09T01:45:41,Azure Login issue reported by Legal user in Stockholm,Network Team
+447,139,CRM,Medium,Resolved,2026-03-14T18:06:41,2026-03-16T18:06:41,CRM issue reported by Legal user in Helsinki,Service Desk
+448,94,Access Request,Critical,Open,2026-05-08T08:09:41,2026-05-21T08:09:41,Access Request issue reported by Support user in Turku,Endpoint Team
+449,49,Database,Medium,Resolved,2026-01-15T03:06:41,2026-01-20T03:06:41,Database issue reported by Sales user in Helsinki,Endpoint Team
+450,83,Email,High,Open,2026-06-14T02:13:41,2026-06-16T02:13:41,Email issue reported by HR user in Stockholm,Identity Team
+451,9,Printer,Medium,Open,2026-06-11T03:43:41,2026-06-24T03:43:41,Printer issue reported by Finance user in Helsinki,Endpoint Team
+452,126,Database,Medium,In Progress,2026-01-29T20:18:41,2026-02-07T20:18:41,Database issue reported by Operations user in Turku,Service Desk
+453,4,Printer,Low,Closed,2026-01-22T02:56:41,2026-02-03T02:56:41,Printer issue reported by Finance user in Tampere,Service Desk
+454,93,Database,High,Resolved,2025-12-30T05:03:41,2026-01-12T05:03:41,Database issue reported by Operations user in Turku,Platform Team
+455,69,Database,Low,Closed,2026-06-27T19:51:41,2026-06-30T19:51:41,Database issue reported by Legal user in Turku,Platform Team
+456,25,Email,Low,Resolved,2026-01-04T11:21:41,2026-01-14T11:21:41,Email issue reported by Support user in Berlin,Identity Team
+457,146,Laptop,Low,Resolved,2026-02-15T19:20:41,2026-02-25T19:20:41,Laptop issue reported by Support user in Tallinn,Platform Team
+458,92,CI/CD,Low,Closed,2026-01-09T21:28:41,2026-01-11T21:28:41,CI/CD issue reported by Sales user in Tampere,Platform Team
+459,103,Database,Medium,Resolved,2026-04-12T21:45:41,2026-04-26T21:45:41,Database issue reported by Support user in Tallinn,Network Team
+460,81,Database,Medium,Closed,2026-04-16T07:29:41,2026-04-27T07:29:41,Database issue reported by Engineering user in Helsinki,Network Team
+461,62,Access Request,Critical,Closed,2026-02-19T12:31:41,2026-02-23T12:31:41,Access Request issue reported by Engineering user in Helsinki,Network Team
+462,116,CI/CD,Low,Open,2026-03-29T18:09:41,2026-03-29T18:09:41,CI/CD issue reported by Legal user in Helsinki,Platform Team
+463,35,Azure Login,Low,In Progress,2026-07-07T09:41:41,2026-07-19T09:41:41,Azure Login issue reported by Engineering user in Tallinn,Network Team
+464,142,Database,Low,Resolved,2026-02-15T23:56:41,2026-02-22T23:56:41,Database issue reported by HR user in Tampere,Network Team
+465,40,Laptop,Low,Resolved,2026-05-02T06:59:41,2026-05-14T06:59:41,Laptop issue reported by Support user in Tallinn,Network Team
+466,24,Access Request,Low,In Progress,2026-03-27T23:57:41,2026-04-01T23:57:41,Access Request issue reported by HR user in Turku,Endpoint Team
+467,45,CI/CD,Low,Closed,2026-01-12T20:19:41,2026-01-22T20:19:41,CI/CD issue reported by Engineering user in Tampere,Network Team
+468,10,Access Request,High,Open,2026-04-02T16:06:41,2026-04-07T16:06:41,Access Request issue reported by IT user in Tallinn,Endpoint Team
+469,107,Email,Medium,Resolved,2025-12-23T11:08:41,2025-12-23T11:08:41,Email issue reported by IT user in Stockholm,Endpoint Team
+470,14,Azure Login,Low,Resolved,2026-02-24T17:35:41,2026-03-04T17:35:41,Azure Login issue reported by Engineering user in Berlin,Identity Team
+471,40,VPN,High,Closed,2026-01-16T19:30:41,2026-01-25T19:30:41,VPN issue reported by Support user in Tallinn,Platform Team
+472,24,Printer,Low,Resolved,2026-03-20T09:05:41,2026-03-21T09:05:41,Printer issue reported by HR user in Turku,Endpoint Team
+473,147,VPN,Medium,Open,2026-02-18T06:39:41,2026-03-02T06:39:41,VPN issue reported by Finance user in Tallinn,Identity Team
+474,35,CI/CD,Medium,Resolved,2026-02-15T12:24:41,2026-02-23T12:24:41,CI/CD issue reported by Engineering user in Tallinn,Platform Team
+475,135,Printer,Low,Closed,2026-05-07T16:38:41,2026-05-21T16:38:41,Printer issue reported by Finance user in Berlin,Platform Team
+476,23,Email,Low,Resolved,2026-01-18T05:28:41,2026-01-23T05:28:41,Email issue reported by IT user in Tampere,Platform Team
+477,7,Azure Login,High,Closed,2026-05-26T07:16:41,2026-06-04T07:16:41,Azure Login issue reported by Engineering user in London,Identity Team
+478,113,VPN,Low,Resolved,2025-12-11T11:43:41,2025-12-22T11:43:41,VPN issue reported by Sales user in Berlin,Service Desk
+479,29,VPN,High,Open,2026-05-06T22:56:41,2026-05-10T22:56:41,VPN issue reported by Finance user in Stockholm,Service Desk
+480,88,Email,Low,Open,2026-04-21T04:25:41,2026-04-29T04:25:41,Email issue reported by Operations user in Helsinki,Identity Team
+481,53,Database,High,Resolved,2026-02-25T10:20:41,2026-02-27T10:20:41,Database issue reported by Legal user in Tampere,Service Desk
+482,97,Access Request,Low,In Progress,2026-01-20T02:53:41,2026-01-23T02:53:41,Access Request issue reported by Operations user in Turku,Platform Team
+483,70,VPN,Medium,Open,2026-03-10T22:55:41,2026-03-20T22:55:41,VPN issue reported by Finance user in Helsinki,Network Team
+484,28,VPN,Medium,In Progress,2026-04-24T22:31:41,2026-05-05T22:31:41,VPN issue reported by HR user in Berlin,Service Desk
+485,81,CI/CD,Medium,In Progress,2026-02-06T01:50:41,2026-02-13T01:50:41,CI/CD issue reported by Engineering user in Helsinki,Platform Team
+486,6,VPN,Medium,In Progress,2026-05-06T02:36:41,2026-05-08T02:36:41,VPN issue reported by Operations user in Tampere,Service Desk
+487,89,CRM,Critical,In Progress,2026-04-08T22:36:41,2026-04-16T22:36:41,CRM issue reported by Operations user in London,Network Team
+488,16,Azure Login,Low,Closed,2026-03-31T18:20:41,2026-04-05T18:20:41,Azure Login issue reported by Operations user in Turku,Endpoint Team
+489,36,Email,Medium,Closed,2026-01-03T06:22:41,2026-01-13T06:22:41,Email issue reported by Finance user in Turku,Identity Team
+490,107,Printer,Critical,Closed,2026-02-12T14:28:41,2026-02-17T14:28:41,Printer issue reported by IT user in Stockholm,Endpoint Team
+491,139,Laptop,Medium,Resolved,2026-05-16T22:47:41,2026-05-19T22:47:41,Laptop issue reported by Legal user in Helsinki,Identity Team
+492,80,Database,Low,Closed,2026-06-04T04:57:41,2026-06-18T04:57:41,Database issue reported by Support user in Tampere,Platform Team
+493,41,CRM,Low,Closed,2026-06-21T01:21:41,2026-06-26T01:21:41,CRM issue reported by Sales user in Berlin,Identity Team
+494,8,CRM,Critical,Resolved,2026-03-25T05:36:41,2026-04-08T05:36:41,CRM issue reported by IT user in Turku,Network Team
+495,39,Printer,Critical,Open,2026-06-11T14:44:41,2026-06-20T14:44:41,Printer issue reported by HR user in Berlin,Network Team
+496,146,Access Request,Low,In Progress,2026-05-09T23:41:41,2026-05-10T23:41:41,Access Request issue reported by Support user in Tallinn,Endpoint Team
+497,35,Database,Low,Resolved,2026-02-04T03:10:41,2026-02-10T03:10:41,Database issue reported by Engineering user in Tallinn,Endpoint Team
+498,122,Laptop,High,Open,2026-05-28T12:41:41,2026-05-28T12:41:41,Laptop issue reported by Support user in Stockholm,Network Team
+499,106,Printer,Low,Closed,2025-12-29T21:43:41,2026-01-12T21:43:41,Printer issue reported by Support user in Turku,Endpoint Team
+500,126,CRM,Low,Resolved,2026-03-13T11:28:41,2026-03-24T11:28:41,CRM issue reported by Operations user in Turku,Endpoint Team
+501,81,Network,Medium,Resolved,2026-02-01T19:19:41,2026-02-15T19:19:41,Network issue reported by Engineering user in Helsinki,Service Desk
+502,134,Email,High,Closed,2026-03-15T04:03:41,2026-03-18T04:03:41,Email issue reported by Engineering user in Stockholm,Platform Team
+503,138,Network,High,Resolved,2026-01-01T17:20:41,2026-01-01T17:20:41,Network issue reported by Support user in London,Identity Team
+504,75,CI/CD,Medium,Closed,2026-03-29T09:06:41,2026-04-04T09:06:41,CI/CD issue reported by Support user in Helsinki,Network Team
+505,14,Database,Low,Resolved,2026-06-02T04:02:41,2026-06-10T04:02:41,Database issue reported by Engineering user in Berlin,Service Desk
+506,47,Access Request,Low,Resolved,2026-01-11T01:47:41,2026-01-11T01:47:41,Access Request issue reported by Legal user in Tampere,Identity Team
+507,117,Access Request,Low,Resolved,2026-01-07T11:59:41,2026-01-18T11:59:41,Access Request issue reported by Legal user in Tampere,Identity Team
+508,32,Email,Low,Resolved,2026-06-08T20:27:41,2026-06-19T20:27:41,Email issue reported by Operations user in Tampere,Endpoint Team
+509,131,Access Request,High,Resolved,2026-05-29T06:20:41,2026-06-12T06:20:41,Access Request issue reported by Sales user in Stockholm,Network Team
+510,145,Laptop,Low,Closed,2026-05-28T14:44:41,2026-06-01T14:44:41,Laptop issue reported by HR user in Turku,Network Team
+511,115,Azure Login,Critical,Closed,2026-01-29T13:48:41,2026-01-29T13:48:41,Azure Login issue reported by Operations user in Tampere,Platform Team
+512,65,VPN,High,Resolved,2026-03-13T03:01:41,2026-03-22T03:01:41,VPN issue reported by Operations user in Helsinki,Endpoint Team
+513,61,Printer,Medium,Resolved,2026-02-07T21:25:41,2026-02-16T21:25:41,Printer issue reported by Engineering user in Tallinn,Platform Team
+514,2,Printer,High,Resolved,2026-02-18T10:16:41,2026-02-21T10:16:41,Printer issue reported by HR user in Berlin,Service Desk
+515,48,Laptop,High,Open,2026-06-23T22:33:41,2026-07-03T22:33:41,Laptop issue reported by Legal user in Tampere,Platform Team
+516,77,CRM,Low,Resolved,2026-06-16T17:49:41,2026-06-26T17:49:41,CRM issue reported by IT user in Tampere,Network Team
+517,147,Database,Critical,Resolved,2026-05-24T04:08:41,2026-05-25T04:08:41,Database issue reported by Finance user in Tallinn,Network Team
+518,83,CRM,Medium,Resolved,2026-04-02T16:07:41,2026-04-06T16:07:41,CRM issue reported by HR user in Stockholm,Endpoint Team
+519,35,Email,Medium,Resolved,2026-01-12T10:34:41,2026-01-23T10:34:41,Email issue reported by Engineering user in Tallinn,Identity Team
+520,15,Email,Low,Resolved,2026-02-11T19:15:41,2026-02-22T19:15:41,Email issue reported by Finance user in London,Platform Team
+521,74,Network,Critical,Resolved,2026-02-03T08:39:41,2026-02-08T08:39:41,Network issue reported by Support user in Berlin,Identity Team
+522,145,CI/CD,High,Resolved,2026-02-24T19:15:41,2026-03-10T19:15:41,CI/CD issue reported by HR user in Turku,Platform Team
+523,60,Azure Login,Medium,Open,2026-05-20T18:48:41,2026-05-21T18:48:41,Azure Login issue reported by Legal user in Tampere,Identity Team
+524,107,Network,Medium,Resolved,2026-06-27T08:33:41,2026-06-27T08:33:41,Network issue reported by IT user in Stockholm,Identity Team
+525,73,Azure Login,Medium,In Progress,2025-12-18T16:36:41,2025-12-30T16:36:41,Azure Login issue reported by Support user in Tallinn,Service Desk
+526,30,CRM,Critical,Resolved,2026-04-12T06:09:41,2026-04-25T06:09:41,CRM issue reported by Support user in Tallinn,Identity Team
+527,50,CRM,High,Closed,2026-04-12T21:25:41,2026-04-22T21:25:41,CRM issue reported by IT user in Stockholm,Identity Team
+528,124,Laptop,High,Closed,2026-01-29T03:58:41,2026-02-05T03:58:41,Laptop issue reported by Finance user in Tampere,Endpoint Team
+529,15,Database,Medium,Resolved,2026-04-23T00:09:41,2026-04-23T00:09:41,Database issue reported by Finance user in London,Identity Team
+530,148,CRM,Low,Closed,2025-12-16T07:51:41,2025-12-16T07:51:41,CRM issue reported by Finance user in London,Network Team
+531,97,Database,Medium,Resolved,2026-05-27T00:17:41,2026-06-09T00:17:41,Database issue reported by Operations user in Turku,Network Team
+532,81,VPN,Low,Resolved,2026-04-30T05:50:41,2026-05-07T05:50:41,VPN issue reported by Engineering user in Helsinki,Network Team
+533,56,Database,Low,Resolved,2026-04-22T13:48:41,2026-04-25T13:48:41,Database issue reported by Finance user in London,Service Desk
+534,114,Database,Low,Resolved,2026-07-02T02:58:41,2026-07-16T02:58:41,Database issue reported by Sales user in Tampere,Endpoint Team
+535,135,Azure Login,Low,Closed,2025-12-22T08:46:41,2025-12-30T08:46:41,Azure Login issue reported by Finance user in Berlin,Identity Team
+536,53,VPN,Low,Closed,2026-03-13T06:10:41,2026-03-17T06:10:41,VPN issue reported by Legal user in Tampere,Service Desk
+537,23,CRM,Medium,Resolved,2026-03-11T17:49:41,2026-03-15T17:49:41,CRM issue reported by IT user in Tampere,Service Desk
+538,148,Azure Login,Low,In Progress,2026-01-26T12:35:41,2026-02-03T12:35:41,Azure Login issue reported by Finance user in London,Network Team
+539,113,Email,Low,In Progress,2026-04-30T14:45:41,2026-05-09T14:45:41,Email issue reported by Sales user in Berlin,Platform Team
+540,132,Email,Low,Resolved,2026-05-17T01:33:41,2026-05-28T01:33:41,Email issue reported by Legal user in Helsinki,Network Team
+541,147,Printer,Low,Resolved,2026-05-26T16:36:41,2026-06-02T16:36:41,Printer issue reported by Finance user in Tallinn,Service Desk
+542,34,VPN,Low,Open,2026-03-09T21:52:41,2026-03-15T21:52:41,VPN issue reported by Sales user in Tampere,Endpoint Team
+543,46,Access Request,Medium,Resolved,2026-02-06T22:02:41,2026-02-11T22:02:41,Access Request issue reported by IT user in Helsinki,Network Team
+544,86,Printer,Critical,Resolved,2026-01-06T21:04:41,2026-01-18T21:04:41,Printer issue reported by IT user in London,Endpoint Team
+545,146,Laptop,Low,Open,2026-06-14T20:26:41,2026-06-24T20:26:41,Laptop issue reported by Support user in Tallinn,Endpoint Team
+546,121,Printer,Low,Closed,2026-05-12T14:00:41,2026-05-17T14:00:41,Printer issue reported by Support user in London,Endpoint Team
+547,47,CRM,Low,Resolved,2025-12-19T08:26:41,2025-12-20T08:26:41,CRM issue reported by Legal user in Tampere,Network Team
+548,123,CI/CD,Medium,In Progress,2026-05-26T09:06:41,2026-06-03T09:06:41,CI/CD issue reported by Sales user in Turku,Service Desk
+549,104,Email,Low,Open,2026-04-16T01:14:41,2026-04-23T01:14:41,Email issue reported by Operations user in Berlin,Endpoint Team
+550,106,Printer,Medium,In Progress,2026-01-31T11:20:41,2026-02-01T11:20:41,Printer issue reported by Support user in Turku,Network Team
+551,54,Access Request,Medium,Closed,2026-03-20T05:19:41,2026-03-23T05:19:41,Access Request issue reported by Legal user in Tampere,Identity Team
+552,20,Access Request,Low,Resolved,2026-03-06T15:18:41,2026-03-07T15:18:41,Access Request issue reported by Sales user in Berlin,Endpoint Team
+553,46,Azure Login,High,Open,2026-03-27T16:17:41,2026-04-08T16:17:41,Azure Login issue reported by IT user in Helsinki,Endpoint Team
+554,84,CI/CD,High,Open,2026-01-23T21:52:41,2026-02-06T21:52:41,CI/CD issue reported by IT user in London,Platform Team
+555,1,Laptop,Medium,Resolved,2026-01-20T14:27:41,2026-01-29T14:27:41,Laptop issue reported by Engineering user in Berlin,Endpoint Team
+556,51,Printer,Critical,Resolved,2026-01-15T08:36:41,2026-01-19T08:36:41,Printer issue reported by Finance user in Helsinki,Endpoint Team
+557,89,Email,Medium,Closed,2026-02-09T18:16:41,2026-02-11T18:16:41,Email issue reported by Operations user in London,Network Team
+558,16,CRM,High,Closed,2026-02-18T17:55:41,2026-02-23T17:55:41,CRM issue reported by Operations user in Turku,Service Desk
+559,73,VPN,Medium,Resolved,2026-05-09T05:11:41,2026-05-20T05:11:41,VPN issue reported by Support user in Tallinn,Endpoint Team
+560,104,Network,Medium,Resolved,2026-03-19T01:42:41,2026-03-22T01:42:41,Network issue reported by Operations user in Berlin,Platform Team
+561,99,CRM,Medium,Closed,2026-03-24T14:37:41,2026-03-26T14:37:41,CRM issue reported by Engineering user in Berlin,Service Desk
+562,19,VPN,Medium,Resolved,2026-06-01T18:59:41,2026-06-03T18:59:41,VPN issue reported by HR user in Stockholm,Service Desk
+563,36,Network,Medium,Closed,2026-03-13T20:17:41,2026-03-20T20:17:41,Network issue reported by Finance user in Turku,Platform Team
+564,109,Database,Low,Resolved,2025-12-11T04:31:41,2025-12-20T04:31:41,Database issue reported by Support user in Tallinn,Service Desk
+565,148,CI/CD,Medium,Resolved,2026-01-02T11:10:41,2026-01-10T11:10:41,CI/CD issue reported by Finance user in London,Platform Team
+566,94,VPN,Low,Closed,2026-06-29T00:25:41,2026-07-06T00:25:41,VPN issue reported by Support user in Turku,Service Desk
+567,37,Database,Medium,Resolved,2025-12-28T10:26:41,2026-01-06T10:26:41,Database issue reported by Sales user in Tallinn,Service Desk
+568,63,CI/CD,Low,Closed,2026-01-27T19:13:41,2026-02-06T19:13:41,CI/CD issue reported by HR user in Helsinki,Platform Team
+569,149,Azure Login,High,In Progress,2026-02-02T16:58:41,2026-02-09T16:58:41,Azure Login issue reported by IT user in Tallinn,Endpoint Team
+570,132,CI/CD,Critical,Resolved,2026-02-11T19:34:41,2026-02-23T19:34:41,CI/CD issue reported by Legal user in Helsinki,Network Team
+571,75,Laptop,Low,Resolved,2026-06-28T19:56:41,2026-07-10T19:56:41,Laptop issue reported by Support user in Helsinki,Platform Team
+572,67,VPN,Low,In Progress,2026-01-28T03:18:41,2026-02-01T03:18:41,VPN issue reported by IT user in Turku,Platform Team
+573,7,Azure Login,High,Resolved,2026-03-06T16:47:41,2026-03-10T16:47:41,Azure Login issue reported by Engineering user in London,Network Team
+574,34,Access Request,High,In Progress,2026-04-28T10:01:41,2026-05-07T10:01:41,Access Request issue reported by Sales user in Tampere,Identity Team
+575,39,CI/CD,Low,Closed,2026-04-05T13:39:41,2026-04-07T13:39:41,CI/CD issue reported by HR user in Berlin,Platform Team
+576,9,CRM,Low,Closed,2026-06-17T14:17:41,2026-06-24T14:17:41,CRM issue reported by Finance user in Helsinki,Endpoint Team
+577,99,Printer,Low,Resolved,2026-01-20T04:09:41,2026-01-31T04:09:41,Printer issue reported by Engineering user in Berlin,Network Team
+578,14,Azure Login,Medium,In Progress,2025-12-27T15:52:41,2025-12-31T15:52:41,Azure Login issue reported by Engineering user in Berlin,Endpoint Team
+579,137,Printer,Low,Resolved,2026-04-01T21:10:41,2026-04-09T21:10:41,Printer issue reported by Sales user in Stockholm,Endpoint Team
+580,4,Azure Login,Critical,Resolved,2025-12-16T04:31:41,2025-12-26T04:31:41,Azure Login issue reported by Finance user in Tampere,Service Desk
+581,25,Database,Critical,Resolved,2026-01-26T07:01:41,2026-02-08T07:01:41,Database issue reported by Support user in Berlin,Network Team
+582,86,Azure Login,Medium,Resolved,2026-05-01T15:39:41,2026-05-13T15:39:41,Azure Login issue reported by IT user in London,Identity Team
+583,50,Database,Low,Closed,2026-04-12T21:11:41,2026-04-12T21:11:41,Database issue reported by IT user in Stockholm,Service Desk
+584,18,VPN,Medium,Open,2026-03-25T15:22:41,2026-03-28T15:22:41,VPN issue reported by Finance user in Tallinn,Network Team
+585,65,Printer,Critical,Open,2026-06-30T18:16:41,2026-07-10T18:16:41,Printer issue reported by Operations user in Helsinki,Identity Team
+586,32,Email,High,Resolved,2026-06-15T23:47:41,2026-06-25T23:47:41,Email issue reported by Operations user in Tampere,Platform Team
+587,48,Email,Medium,In Progress,2026-01-11T13:39:41,2026-01-12T13:39:41,Email issue reported by Legal user in Tampere,Endpoint Team
+588,71,Network,Low,Closed,2026-01-11T21:06:41,2026-01-23T21:06:41,Network issue reported by Support user in Tampere,Service Desk
+589,71,VPN,Low,Closed,2026-04-02T06:34:41,2026-04-15T06:34:41,VPN issue reported by Support user in Tampere,Network Team
+590,46,CI/CD,Medium,In Progress,2026-06-21T02:56:41,2026-07-01T02:56:41,CI/CD issue reported by IT user in Helsinki,Endpoint Team
+591,28,Laptop,Low,Resolved,2026-02-20T05:42:41,2026-02-27T05:42:41,Laptop issue reported by HR user in Berlin,Network Team
+592,27,VPN,High,Closed,2026-06-20T16:19:41,2026-06-20T16:19:41,VPN issue reported by Legal user in Helsinki,Endpoint Team
+593,39,VPN,High,In Progress,2026-06-28T21:31:41,2026-07-12T21:31:41,VPN issue reported by HR user in Berlin,Endpoint Team
+594,148,VPN,Medium,Resolved,2026-02-26T20:06:41,2026-03-11T20:06:41,VPN issue reported by Finance user in London,Service Desk
+595,139,Printer,Medium,Closed,2026-07-08T06:11:41,2026-07-17T06:11:41,Printer issue reported by Legal user in Helsinki,Platform Team
+596,92,CRM,Critical,Open,2026-01-15T09:30:41,2026-01-25T09:30:41,CRM issue reported by Sales user in Tampere,Service Desk
+597,94,Database,High,Resolved,2026-04-12T16:02:41,2026-04-22T16:02:41,Database issue reported by Support user in Turku,Identity Team
+598,46,Database,Medium,In Progress,2026-06-28T06:13:41,2026-07-12T06:13:41,Database issue reported by IT user in Helsinki,Service Desk
+599,92,CI/CD,Low,Closed,2026-06-16T22:27:41,2026-06-19T22:27:41,CI/CD issue reported by Sales user in Tampere,Service Desk
+600,62,CI/CD,Low,Resolved,2026-03-31T16:05:41,2026-04-08T16:05:41,CI/CD issue reported by Engineering user in Helsinki,Endpoint Team
+601,5,VPN,Low,Closed,2026-04-13T17:34:41,2026-04-14T17:34:41,VPN issue reported by Engineering user in Tallinn,Identity Team
+602,134,CI/CD,Low,Closed,2026-01-16T01:46:41,2026-01-17T01:46:41,CI/CD issue reported by Engineering user in Stockholm,Service Desk
+603,37,CI/CD,Medium,Closed,2026-01-22T18:25:41,2026-01-25T18:25:41,CI/CD issue reported by Sales user in Tallinn,Identity Team
+604,4,Laptop,High,In Progress,2026-01-28T16:58:41,2026-02-04T16:58:41,Laptop issue reported by Finance user in Tampere,Platform Team
+605,44,Access Request,High,Resolved,2026-06-22T15:48:41,2026-06-25T15:48:41,Access Request issue reported by Sales user in Tallinn,Service Desk
+606,52,Network,Low,Resolved,2026-04-12T19:12:41,2026-04-22T19:12:41,Network issue reported by Finance user in Tampere,Platform Team
+607,140,Laptop,Low,Open,2026-04-17T12:07:41,2026-04-18T12:07:41,Laptop issue reported by Sales user in Berlin,Service Desk
+608,71,Laptop,Medium,Resolved,2025-12-27T05:45:41,2026-01-03T05:45:41,Laptop issue reported by Support user in Tampere,Identity Team
+609,149,VPN,Medium,Closed,2026-06-04T15:05:41,2026-06-16T15:05:41,VPN issue reported by IT user in Tallinn,Identity Team
+610,5,CI/CD,Low,In Progress,2026-06-18T18:55:41,2026-06-28T18:55:41,CI/CD issue reported by Engineering user in Tallinn,Platform Team
+611,73,Network,Low,Open,2026-01-12T03:11:41,2026-01-16T03:11:41,Network issue reported by Support user in Tallinn,Platform Team
+612,116,Network,Medium,Resolved,2026-05-08T13:16:41,2026-05-19T13:16:41,Network issue reported by Legal user in Helsinki,Endpoint Team
+613,23,Azure Login,Low,Resolved,2026-04-10T05:55:41,2026-04-18T05:55:41,Azure Login issue reported by IT user in Tampere,Service Desk
+614,93,Database,Medium,Closed,2026-03-01T11:26:41,2026-03-05T11:26:41,Database issue reported by Operations user in Turku,Service Desk
+615,50,Email,Critical,Closed,2025-12-17T14:12:41,2025-12-24T14:12:41,Email issue reported by IT user in Stockholm,Identity Team
+616,41,VPN,Medium,In Progress,2026-06-24T22:32:41,2026-06-29T22:32:41,VPN issue reported by Sales user in Berlin,Platform Team
+617,117,VPN,Low,Closed,2026-06-11T19:52:41,2026-06-23T19:52:41,VPN issue reported by Legal user in Tampere,Service Desk
+618,125,Database,Medium,In Progress,2026-06-09T15:58:41,2026-06-18T15:58:41,Database issue reported by HR user in Berlin,Network Team
+619,108,Printer,High,In Progress,2025-12-28T20:58:41,2026-01-02T20:58:41,Printer issue reported by Legal user in London,Identity Team
+620,26,Printer,High,In Progress,2026-01-01T05:00:41,2026-01-02T05:00:41,Printer issue reported by Operations user in Turku,Endpoint Team
+621,150,CI/CD,Medium,In Progress,2026-06-25T05:46:41,2026-06-27T05:46:41,CI/CD issue reported by Finance user in Tallinn,Endpoint Team
+622,96,Laptop,Critical,Resolved,2026-03-12T19:43:41,2026-03-15T19:43:41,Laptop issue reported by HR user in Tallinn,Network Team
+623,33,VPN,Low,In Progress,2026-01-12T00:52:41,2026-01-19T00:52:41,VPN issue reported by HR user in Tallinn,Endpoint Team
+624,108,Laptop,Medium,Closed,2025-12-26T08:41:41,2026-01-07T08:41:41,Laptop issue reported by Legal user in London,Platform Team
+625,44,Access Request,Medium,Resolved,2026-02-17T11:50:41,2026-03-02T11:50:41,Access Request issue reported by Sales user in Tallinn,Identity Team
+626,122,CI/CD,High,Resolved,2026-04-28T18:09:41,2026-05-01T18:09:41,CI/CD issue reported by Support user in Stockholm,Network Team
+627,112,Access Request,High,Closed,2026-05-13T00:46:41,2026-05-19T00:46:41,Access Request issue reported by Finance user in Stockholm,Service Desk
+628,11,CI/CD,Medium,Resolved,2026-01-02T02:53:41,2026-01-14T02:53:41,CI/CD issue reported by Legal user in Tallinn,Service Desk
+629,116,CI/CD,Medium,Closed,2026-05-08T16:20:41,2026-05-14T16:20:41,CI/CD issue reported by Legal user in Helsinki,Identity Team
+630,34,CRM,Low,Closed,2026-04-24T11:14:41,2026-05-04T11:14:41,CRM issue reported by Sales user in Tampere,Network Team
+631,42,CI/CD,Medium,Open,2026-02-11T19:18:41,2026-02-23T19:18:41,CI/CD issue reported by Legal user in Tallinn,Identity Team
+632,104,Laptop,Medium,Resolved,2025-12-18T07:15:41,2025-12-31T07:15:41,Laptop issue reported by Operations user in Berlin,Service Desk
+633,99,CRM,Low,Resolved,2026-02-23T17:37:41,2026-03-04T17:37:41,CRM issue reported by Engineering user in Berlin,Platform Team
+634,148,Printer,Low,Resolved,2025-12-18T21:50:41,2026-01-01T21:50:41,Printer issue reported by Finance user in London,Service Desk
+635,132,CRM,Medium,Resolved,2026-06-25T15:31:41,2026-06-30T15:31:41,CRM issue reported by Legal user in Helsinki,Network Team
+636,45,Database,Low,Closed,2026-01-09T16:20:41,2026-01-14T16:20:41,Database issue reported by Engineering user in Tampere,Identity Team
+637,139,Email,Medium,Closed,2026-01-23T03:08:41,2026-02-03T03:08:41,Email issue reported by Legal user in Helsinki,Identity Team
+638,58,CRM,Low,Resolved,2026-04-09T10:23:41,2026-04-10T10:23:41,CRM issue reported by Engineering user in Tampere,Network Team
+639,89,CI/CD,Medium,Closed,2026-03-06T02:22:41,2026-03-14T02:22:41,CI/CD issue reported by Operations user in London,Platform Team
+640,75,CI/CD,Medium,Resolved,2026-01-31T07:04:41,2026-02-14T07:04:41,CI/CD issue reported by Support user in Helsinki,Service Desk
+641,49,CI/CD,Low,Closed,2026-06-16T16:30:41,2026-06-17T16:30:41,CI/CD issue reported by Sales user in Helsinki,Service Desk
+642,43,Azure Login,High,Resolved,2026-06-09T20:46:41,2026-06-17T20:46:41,Azure Login issue reported by Sales user in Helsinki,Service Desk
+643,76,Network,Low,Open,2026-01-15T00:56:41,2026-01-22T00:56:41,Network issue reported by HR user in Turku,Service Desk
+644,75,Printer,High,Closed,2026-06-22T18:00:41,2026-06-30T18:00:41,Printer issue reported by Support user in Helsinki,Network Team
+645,106,Access Request,Medium,Closed,2026-04-11T22:14:41,2026-04-21T22:14:41,Access Request issue reported by Support user in Turku,Platform Team
+646,141,CI/CD,High,Open,2026-03-13T09:19:41,2026-03-15T09:19:41,CI/CD issue reported by Engineering user in Tampere,Network Team
+647,59,CI/CD,Low,Closed,2026-04-04T09:06:41,2026-04-08T09:06:41,CI/CD issue reported by Support user in London,Endpoint Team
+648,43,Access Request,Critical,In Progress,2026-05-27T20:21:41,2026-06-09T20:21:41,Access Request issue reported by Sales user in Helsinki,Identity Team
+649,42,Printer,Medium,Resolved,2026-06-09T17:35:41,2026-06-14T17:35:41,Printer issue reported by Legal user in Tallinn,Identity Team
+650,53,Database,Low,In Progress,2026-01-08T17:13:41,2026-01-13T17:13:41,Database issue reported by Legal user in Tampere,Endpoint Team
+651,139,Laptop,Medium,Closed,2026-02-22T09:48:41,2026-03-01T09:48:41,Laptop issue reported by Legal user in Helsinki,Identity Team
+652,118,CRM,Medium,Resolved,2026-05-30T18:08:41,2026-06-09T18:08:41,CRM issue reported by IT user in London,Network Team
+653,122,Azure Login,Medium,Open,2025-12-27T00:13:41,2026-01-10T00:13:41,Azure Login issue reported by Support user in Stockholm,Endpoint Team
+654,87,Email,Medium,Open,2026-01-02T02:58:41,2026-01-03T02:58:41,Email issue reported by HR user in Tampere,Network Team
+655,7,Network,Low,Resolved,2026-01-31T11:27:41,2026-02-09T11:27:41,Network issue reported by Engineering user in London,Identity Team
+656,150,Database,Medium,Open,2026-05-13T10:43:41,2026-05-20T10:43:41,Database issue reported by Finance user in Tallinn,Service Desk
+657,132,Network,Medium,Resolved,2026-05-20T03:35:41,2026-05-20T03:35:41,Network issue reported by Legal user in Helsinki,Network Team
+658,102,Laptop,Low,Resolved,2026-01-06T05:32:41,2026-01-11T05:32:41,Laptop issue reported by Support user in Berlin,Network Team
+659,79,CI/CD,Medium,Closed,2026-02-15T16:42:41,2026-02-21T16:42:41,CI/CD issue reported by Support user in Helsinki,Endpoint Team
+660,74,Laptop,High,Resolved,2025-12-13T18:58:41,2025-12-15T18:58:41,Laptop issue reported by Support user in Berlin,Platform Team
+661,23,Laptop,Medium,Closed,2026-05-16T09:25:41,2026-05-21T09:25:41,Laptop issue reported by IT user in Tampere,Service Desk
+662,97,Email,Medium,Closed,2026-07-07T05:15:41,2026-07-15T05:15:41,Email issue reported by Operations user in Turku,Endpoint Team
+663,146,Laptop,Medium,Resolved,2026-05-18T13:02:41,2026-05-18T13:02:41,Laptop issue reported by Support user in Tallinn,Network Team
+664,150,Azure Login,Low,Resolved,2026-03-04T01:08:41,2026-03-04T01:08:41,Azure Login issue reported by Finance user in Tallinn,Identity Team
+665,68,Azure Login,Medium,Open,2026-01-25T22:25:41,2026-01-29T22:25:41,Azure Login issue reported by Sales user in Turku,Endpoint Team
+666,46,CI/CD,High,Open,2026-01-12T22:40:41,2026-01-19T22:40:41,CI/CD issue reported by IT user in Helsinki,Service Desk
+667,93,Access Request,Medium,Closed,2026-03-07T00:28:41,2026-03-14T00:28:41,Access Request issue reported by Operations user in Turku,Service Desk
+668,96,Database,Low,Closed,2026-01-02T00:54:41,2026-01-02T00:54:41,Database issue reported by HR user in Tallinn,Identity Team
+669,82,CI/CD,Low,In Progress,2026-01-12T14:33:41,2026-01-18T14:33:41,CI/CD issue reported by Engineering user in London,Network Team
+670,13,Azure Login,Medium,Closed,2026-04-25T02:15:41,2026-05-07T02:15:41,Azure Login issue reported by IT user in Tallinn,Identity Team
+671,25,Access Request,Low,In Progress,2025-12-28T13:21:41,2026-01-10T13:21:41,Access Request issue reported by Support user in Berlin,Network Team
+672,70,CRM,Low,Resolved,2026-06-14T01:18:41,2026-06-16T01:18:41,CRM issue reported by Finance user in Helsinki,Platform Team
+673,73,CRM,Critical,In Progress,2025-12-21T03:29:41,2025-12-22T03:29:41,CRM issue reported by Support user in Tallinn,Identity Team
+674,40,Database,Medium,Closed,2026-05-13T12:05:41,2026-05-26T12:05:41,Database issue reported by Support user in Tallinn,Platform Team
+675,137,Database,Low,Resolved,2026-01-10T15:29:41,2026-01-23T15:29:41,Database issue reported by Sales user in Stockholm,Identity Team
+676,5,CI/CD,High,Resolved,2026-04-10T09:11:41,2026-04-24T09:11:41,CI/CD issue reported by Engineering user in Tallinn,Platform Team
+677,134,CRM,High,Open,2026-05-24T20:36:41,2026-05-27T20:36:41,CRM issue reported by Engineering user in Stockholm,Identity Team
+678,37,Printer,Low,Open,2026-04-21T14:42:41,2026-05-02T14:42:41,Printer issue reported by Sales user in Tallinn,Service Desk
+679,20,VPN,Low,Resolved,2025-12-22T03:07:41,2025-12-22T03:07:41,VPN issue reported by Sales user in Berlin,Platform Team
+680,16,CI/CD,Medium,Open,2026-06-08T10:53:41,2026-06-20T10:53:41,CI/CD issue reported by Operations user in Turku,Service Desk
+681,32,Access Request,Medium,In Progress,2026-05-16T23:58:41,2026-05-16T23:58:41,Access Request issue reported by Operations user in Tampere,Service Desk
+682,38,Azure Login,Medium,In Progress,2026-02-10T07:33:41,2026-02-21T07:33:41,Azure Login issue reported by Finance user in London,Platform Team
+683,62,Database,High,Closed,2026-02-13T16:49:41,2026-02-21T16:49:41,Database issue reported by Engineering user in Helsinki,Identity Team
+684,50,Azure Login,Low,Closed,2026-05-26T01:55:41,2026-05-29T01:55:41,Azure Login issue reported by IT user in Stockholm,Platform Team
+685,122,CRM,Critical,Resolved,2026-01-11T00:44:41,2026-01-13T00:44:41,CRM issue reported by Support user in Stockholm,Network Team
+686,98,Network,High,Resolved,2026-05-15T02:41:41,2026-05-20T02:41:41,Network issue reported by Finance user in Stockholm,Service Desk
+687,120,Email,High,Closed,2026-02-25T14:24:41,2026-03-05T14:24:41,Email issue reported by Legal user in Stockholm,Service Desk
+688,22,CRM,Medium,In Progress,2026-03-04T15:31:41,2026-03-08T15:31:41,CRM issue reported by Operations user in Turku,Endpoint Team
+689,58,Database,High,Resolved,2026-03-26T09:01:41,2026-04-09T09:01:41,Database issue reported by Engineering user in Tampere,Endpoint Team
+690,95,Laptop,Medium,Resolved,2026-07-04T21:24:41,2026-07-12T21:24:41,Laptop issue reported by IT user in Helsinki,Service Desk
+691,31,Laptop,Low,Resolved,2026-03-29T06:11:41,2026-04-12T06:11:41,Laptop issue reported by Support user in London,Identity Team
+692,17,CRM,Critical,Resolved,2026-05-19T08:43:41,2026-05-20T08:43:41,CRM issue reported by HR user in Turku,Identity Team
+693,109,CI/CD,Low,Resolved,2026-04-27T20:06:41,2026-05-09T20:06:41,CI/CD issue reported by Support user in Tallinn,Endpoint Team
+694,92,CI/CD,Medium,Closed,2026-01-18T23:30:41,2026-01-20T23:30:41,CI/CD issue reported by Sales user in Tampere,Endpoint Team
+695,28,Email,Critical,In Progress,2026-05-05T03:24:41,2026-05-05T03:24:41,Email issue reported by HR user in Berlin,Service Desk
+696,14,Email,Medium,Closed,2026-03-02T21:54:41,2026-03-12T21:54:41,Email issue reported by Engineering user in Berlin,Network Team
+697,40,Azure Login,Medium,Closed,2026-01-29T23:49:41,2026-02-06T23:49:41,Azure Login issue reported by Support user in Tallinn,Endpoint Team
+698,120,Printer,Low,Resolved,2026-04-23T21:24:41,2026-04-28T21:24:41,Printer issue reported by Legal user in Stockholm,Platform Team
+699,140,VPN,Low,Closed,2025-12-25T17:28:41,2026-01-01T17:28:41,VPN issue reported by Sales user in Berlin,Network Team
+700,97,CI/CD,Medium,In Progress,2026-03-13T17:53:41,2026-03-25T17:53:41,CI/CD issue reported by Operations user in Turku,Network Team
+701,43,CI/CD,Medium,Closed,2026-03-20T14:36:41,2026-03-21T14:36:41,CI/CD issue reported by Sales user in Helsinki,Platform Team
+702,126,Database,Medium,Resolved,2026-01-14T01:19:41,2026-01-16T01:19:41,Database issue reported by Operations user in Turku,Platform Team
+703,15,Network,Medium,Closed,2026-05-02T03:18:41,2026-05-07T03:18:41,Network issue reported by Finance user in London,Network Team
+704,83,VPN,Medium,Open,2026-07-01T00:53:41,2026-07-13T00:53:41,VPN issue reported by HR user in Stockholm,Platform Team
+705,7,CRM,Medium,In Progress,2026-04-02T15:28:41,2026-04-07T15:28:41,CRM issue reported by Engineering user in London,Service Desk
+706,63,Printer,Critical,Resolved,2026-05-08T22:36:41,2026-05-09T22:36:41,Printer issue reported by HR user in Helsinki,Network Team
+707,30,CRM,Medium,In Progress,2026-05-26T18:21:41,2026-06-08T18:21:41,CRM issue reported by Support user in Tallinn,Endpoint Team
+708,146,Database,Medium,Resolved,2026-03-23T10:54:41,2026-03-28T10:54:41,Database issue reported by Support user in Tallinn,Endpoint Team
+709,147,Network,Low,Closed,2026-04-17T00:49:41,2026-04-27T00:49:41,Network issue reported by Finance user in Tallinn,Identity Team
+710,87,CI/CD,Low,In Progress,2026-03-01T21:34:41,2026-03-07T21:34:41,CI/CD issue reported by HR user in Tampere,Identity Team
+711,128,Email,Low,In Progress,2026-02-21T12:37:41,2026-03-02T12:37:41,Email issue reported by Engineering user in London,Endpoint Team
+712,58,Access Request,Low,Closed,2025-12-30T16:10:41,2026-01-04T16:10:41,Access Request issue reported by Engineering user in Tampere,Network Team
+713,18,Access Request,Low,Resolved,2025-12-15T02:25:41,2025-12-16T02:25:41,Access Request issue reported by Finance user in Tallinn,Network Team
+714,130,Azure Login,Medium,In Progress,2026-03-19T21:21:41,2026-03-23T21:21:41,Azure Login issue reported by Operations user in Tallinn,Platform Team
+715,132,CI/CD,Medium,Closed,2026-01-18T01:44:41,2026-01-26T01:44:41,CI/CD issue reported by Legal user in Helsinki,Identity Team
+716,148,CI/CD,Medium,Closed,2026-05-14T21:03:41,2026-05-28T21:03:41,CI/CD issue reported by Finance user in London,Platform Team
+717,112,Access Request,Medium,Resolved,2026-01-02T22:52:41,2026-01-04T22:52:41,Access Request issue reported by Finance user in Stockholm,Identity Team
+718,39,Azure Login,Critical,Closed,2026-03-19T05:35:41,2026-03-29T05:35:41,Azure Login issue reported by HR user in Berlin,Identity Team
+719,106,Azure Login,Medium,In Progress,2025-12-10T09:14:41,2025-12-13T09:14:41,Azure Login issue reported by Support user in Turku,Endpoint Team
+720,62,Email,High,In Progress,2026-05-31T12:54:41,2026-06-07T12:54:41,Email issue reported by Engineering user in Helsinki,Endpoint Team
+721,144,Network,Low,Open,2026-03-21T21:58:41,2026-03-23T21:58:41,Network issue reported by HR user in Tallinn,Service Desk
+722,67,Azure Login,Low,Resolved,2026-01-21T01:44:41,2026-02-01T01:44:41,Azure Login issue reported by IT user in Turku,Endpoint Team
+723,6,VPN,Low,In Progress,2026-06-17T08:17:41,2026-06-23T08:17:41,VPN issue reported by Operations user in Tampere,Network Team
+724,24,Network,High,Open,2026-01-04T14:40:41,2026-01-18T14:40:41,Network issue reported by HR user in Turku,Service Desk
+725,134,Access Request,Low,Resolved,2025-12-22T02:39:41,2025-12-31T02:39:41,Access Request issue reported by Engineering user in Stockholm,Service Desk
+726,81,CRM,High,Closed,2026-02-08T19:31:41,2026-02-22T19:31:41,CRM issue reported by Engineering user in Helsinki,Endpoint Team
+727,56,Laptop,Medium,Closed,2026-06-11T13:42:41,2026-06-15T13:42:41,Laptop issue reported by Finance user in London,Platform Team
+728,15,CI/CD,Low,Closed,2026-02-22T07:11:41,2026-02-28T07:11:41,CI/CD issue reported by Finance user in London,Endpoint Team
+729,64,Azure Login,Medium,Resolved,2025-12-20T14:32:41,2025-12-24T14:32:41,Azure Login issue reported by Finance user in Tallinn,Service Desk
+730,9,VPN,Medium,In Progress,2026-01-12T21:40:41,2026-01-22T21:40:41,VPN issue reported by Finance user in Helsinki,Network Team
+731,32,Database,Critical,Open,2026-05-09T04:31:41,2026-05-23T04:31:41,Database issue reported by Operations user in Tampere,Network Team
+732,78,Email,High,In Progress,2025-12-10T11:36:41,2025-12-24T11:36:41,Email issue reported by Support user in London,Endpoint Team
+733,82,Network,High,Closed,2025-12-18T17:38:41,2025-12-25T17:38:41,Network issue reported by Engineering user in London,Endpoint Team
+734,106,CRM,Low,Closed,2026-01-06T04:59:41,2026-01-08T04:59:41,CRM issue reported by Support user in Turku,Network Team
+735,130,Email,Medium,Closed,2026-04-09T05:17:41,2026-04-14T05:17:41,Email issue reported by Operations user in Tallinn,Endpoint Team
+736,8,VPN,High,Resolved,2026-01-24T22:44:41,2026-01-26T22:44:41,VPN issue reported by IT user in Turku,Service Desk
+737,103,Printer,Low,Resolved,2026-01-29T09:35:41,2026-02-01T09:35:41,Printer issue reported by Support user in Tallinn,Platform Team
+738,34,Access Request,Medium,Closed,2026-01-14T05:05:41,2026-01-27T05:05:41,Access Request issue reported by Sales user in Tampere,Identity Team
+739,67,Laptop,Low,In Progress,2026-01-14T00:03:41,2026-01-15T00:03:41,Laptop issue reported by IT user in Turku,Endpoint Team
+740,95,Laptop,Low,Closed,2026-03-30T06:02:41,2026-03-30T06:02:41,Laptop issue reported by IT user in Helsinki,Platform Team
+741,59,Email,Low,Closed,2026-03-12T12:39:41,2026-03-18T12:39:41,Email issue reported by Support user in London,Platform Team
+742,110,Access Request,Low,Closed,2026-05-03T14:50:41,2026-05-12T14:50:41,Access Request issue reported by Sales user in Berlin,Service Desk
+743,4,Database,Low,Resolved,2026-03-19T04:03:41,2026-03-30T04:03:41,Database issue reported by Finance user in Tampere,Identity Team
+744,49,Azure Login,Medium,Resolved,2026-04-25T19:24:41,2026-04-28T19:24:41,Azure Login issue reported by Sales user in Helsinki,Platform Team
+745,56,Azure Login,Medium,Resolved,2026-01-02T21:43:41,2026-01-04T21:43:41,Azure Login issue reported by Finance user in London,Service Desk
+746,75,Azure Login,Medium,Closed,2026-05-08T23:27:41,2026-05-18T23:27:41,Azure Login issue reported by Support user in Helsinki,Endpoint Team
+747,22,VPN,Medium,In Progress,2026-03-10T14:00:41,2026-03-20T14:00:41,VPN issue reported by Operations user in Turku,Identity Team
+748,99,Network,Medium,Open,2025-12-31T23:39:41,2025-12-31T23:39:41,Network issue reported by Engineering user in Berlin,Network Team
+749,61,CI/CD,Medium,Closed,2026-04-08T23:13:41,2026-04-19T23:13:41,CI/CD issue reported by Engineering user in Tallinn,Service Desk
+750,2,Azure Login,Medium,In Progress,2026-02-28T23:31:41,2026-03-05T23:31:41,Azure Login issue reported by HR user in Berlin,Identity Team
+751,144,VPN,Medium,In Progress,2026-02-10T13:39:41,2026-02-15T13:39:41,VPN issue reported by HR user in Tallinn,Endpoint Team
+752,34,Email,Low,Resolved,2026-04-17T20:22:41,2026-04-22T20:22:41,Email issue reported by Sales user in Tampere,Service Desk
+753,33,CI/CD,Low,Closed,2026-04-27T19:32:41,2026-05-11T19:32:41,CI/CD issue reported by HR user in Tallinn,Network Team
+754,68,Database,High,In Progress,2026-04-19T04:58:41,2026-04-26T04:58:41,Database issue reported by Sales user in Turku,Identity Team
+755,143,CI/CD,Low,Open,2026-06-25T12:46:41,2026-07-02T12:46:41,CI/CD issue reported by Sales user in Stockholm,Network Team
+756,42,CI/CD,Low,Closed,2026-03-19T14:58:41,2026-03-24T14:58:41,CI/CD issue reported by Legal user in Tallinn,Platform Team
+757,125,CI/CD,Low,Closed,2026-03-04T15:01:41,2026-03-09T15:01:41,CI/CD issue reported by HR user in Berlin,Service Desk
+758,53,Azure Login,Low,Resolved,2026-05-23T13:08:41,2026-06-06T13:08:41,Azure Login issue reported by Legal user in Tampere,Platform Team
+759,55,Access Request,Medium,Resolved,2026-07-07T02:06:41,2026-07-08T02:06:41,Access Request issue reported by Finance user in Helsinki,Identity Team
+760,128,Email,Medium,Resolved,2026-04-15T18:37:41,2026-04-21T18:37:41,Email issue reported by Engineering user in London,Network Team
+761,28,CRM,High,Resolved,2026-05-30T18:50:41,2026-06-06T18:50:41,CRM issue reported by HR user in Berlin,Endpoint Team
+762,69,Access Request,Medium,Closed,2026-01-21T18:34:41,2026-01-28T18:34:41,Access Request issue reported by Legal user in Turku,Network Team
+763,146,Laptop,Low,Resolved,2026-05-15T17:04:41,2026-05-15T17:04:41,Laptop issue reported by Support user in Tallinn,Service Desk
+764,141,Access Request,Low,In Progress,2026-04-02T16:30:41,2026-04-14T16:30:41,Access Request issue reported by Engineering user in Tampere,Endpoint Team
+765,23,VPN,Low,Closed,2026-05-16T13:31:41,2026-05-28T13:31:41,VPN issue reported by IT user in Tampere,Identity Team
+766,31,Azure Login,Low,Closed,2026-03-05T05:08:41,2026-03-15T05:08:41,Azure Login issue reported by Support user in London,Platform Team
+767,34,CRM,Low,Resolved,2026-01-19T15:02:41,2026-01-26T15:02:41,CRM issue reported by Sales user in Tampere,Endpoint Team
+768,122,Azure Login,Medium,Open,2026-02-13T23:28:41,2026-02-18T23:28:41,Azure Login issue reported by Support user in Stockholm,Platform Team
+769,48,Network,Low,Open,2026-01-28T05:50:41,2026-02-04T05:50:41,Network issue reported by Legal user in Tampere,Identity Team
+770,40,CI/CD,Low,Resolved,2026-02-23T22:14:41,2026-03-01T22:14:41,CI/CD issue reported by Support user in Tallinn,Service Desk
+771,123,Azure Login,High,Closed,2026-05-31T14:12:41,2026-06-08T14:12:41,Azure Login issue reported by Sales user in Turku,Endpoint Team
+772,76,Access Request,Medium,Closed,2026-06-26T01:51:41,2026-07-04T01:51:41,Access Request issue reported by HR user in Turku,Endpoint Team
+773,106,Email,Low,Resolved,2026-03-11T21:09:41,2026-03-15T21:09:41,Email issue reported by Support user in Turku,Platform Team
+774,21,Database,Low,Resolved,2026-07-04T15:08:41,2026-07-06T15:08:41,Database issue reported by Sales user in London,Endpoint Team
+775,12,Email,High,In Progress,2026-03-23T20:36:41,2026-04-04T20:36:41,Email issue reported by Finance user in Tallinn,Endpoint Team
+776,68,CRM,High,In Progress,2025-12-13T13:42:41,2025-12-22T13:42:41,CRM issue reported by Sales user in Turku,Network Team
+777,28,Network,Low,Resolved,2026-02-22T18:55:41,2026-03-04T18:55:41,Network issue reported by HR user in Berlin,Endpoint Team
+778,118,Network,Low,Closed,2026-01-20T19:17:41,2026-02-02T19:17:41,Network issue reported by IT user in London,Platform Team
+779,93,Network,Low,Open,2025-12-15T09:50:41,2025-12-16T09:50:41,Network issue reported by Operations user in Turku,Service Desk
+780,49,VPN,Low,Open,2026-05-16T03:14:41,2026-05-29T03:14:41,VPN issue reported by Sales user in Helsinki,Platform Team
+781,49,Email,Low,Resolved,2026-04-22T04:46:41,2026-04-24T04:46:41,Email issue reported by Sales user in Helsinki,Identity Team
+782,114,CI/CD,Low,Resolved,2026-03-10T18:00:41,2026-03-14T18:00:41,CI/CD issue reported by Sales user in Tampere,Platform Team
+783,101,VPN,High,Resolved,2026-04-14T18:49:41,2026-04-20T18:49:41,VPN issue reported by IT user in Berlin,Endpoint Team
+784,149,Access Request,Medium,Open,2026-01-02T01:37:41,2026-01-10T01:37:41,Access Request issue reported by IT user in Tallinn,Platform Team
+785,125,Printer,Medium,Open,2026-01-07T17:22:41,2026-01-15T17:22:41,Printer issue reported by HR user in Berlin,Service Desk
+786,69,Network,Medium,Resolved,2026-03-09T15:24:41,2026-03-16T15:24:41,Network issue reported by Legal user in Turku,Endpoint Team
+787,6,Laptop,Medium,Resolved,2026-04-25T19:43:41,2026-05-03T19:43:41,Laptop issue reported by Operations user in Tampere,Identity Team
+788,87,Access Request,Low,Open,2026-01-05T21:26:41,2026-01-16T21:26:41,Access Request issue reported by HR user in Tampere,Endpoint Team
+789,107,CRM,Low,Closed,2025-12-17T03:04:41,2025-12-20T03:04:41,CRM issue reported by IT user in Stockholm,Network Team
+790,23,CI/CD,Medium,In Progress,2026-06-05T13:43:41,2026-06-17T13:43:41,CI/CD issue reported by IT user in Tampere,Endpoint Team
+791,127,Azure Login,Low,Open,2026-05-09T12:20:41,2026-05-23T12:20:41,Azure Login issue reported by Engineering user in Tampere,Network Team
+792,92,Laptop,Low,Closed,2026-05-25T02:53:41,2026-05-26T02:53:41,Laptop issue reported by Sales user in Tampere,Platform Team
+793,59,Email,Low,In Progress,2026-02-15T11:24:41,2026-02-20T11:24:41,Email issue reported by Support user in London,Service Desk
+794,143,Azure Login,Medium,Resolved,2026-05-30T20:00:41,2026-06-10T20:00:41,Azure Login issue reported by Sales user in Stockholm,Service Desk
+795,113,CI/CD,Medium,Closed,2025-12-27T15:49:41,2026-01-09T15:49:41,CI/CD issue reported by Sales user in Berlin,Service Desk
+796,144,VPN,High,Resolved,2026-03-01T15:45:41,2026-03-15T15:45:41,VPN issue reported by HR user in Tallinn,Network Team
+797,41,Azure Login,High,Resolved,2026-01-08T04:07:41,2026-01-09T04:07:41,Azure Login issue reported by Sales user in Berlin,Identity Team
+798,94,CRM,Medium,Closed,2025-12-11T14:48:41,2025-12-17T14:48:41,CRM issue reported by Support user in Turku,Service Desk
+799,63,CI/CD,Low,In Progress,2026-04-12T09:23:41,2026-04-23T09:23:41,CI/CD issue reported by HR user in Helsinki,Endpoint Team
+800,93,Printer,Low,Closed,2026-05-31T02:29:41,2026-06-06T02:29:41,Printer issue reported by Operations user in Turku,Endpoint Team
+801,105,CI/CD,Medium,Closed,2026-02-25T21:32:41,2026-03-09T21:32:41,CI/CD issue reported by Support user in Stockholm,Service Desk
+802,133,Email,High,Resolved,2026-06-17T08:35:41,2026-06-23T08:35:41,Email issue reported by HR user in London,Service Desk
+803,101,VPN,Low,Closed,2026-01-19T22:46:41,2026-01-29T22:46:41,VPN issue reported by IT user in Berlin,Platform Team
+804,76,Network,Low,Resolved,2026-03-27T21:11:41,2026-04-07T21:11:41,Network issue reported by HR user in Turku,Network Team
+805,89,VPN,High,Closed,2026-04-28T02:16:41,2026-05-05T02:16:41,VPN issue reported by Operations user in London,Identity Team
+806,140,Access Request,Low,Resolved,2025-12-18T23:14:41,2025-12-30T23:14:41,Access Request issue reported by Sales user in Berlin,Endpoint Team
+807,51,Azure Login,High,In Progress,2026-06-17T17:21:41,2026-06-28T17:21:41,Azure Login issue reported by Finance user in Helsinki,Identity Team
+808,134,Database,Low,Resolved,2026-04-27T12:50:41,2026-05-02T12:50:41,Database issue reported by Engineering user in Stockholm,Identity Team
+809,6,VPN,High,In Progress,2025-12-17T01:18:41,2025-12-21T01:18:41,VPN issue reported by Operations user in Tampere,Endpoint Team
+810,130,Email,Medium,Resolved,2026-01-02T17:02:41,2026-01-07T17:02:41,Email issue reported by Operations user in Tallinn,Service Desk
+811,13,Email,Medium,Closed,2026-03-16T09:19:41,2026-03-19T09:19:41,Email issue reported by IT user in Tallinn,Platform Team
+812,145,Database,Medium,In Progress,2026-02-06T11:33:41,2026-02-19T11:33:41,Database issue reported by HR user in Turku,Platform Team
+813,36,Network,Medium,Open,2026-02-24T19:40:41,2026-02-27T19:40:41,Network issue reported by Finance user in Turku,Network Team
+814,117,Email,Low,Closed,2026-05-31T20:28:41,2026-05-31T20:28:41,Email issue reported by Legal user in Tampere,Endpoint Team
+815,34,CI/CD,Medium,Resolved,2026-05-15T04:51:41,2026-05-24T04:51:41,CI/CD issue reported by Sales user in Tampere,Platform Team
+816,133,Network,Critical,Resolved,2026-05-02T00:24:41,2026-05-13T00:24:41,Network issue reported by HR user in London,Endpoint Team
+817,107,Laptop,Medium,Resolved,2026-06-02T02:47:41,2026-06-13T02:47:41,Laptop issue reported by IT user in Stockholm,Platform Team
+818,136,Email,High,Resolved,2026-01-12T12:26:41,2026-01-20T12:26:41,Email issue reported by HR user in Helsinki,Network Team
+819,31,Access Request,Low,Resolved,2026-03-26T15:48:41,2026-04-03T15:48:41,Access Request issue reported by Support user in London,Identity Team
+820,31,CRM,Low,In Progress,2026-04-21T07:36:41,2026-04-23T07:36:41,CRM issue reported by Support user in London,Identity Team
+821,108,VPN,High,In Progress,2026-04-21T09:42:41,2026-04-21T09:42:41,VPN issue reported by Legal user in London,Service Desk
+822,141,CRM,Low,Resolved,2026-06-21T17:29:41,2026-06-28T17:29:41,CRM issue reported by Engineering user in Tampere,Network Team
+823,97,CI/CD,Medium,Closed,2026-01-04T23:47:41,2026-01-11T23:47:41,CI/CD issue reported by Operations user in Turku,Endpoint Team
+824,115,Laptop,Medium,Closed,2026-01-03T08:50:41,2026-01-09T08:50:41,Laptop issue reported by Operations user in Tampere,Endpoint Team
+825,60,Network,High,Closed,2026-04-13T01:53:41,2026-04-24T01:53:41,Network issue reported by Legal user in Tampere,Network Team
+826,23,Laptop,High,Resolved,2026-01-08T18:19:41,2026-01-12T18:19:41,Laptop issue reported by IT user in Tampere,Platform Team
+827,32,Database,High,Resolved,2026-06-17T12:16:41,2026-06-26T12:16:41,Database issue reported by Operations user in Tampere,Platform Team
+828,49,CI/CD,Medium,Resolved,2026-03-02T18:48:41,2026-03-02T18:48:41,CI/CD issue reported by Sales user in Helsinki,Network Team
+829,53,Printer,Medium,Open,2026-01-09T00:27:41,2026-01-14T00:27:41,Printer issue reported by Legal user in Tampere,Endpoint Team
+830,12,CI/CD,Low,In Progress,2026-07-03T08:28:41,2026-07-11T08:28:41,CI/CD issue reported by Finance user in Tallinn,Network Team
+831,98,Azure Login,Low,Resolved,2026-06-15T15:49:41,2026-06-17T15:49:41,Azure Login issue reported by Finance user in Stockholm,Network Team
+832,23,Laptop,Medium,In Progress,2026-04-21T05:12:41,2026-04-26T05:12:41,Laptop issue reported by IT user in Tampere,Identity Team
+833,7,VPN,Medium,In Progress,2026-04-23T06:49:41,2026-04-28T06:49:41,VPN issue reported by Engineering user in London,Network Team
+834,97,Email,Medium,Closed,2026-06-25T12:40:41,2026-07-02T12:40:41,Email issue reported by Operations user in Turku,Platform Team
+835,130,Network,Medium,In Progress,2026-06-09T10:52:41,2026-06-10T10:52:41,Network issue reported by Operations user in Tallinn,Endpoint Team
+836,8,Network,Low,Closed,2026-01-27T10:57:41,2026-02-05T10:57:41,Network issue reported by IT user in Turku,Service Desk
+837,64,Database,Medium,Resolved,2026-01-23T14:36:41,2026-02-05T14:36:41,Database issue reported by Finance user in Tallinn,Platform Team
+838,53,Laptop,Medium,Closed,2026-04-04T01:45:41,2026-04-10T01:45:41,Laptop issue reported by Legal user in Tampere,Platform Team
+839,116,VPN,Medium,Resolved,2026-07-08T04:02:41,2026-07-10T04:02:41,VPN issue reported by Legal user in Helsinki,Service Desk
+840,16,CI/CD,Medium,Closed,2026-04-29T23:39:41,2026-05-04T23:39:41,CI/CD issue reported by Operations user in Turku,Identity Team
+841,150,Database,Medium,Closed,2026-04-27T17:45:41,2026-05-01T17:45:41,Database issue reported by Finance user in Tallinn,Service Desk
+842,102,Email,High,Closed,2026-06-02T19:20:41,2026-06-05T19:20:41,Email issue reported by Support user in Berlin,Platform Team
+843,130,CRM,High,In Progress,2026-01-15T08:15:41,2026-01-22T08:15:41,CRM issue reported by Operations user in Tallinn,Network Team
+844,63,CRM,Low,Closed,2026-04-12T12:26:41,2026-04-26T12:26:41,CRM issue reported by HR user in Helsinki,Identity Team
+845,1,Access Request,Low,Open,2026-03-09T17:58:41,2026-03-17T17:58:41,Access Request issue reported by Engineering user in Berlin,Endpoint Team
+846,101,Database,Low,Open,2026-06-17T22:14:41,2026-06-30T22:14:41,Database issue reported by IT user in Berlin,Endpoint Team
+847,32,CRM,Medium,Resolved,2025-12-12T06:03:41,2025-12-25T06:03:41,CRM issue reported by Operations user in Tampere,Service Desk
+848,32,CI/CD,High,Open,2026-04-05T12:27:41,2026-04-17T12:27:41,CI/CD issue reported by Operations user in Tampere,Network Team
+849,92,Printer,High,In Progress,2026-06-14T23:15:41,2026-06-17T23:15:41,Printer issue reported by Sales user in Tampere,Endpoint Team
+850,93,VPN,Medium,Closed,2026-04-28T02:58:41,2026-04-28T02:58:41,VPN issue reported by Operations user in Turku,Identity Team
+851,102,Email,Medium,Resolved,2026-04-28T00:23:41,2026-05-08T00:23:41,Email issue reported by Support user in Berlin,Platform Team
+852,145,Laptop,Low,Closed,2026-06-22T00:47:41,2026-07-06T00:47:41,Laptop issue reported by HR user in Turku,Platform Team
+853,59,Database,Low,Closed,2026-01-03T10:43:41,2026-01-14T10:43:41,Database issue reported by Support user in London,Platform Team
+854,65,Database,Critical,Resolved,2026-03-14T18:28:41,2026-03-14T18:28:41,Database issue reported by Operations user in Helsinki,Network Team
+855,111,Network,Medium,Resolved,2026-04-29T15:12:41,2026-05-07T15:12:41,Network issue reported by HR user in Helsinki,Service Desk
+856,58,VPN,Low,Resolved,2026-04-28T05:21:41,2026-05-01T05:21:41,VPN issue reported by Engineering user in Tampere,Network Team
+857,21,Access Request,Medium,In Progress,2025-12-14T18:08:41,2025-12-15T18:08:41,Access Request issue reported by Sales user in London,Identity Team
+858,51,Laptop,Low,Resolved,2026-04-15T09:51:41,2026-04-22T09:51:41,Laptop issue reported by Finance user in Helsinki,Endpoint Team
+859,7,Access Request,Low,In Progress,2025-12-15T21:56:41,2025-12-16T21:56:41,Access Request issue reported by Engineering user in London,Endpoint Team
+860,62,CRM,Critical,Closed,2026-06-25T08:22:41,2026-07-07T08:22:41,CRM issue reported by Engineering user in Helsinki,Platform Team
+861,113,Email,Critical,Open,2026-01-29T04:18:41,2026-02-12T04:18:41,Email issue reported by Sales user in Berlin,Service Desk
+862,97,CRM,Critical,Open,2026-01-12T16:05:41,2026-01-19T16:05:41,CRM issue reported by Operations user in Turku,Service Desk
+863,78,Access Request,Low,Open,2026-01-29T05:51:41,2026-01-29T05:51:41,Access Request issue reported by Support user in London,Network Team
+864,98,Network,High,Resolved,2026-06-13T23:07:41,2026-06-25T23:07:41,Network issue reported by Finance user in Stockholm,Platform Team
+865,3,CI/CD,Medium,Resolved,2026-04-01T04:05:41,2026-04-02T04:05:41,CI/CD issue reported by Finance user in Tallinn,Network Team
+866,7,CI/CD,Low,In Progress,2026-02-26T08:18:41,2026-03-07T08:18:41,CI/CD issue reported by Engineering user in London,Service Desk
+867,50,Access Request,Medium,In Progress,2026-06-05T22:23:41,2026-06-16T22:23:41,Access Request issue reported by IT user in Stockholm,Platform Team
+868,114,Laptop,Low,Open,2026-05-07T14:04:41,2026-05-16T14:04:41,Laptop issue reported by Sales user in Tampere,Endpoint Team
+869,132,CRM,Low,Resolved,2026-04-19T23:59:41,2026-04-26T23:59:41,CRM issue reported by Legal user in Helsinki,Network Team
+870,88,Azure Login,Medium,Resolved,2026-04-05T18:22:41,2026-04-05T18:22:41,Azure Login issue reported by Operations user in Helsinki,Identity Team
+871,130,Database,Low,In Progress,2026-06-25T05:33:41,2026-07-09T05:33:41,Database issue reported by Operations user in Tallinn,Identity Team
+872,18,CRM,Critical,Resolved,2026-05-20T21:25:41,2026-05-29T21:25:41,CRM issue reported by Finance user in Tallinn,Network Team
+873,149,Access Request,Low,Resolved,2026-04-13T23:36:41,2026-04-20T23:36:41,Access Request issue reported by IT user in Tallinn,Service Desk
+874,127,Printer,Medium,Resolved,2026-07-07T22:41:41,2026-07-10T22:41:41,Printer issue reported by Engineering user in Tampere,Identity Team
+875,124,CRM,Low,In Progress,2025-12-13T19:31:41,2025-12-13T19:31:41,CRM issue reported by Finance user in Tampere,Network Team
+876,3,Email,Low,Open,2026-04-08T18:20:41,2026-04-11T18:20:41,Email issue reported by Finance user in Tallinn,Platform Team
+877,93,VPN,Low,In Progress,2026-07-01T12:43:41,2026-07-05T12:43:41,VPN issue reported by Operations user in Turku,Identity Team
+878,87,Database,High,Open,2026-05-07T13:43:41,2026-05-21T13:43:41,Database issue reported by HR user in Tampere,Service Desk
+879,6,Laptop,Low,Closed,2026-04-01T22:05:41,2026-04-04T22:05:41,Laptop issue reported by Operations user in Tampere,Network Team
+880,117,Printer,Medium,In Progress,2026-04-05T07:13:41,2026-04-17T07:13:41,Printer issue reported by Legal user in Tampere,Platform Team
+881,112,Email,High,Closed,2026-06-08T13:59:41,2026-06-11T13:59:41,Email issue reported by Finance user in Stockholm,Platform Team
+882,97,CRM,Low,Closed,2026-04-17T23:28:41,2026-04-17T23:28:41,CRM issue reported by Operations user in Turku,Platform Team
+883,49,Database,Medium,In Progress,2026-04-24T14:35:41,2026-04-28T14:35:41,Database issue reported by Sales user in Helsinki,Identity Team
+884,131,Access Request,Medium,Open,2026-03-05T12:09:41,2026-03-15T12:09:41,Access Request issue reported by Sales user in Stockholm,Platform Team
+885,17,Laptop,High,Closed,2026-02-28T06:07:41,2026-03-05T06:07:41,Laptop issue reported by HR user in Turku,Endpoint Team
+886,133,CI/CD,Medium,Resolved,2026-05-24T08:10:41,2026-06-04T08:10:41,CI/CD issue reported by HR user in London,Endpoint Team
+887,122,Azure Login,Medium,Closed,2026-02-10T06:15:41,2026-02-10T06:15:41,Azure Login issue reported by Support user in Stockholm,Identity Team
+888,57,Printer,Medium,In Progress,2026-03-15T11:30:41,2026-03-21T11:30:41,Printer issue reported by Legal user in Stockholm,Platform Team
+889,41,CRM,Low,Open,2026-05-04T01:50:41,2026-05-11T01:50:41,CRM issue reported by Sales user in Berlin,Platform Team
+890,91,Printer,Low,Resolved,2026-02-09T17:26:41,2026-02-16T17:26:41,Printer issue reported by Sales user in Tampere,Endpoint Team
+891,111,Network,Low,In Progress,2026-04-05T03:35:41,2026-04-12T03:35:41,Network issue reported by HR user in Helsinki,Identity Team
+892,68,Email,Medium,Closed,2026-04-08T16:37:41,2026-04-18T16:37:41,Email issue reported by Sales user in Turku,Service Desk
+893,71,Printer,Medium,Resolved,2026-06-13T15:51:41,2026-06-18T15:51:41,Printer issue reported by Support user in Tampere,Identity Team
+894,85,Azure Login,High,Closed,2026-04-21T19:03:41,2026-04-24T19:03:41,Azure Login issue reported by Sales user in Berlin,Platform Team
+895,36,Database,High,In Progress,2026-05-03T18:06:41,2026-05-15T18:06:41,Database issue reported by Finance user in Turku,Endpoint Team
+896,104,Access Request,Medium,Resolved,2025-12-26T22:55:41,2026-01-07T22:55:41,Access Request issue reported by Operations user in Berlin,Identity Team
+897,102,Printer,Low,In Progress,2026-05-10T19:08:41,2026-05-19T19:08:41,Printer issue reported by Support user in Berlin,Platform Team
+898,120,CI/CD,Medium,Closed,2026-04-12T16:35:41,2026-04-23T16:35:41,CI/CD issue reported by Legal user in Stockholm,Endpoint Team
+899,54,CI/CD,Medium,Resolved,2026-03-15T01:54:41,2026-03-17T01:54:41,CI/CD issue reported by Legal user in Tampere,Network Team
+900,3,CI/CD,Low,Resolved,2025-12-12T21:02:41,2025-12-18T21:02:41,CI/CD issue reported by Finance user in Tallinn,Endpoint Team
+901,138,Azure Login,Low,Resolved,2026-04-16T00:54:41,2026-04-18T00:54:41,Azure Login issue reported by Support user in London,Identity Team
+902,85,Access Request,High,Resolved,2026-01-27T22:57:41,2026-02-02T22:57:41,Access Request issue reported by Sales user in Berlin,Identity Team
+903,101,Email,Low,Resolved,2026-02-22T06:43:41,2026-03-01T06:43:41,Email issue reported by IT user in Berlin,Network Team
+904,24,Laptop,High,In Progress,2026-06-11T21:20:41,2026-06-20T21:20:41,Laptop issue reported by HR user in Turku,Endpoint Team
+905,7,Laptop,Low,Closed,2026-05-19T15:57:41,2026-05-22T15:57:41,Laptop issue reported by Engineering user in London,Network Team
+906,135,Email,Low,Resolved,2026-03-14T17:32:41,2026-03-27T17:32:41,Email issue reported by Finance user in Berlin,Endpoint Team
+907,101,Laptop,High,Resolved,2026-06-10T14:21:41,2026-06-16T14:21:41,Laptop issue reported by IT user in Berlin,Identity Team
+908,34,Printer,Medium,Closed,2026-04-20T05:03:41,2026-04-29T05:03:41,Printer issue reported by Sales user in Tampere,Platform Team
+909,80,Access Request,Low,Resolved,2026-05-18T02:10:41,2026-05-18T02:10:41,Access Request issue reported by Support user in Tampere,Identity Team
+910,115,Email,Low,In Progress,2026-03-27T23:04:41,2026-04-05T23:04:41,Email issue reported by Operations user in Tampere,Endpoint Team
+911,118,CI/CD,Medium,Open,2026-02-11T17:08:41,2026-02-25T17:08:41,CI/CD issue reported by IT user in London,Endpoint Team
+912,89,Azure Login,Low,Closed,2026-03-29T23:03:41,2026-04-01T23:03:41,Azure Login issue reported by Operations user in London,Identity Team
+913,111,CI/CD,Low,Resolved,2026-03-31T21:44:41,2026-04-11T21:44:41,CI/CD issue reported by HR user in Helsinki,Service Desk
+914,62,Laptop,Critical,In Progress,2026-04-28T22:21:41,2026-05-09T22:21:41,Laptop issue reported by Engineering user in Helsinki,Identity Team
+915,127,Network,Low,Closed,2025-12-25T01:48:41,2025-12-26T01:48:41,Network issue reported by Engineering user in Tampere,Platform Team
+916,84,Network,Low,In Progress,2026-03-15T13:39:41,2026-03-15T13:39:41,Network issue reported by IT user in London,Service Desk
+917,119,Network,Medium,Closed,2026-04-11T19:30:41,2026-04-11T19:30:41,Network issue reported by Operations user in London,Network Team
+918,30,Laptop,Medium,Resolved,2026-04-15T21:08:41,2026-04-16T21:08:41,Laptop issue reported by Support user in Tallinn,Platform Team
+919,63,CI/CD,Low,In Progress,2026-06-03T03:03:41,2026-06-16T03:03:41,CI/CD issue reported by HR user in Helsinki,Service Desk
+920,26,Laptop,Low,Closed,2026-04-24T15:21:41,2026-05-04T15:21:41,Laptop issue reported by Operations user in Turku,Service Desk
+921,70,Laptop,Low,In Progress,2026-03-18T07:44:41,2026-03-28T07:44:41,Laptop issue reported by Finance user in Helsinki,Platform Team
+922,56,CI/CD,Medium,Resolved,2026-01-11T17:02:41,2026-01-21T17:02:41,CI/CD issue reported by Finance user in London,Service Desk
+923,100,Azure Login,High,Open,2026-03-17T17:17:41,2026-03-29T17:17:41,Azure Login issue reported by Sales user in Turku,Identity Team
+924,64,CRM,Low,Open,2026-05-08T12:50:41,2026-05-08T12:50:41,CRM issue reported by Finance user in Tallinn,Network Team
+925,50,Email,Medium,Closed,2026-05-13T15:04:41,2026-05-24T15:04:41,Email issue reported by IT user in Stockholm,Identity Team
+926,12,Network,Medium,In Progress,2026-02-27T15:03:41,2026-03-02T15:03:41,Network issue reported by Finance user in Tallinn,Platform Team
+927,54,Database,Low,In Progress,2026-03-29T05:48:41,2026-04-03T05:48:41,Database issue reported by Legal user in Tampere,Identity Team
+928,4,Network,Medium,Resolved,2026-01-22T08:55:41,2026-01-23T08:55:41,Network issue reported by Finance user in Tampere,Network Team
+929,95,VPN,Medium,In Progress,2026-06-21T12:29:41,2026-06-22T12:29:41,VPN issue reported by IT user in Helsinki,Platform Team
+930,146,Laptop,Medium,In Progress,2026-05-05T15:17:41,2026-05-11T15:17:41,Laptop issue reported by Support user in Tallinn,Identity Team
+931,86,Laptop,Medium,Closed,2026-01-26T20:35:41,2026-01-27T20:35:41,Laptop issue reported by IT user in London,Network Team
+932,5,Access Request,High,Resolved,2026-02-09T04:31:41,2026-02-17T04:31:41,Access Request issue reported by Engineering user in Tallinn,Platform Team
+933,4,Printer,Low,Closed,2026-07-02T23:07:41,2026-07-13T23:07:41,Printer issue reported by Finance user in Tampere,Endpoint Team
+934,63,Access Request,Low,Resolved,2026-06-18T17:47:41,2026-06-20T17:47:41,Access Request issue reported by HR user in Helsinki,Endpoint Team
+935,53,VPN,Medium,Closed,2026-05-08T19:17:41,2026-05-22T19:17:41,VPN issue reported by Legal user in Tampere,Network Team
+936,35,Azure Login,Medium,Closed,2026-04-17T22:05:41,2026-04-23T22:05:41,Azure Login issue reported by Engineering user in Tallinn,Network Team
+937,7,Printer,Medium,In Progress,2026-01-02T08:34:41,2026-01-16T08:34:41,Printer issue reported by Engineering user in London,Identity Team
+938,57,Access Request,Medium,In Progress,2026-04-02T02:35:41,2026-04-03T02:35:41,Access Request issue reported by Legal user in Stockholm,Endpoint Team
+939,18,Printer,Low,Closed,2026-06-24T22:46:41,2026-06-26T22:46:41,Printer issue reported by Finance user in Tallinn,Platform Team
+940,141,Printer,Medium,Resolved,2026-05-09T02:50:41,2026-05-11T02:50:41,Printer issue reported by Engineering user in Tampere,Identity Team
+941,63,Network,Medium,In Progress,2026-05-23T23:40:41,2026-06-02T23:40:41,Network issue reported by HR user in Helsinki,Identity Team
+942,70,CI/CD,Medium,Resolved,2026-06-18T07:30:41,2026-06-24T07:30:41,CI/CD issue reported by Finance user in Helsinki,Platform Team
+943,111,Laptop,Medium,Closed,2025-12-11T03:54:41,2025-12-12T03:54:41,Laptop issue reported by HR user in Helsinki,Network Team
+944,138,Laptop,Medium,In Progress,2026-02-16T19:44:41,2026-02-23T19:44:41,Laptop issue reported by Support user in London,Network Team
+945,97,Database,High,In Progress,2026-02-03T03:51:41,2026-02-06T03:51:41,Database issue reported by Operations user in Turku,Identity Team
+946,49,VPN,Medium,Closed,2026-07-05T02:09:41,2026-07-19T02:09:41,VPN issue reported by Sales user in Helsinki,Endpoint Team
+947,102,CRM,Medium,Resolved,2026-04-01T03:36:41,2026-04-07T03:36:41,CRM issue reported by Support user in Berlin,Service Desk
+948,32,Network,Critical,Closed,2026-02-14T13:43:41,2026-02-26T13:43:41,Network issue reported by Operations user in Tampere,Network Team
+949,131,CI/CD,Medium,Resolved,2026-01-26T20:32:41,2026-02-09T20:32:41,CI/CD issue reported by Sales user in Stockholm,Endpoint Team
+950,64,Printer,Medium,Closed,2026-03-08T16:57:41,2026-03-18T16:57:41,Printer issue reported by Finance user in Tallinn,Service Desk
+951,38,Azure Login,Low,Open,2026-02-04T04:12:41,2026-02-13T04:12:41,Azure Login issue reported by Finance user in London,Identity Team
+952,4,Email,Medium,Closed,2025-12-23T16:14:41,2026-01-03T16:14:41,Email issue reported by Finance user in Tampere,Platform Team
+953,21,Database,Low,Closed,2026-05-21T05:45:41,2026-05-25T05:45:41,Database issue reported by Sales user in London,Platform Team
+954,137,Network,High,Resolved,2026-02-08T09:09:41,2026-02-19T09:09:41,Network issue reported by Sales user in Stockholm,Service Desk
+955,28,Access Request,High,Open,2025-12-22T07:03:41,2026-01-05T07:03:41,Access Request issue reported by HR user in Berlin,Endpoint Team
+956,79,VPN,High,Open,2026-05-26T03:55:41,2026-06-01T03:55:41,VPN issue reported by Support user in Helsinki,Platform Team
+957,107,Azure Login,Low,In Progress,2026-01-02T05:45:41,2026-01-04T05:45:41,Azure Login issue reported by IT user in Stockholm,Identity Team
+958,125,Laptop,Low,Resolved,2026-03-02T15:27:41,2026-03-05T15:27:41,Laptop issue reported by HR user in Berlin,Service Desk
+959,47,Printer,Medium,Resolved,2026-05-03T05:27:41,2026-05-16T05:27:41,Printer issue reported by Legal user in Tampere,Identity Team
+960,21,Azure Login,Low,In Progress,2026-06-17T06:48:41,2026-06-26T06:48:41,Azure Login issue reported by Sales user in London,Identity Team
+961,123,CI/CD,High,Open,2026-01-17T15:55:41,2026-01-17T15:55:41,CI/CD issue reported by Sales user in Turku,Platform Team
+962,11,Email,Medium,Open,2026-05-15T02:05:41,2026-05-27T02:05:41,Email issue reported by Legal user in Tallinn,Network Team
+963,125,CI/CD,Medium,Resolved,2025-12-27T08:17:41,2026-01-10T08:17:41,CI/CD issue reported by HR user in Berlin,Network Team
+964,81,Printer,Low,Resolved,2026-04-06T21:30:41,2026-04-11T21:30:41,Printer issue reported by Engineering user in Helsinki,Network Team
+965,26,VPN,High,Closed,2026-03-13T20:30:41,2026-03-15T20:30:41,VPN issue reported by Operations user in Turku,Service Desk
+966,32,Database,Medium,Closed,2026-04-27T20:07:41,2026-05-06T20:07:41,Database issue reported by Operations user in Tampere,Endpoint Team
+967,132,Network,Critical,Closed,2026-01-20T12:55:41,2026-02-02T12:55:41,Network issue reported by Legal user in Helsinki,Network Team
+968,5,CRM,Low,Resolved,2026-06-26T19:35:41,2026-07-03T19:35:41,CRM issue reported by Engineering user in Tallinn,Endpoint Team
+969,21,CRM,Critical,Closed,2026-03-21T03:13:41,2026-04-01T03:13:41,CRM issue reported by Sales user in London,Endpoint Team
+970,76,Access Request,High,Closed,2026-05-19T20:46:41,2026-05-31T20:46:41,Access Request issue reported by HR user in Turku,Platform Team
+971,9,Laptop,Critical,Closed,2026-03-03T16:36:41,2026-03-16T16:36:41,Laptop issue reported by Finance user in Helsinki,Endpoint Team
+972,44,CI/CD,Low,Resolved,2026-06-09T03:13:41,2026-06-11T03:13:41,CI/CD issue reported by Sales user in Tallinn,Service Desk
+973,28,Network,Low,Closed,2026-01-06T18:45:41,2026-01-12T18:45:41,Network issue reported by HR user in Berlin,Network Team
+974,57,Azure Login,Medium,Resolved,2026-01-19T02:58:41,2026-02-02T02:58:41,Azure Login issue reported by Legal user in Stockholm,Platform Team
+975,126,Email,Critical,Closed,2025-12-16T20:34:41,2025-12-28T20:34:41,Email issue reported by Operations user in Turku,Platform Team
+976,17,CRM,Medium,Closed,2026-04-02T20:08:41,2026-04-12T20:08:41,CRM issue reported by HR user in Turku,Platform Team
+977,112,Printer,Low,In Progress,2026-05-12T10:48:41,2026-05-17T10:48:41,Printer issue reported by Finance user in Stockholm,Platform Team
+978,49,Email,Critical,Closed,2026-02-12T07:47:41,2026-02-21T07:47:41,Email issue reported by Sales user in Helsinki,Service Desk
+979,80,VPN,Critical,Closed,2026-02-07T01:43:41,2026-02-12T01:43:41,VPN issue reported by Support user in Tampere,Network Team
+980,33,Database,Medium,In Progress,2026-01-19T23:18:41,2026-01-27T23:18:41,Database issue reported by HR user in Tallinn,Endpoint Team
+981,81,Laptop,Medium,In Progress,2025-12-12T09:02:41,2025-12-14T09:02:41,Laptop issue reported by Engineering user in Helsinki,Platform Team
+982,73,Laptop,High,Closed,2025-12-28T21:01:41,2026-01-06T21:01:41,Laptop issue reported by Support user in Tallinn,Network Team
+983,80,Database,High,Closed,2026-01-13T15:38:41,2026-01-20T15:38:41,Database issue reported by Support user in Tampere,Identity Team
+984,127,Azure Login,Low,Closed,2026-01-09T06:52:41,2026-01-22T06:52:41,Azure Login issue reported by Engineering user in Tampere,Identity Team
+985,58,VPN,Medium,Resolved,2025-12-22T13:01:41,2026-01-04T13:01:41,VPN issue reported by Engineering user in Tampere,Identity Team
+986,6,Database,Critical,Resolved,2026-03-30T08:28:41,2026-04-11T08:28:41,Database issue reported by Operations user in Tampere,Endpoint Team
+987,101,Email,Critical,In Progress,2026-02-22T19:37:41,2026-03-05T19:37:41,Email issue reported by IT user in Berlin,Platform Team
+988,101,Email,High,Closed,2026-06-05T08:07:41,2026-06-05T08:07:41,Email issue reported by IT user in Berlin,Network Team
+989,118,Laptop,Low,Resolved,2026-02-11T14:27:41,2026-02-13T14:27:41,Laptop issue reported by IT user in London,Identity Team
+990,56,Printer,High,Resolved,2025-12-31T22:55:41,2026-01-01T22:55:41,Printer issue reported by Finance user in London,Identity Team
+991,97,Network,Medium,Open,2026-01-16T12:56:41,2026-01-23T12:56:41,Network issue reported by Operations user in Turku,Identity Team
+992,14,Email,Critical,Resolved,2026-02-26T22:34:41,2026-03-08T22:34:41,Email issue reported by Engineering user in Berlin,Endpoint Team
+993,63,VPN,Medium,Resolved,2026-06-08T11:30:41,2026-06-10T11:30:41,VPN issue reported by HR user in Helsinki,Endpoint Team
+994,23,CI/CD,Medium,In Progress,2025-12-10T22:31:41,2025-12-15T22:31:41,CI/CD issue reported by IT user in Tampere,Service Desk
+995,31,Email,Critical,Resolved,2026-06-17T15:24:41,2026-06-20T15:24:41,Email issue reported by Support user in London,Service Desk
+996,147,Access Request,High,Closed,2026-03-08T10:11:41,2026-03-10T10:11:41,Access Request issue reported by Finance user in Tallinn,Endpoint Team
+997,124,Network,Low,Open,2026-04-23T00:47:41,2026-05-07T00:47:41,Network issue reported by Finance user in Tampere,Platform Team
+998,48,Network,High,Resolved,2025-12-11T20:54:41,2025-12-23T20:54:41,Network issue reported by Legal user in Tampere,Platform Team
+999,126,Email,High,Closed,2026-02-26T00:21:41,2026-02-27T00:21:41,Email issue reported by Operations user in Turku,Identity Team
+1000,31,Laptop,Medium,Open,2026-02-04T20:44:41,2026-02-09T20:44:41,Laptop issue reported by Support user in London,Service Desk

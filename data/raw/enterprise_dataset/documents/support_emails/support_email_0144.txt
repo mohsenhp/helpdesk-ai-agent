@@ -1,0 +1,14 @@
+From: olli.taylor9@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Azure Login
+
+Hello Service Desk,
+
+I am in the Finance department in Helsinki. I need help with a Azure Login problem.
+The issue started after a laptop reboot.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Olli Taylor

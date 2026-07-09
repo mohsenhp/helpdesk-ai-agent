@@ -1,0 +1,14 @@
+From: alex.koskinen59@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with Azure Login
+
+Hello Service Desk,
+
+I am in the Support department in London. I need help with a Azure Login problem.
+The issue started after password reset.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Alex Koskinen

@@ -1,0 +1,241 @@
+id,asset_tag,asset_type,hostname,os,owner_user_id,location,status
+1,EC-ROU-1001,Router,rou-1001,Debian 13,4,Tampere,Active
+2,EC-PRI-1002,Printer,pri-1002,Debian 13,111,Helsinki,Repair
+3,EC-DES-1003,Desktop,des-1003,Windows Server 2022,112,Stockholm,Retired
+4,EC-ROU-1004,Router,rou-1004,Debian 13,138,London,Lost
+5,EC-PRI-1005,Printer,pri-1005,Ubuntu 24.04,69,Turku,Active
+6,EC-ROU-1006,Router,rou-1006,Ubuntu 24.04,72,Turku,Lost
+7,EC-SER-1007,Server,ser-1007,Debian 13,146,Tallinn,Retired
+8,EC-ROU-1008,Router,rou-1008,macOS 15,8,Turku,Repair
+9,EC-DES-1009,Desktop,des-1009,macOS 15,125,Berlin,Retired
+10,EC-PRI-1010,Printer,pri-1010,Windows Server 2022,88,Helsinki,Retired
+11,EC-LAP-1011,Laptop,lap-1011,Windows Server 2022,143,Stockholm,Repair
+12,EC-DES-1012,Desktop,des-1012,Debian 13,22,Turku,Lost
+13,EC-DES-1013,Desktop,des-1013,Debian 13,143,Stockholm,Lost
+14,EC-LAP-1014,Laptop,lap-1014,Windows 11,115,Tampere,Retired
+15,EC-ROU-1015,Router,rou-1015,Ubuntu 24.04,57,Stockholm,Retired
+16,EC-PRI-1016,Printer,pri-1016,Debian 13,149,Tallinn,Retired
+17,EC-PHO-1017,Phone,pho-1017,Windows Server 2022,109,Tallinn,Retired
+18,EC-PHO-1018,Phone,pho-1018,Debian 13,91,Tampere,Retired
+19,EC-PRI-1019,Printer,pri-1019,Ubuntu 24.04,79,Helsinki,Active
+20,EC-PRI-1020,Printer,pri-1020,Windows 11,50,Stockholm,Repair
+21,EC-DES-1021,Desktop,des-1021,Debian 13,50,Stockholm,Retired
+22,EC-SER-1022,Server,ser-1022,macOS 15,135,Berlin,Active
+23,EC-PRI-1023,Printer,pri-1023,Ubuntu 24.04,50,Stockholm,Retired
+24,EC-PRI-1024,Printer,pri-1024,Windows 11,46,Helsinki,Repair
+25,EC-LAP-1025,Laptop,lap-1025,Windows 11,71,Tampere,Retired
+26,EC-PHO-1026,Phone,pho-1026,Debian 13,33,Tallinn,Active
+27,EC-SER-1027,Server,ser-1027,macOS 15,4,Tampere,Lost
+28,EC-ROU-1028,Router,rou-1028,macOS 15,123,Turku,Repair
+29,EC-PRI-1029,Printer,pri-1029,Debian 13,14,Berlin,Active
+30,EC-ROU-1030,Router,rou-1030,Debian 13,17,Turku,Active
+31,EC-PHO-1031,Phone,pho-1031,Windows 11,148,London,Repair
+32,EC-SER-1032,Server,ser-1032,macOS 15,39,Berlin,Active
+33,EC-LAP-1033,Laptop,lap-1033,Windows Server 2022,64,Tallinn,Lost
+34,EC-SER-1034,Server,ser-1034,Debian 13,58,Tampere,Lost
+35,EC-PRI-1035,Printer,pri-1035,Windows Server 2022,114,Tampere,Lost
+36,EC-SER-1036,Server,ser-1036,Windows Server 2022,79,Helsinki,Active
+37,EC-DES-1037,Desktop,des-1037,Ubuntu 24.04,26,Turku,Retired
+38,EC-DES-1038,Desktop,des-1038,Ubuntu 24.04,21,London,Repair
+39,EC-LAP-1039,Laptop,lap-1039,Ubuntu 24.04,142,Tampere,Active
+40,EC-ROU-1040,Router,rou-1040,Windows Server 2022,105,Stockholm,Lost
+41,EC-LAP-1041,Laptop,lap-1041,Ubuntu 24.04,75,Helsinki,Retired
+42,EC-PHO-1042,Phone,pho-1042,Debian 13,73,Tallinn,Active
+43,EC-PRI-1043,Printer,pri-1043,Windows Server 2022,60,Tampere,Repair
+44,EC-LAP-1044,Laptop,lap-1044,Windows Server 2022,109,Tallinn,Repair
+45,EC-PRI-1045,Printer,pri-1045,Ubuntu 24.04,39,Berlin,Active
+46,EC-DES-1046,Desktop,des-1046,macOS 15,16,Turku,Retired
+47,EC-LAP-1047,Laptop,lap-1047,Debian 13,113,Berlin,Retired
+48,EC-PRI-1048,Printer,pri-1048,Windows Server 2022,104,Berlin,Lost
+49,EC-LAP-1049,Laptop,lap-1049,Windows Server 2022,113,Berlin,Active
+50,EC-PHO-1050,Phone,pho-1050,macOS 15,111,Helsinki,Retired
+51,EC-LAP-1051,Laptop,lap-1051,Ubuntu 24.04,7,London,Active
+52,EC-SER-1052,Server,ser-1052,Windows 11,69,Turku,Repair
+53,EC-SER-1053,Server,ser-1053,Debian 13,121,London,Retired
+54,EC-SER-1054,Server,ser-1054,Debian 13,47,Tampere,Lost
+55,EC-ROU-1055,Router,rou-1055,macOS 15,24,Turku,Lost
+56,EC-PRI-1056,Printer,pri-1056,Windows 11,86,London,Repair
+57,EC-ROU-1057,Router,rou-1057,Debian 13,85,Berlin,Retired
+58,EC-SER-1058,Server,ser-1058,Windows 11,103,Tallinn,Lost
+59,EC-PRI-1059,Printer,pri-1059,macOS 15,23,Tampere,Retired
+60,EC-ROU-1060,Router,rou-1060,Windows Server 2022,30,Tallinn,Active
+61,EC-ROU-1061,Router,rou-1061,Debian 13,139,Helsinki,Active
+62,EC-SER-1062,Server,ser-1062,macOS 15,49,Helsinki,Lost
+63,EC-LAP-1063,Laptop,lap-1063,Ubuntu 24.04,114,Tampere,Retired
+64,EC-DES-1064,Desktop,des-1064,macOS 15,141,Tampere,Lost
+65,EC-LAP-1065,Laptop,lap-1065,Windows 11,125,Berlin,Repair
+66,EC-PRI-1066,Printer,pri-1066,Windows Server 2022,41,Berlin,Active
+67,EC-ROU-1067,Router,rou-1067,Windows 11,142,Tampere,Repair
+68,EC-ROU-1068,Router,rou-1068,Windows 11,30,Tallinn,Repair
+69,EC-PHO-1069,Phone,pho-1069,macOS 15,128,London,Retired
+70,EC-ROU-1070,Router,rou-1070,Debian 13,107,Stockholm,Repair
+71,EC-SER-1071,Server,ser-1071,Ubuntu 24.04,117,Tampere,Lost
+72,EC-SER-1072,Server,ser-1072,Windows Server 2022,49,Helsinki,Repair
+73,EC-PRI-1073,Printer,pri-1073,Debian 13,18,Tallinn,Retired
+74,EC-PRI-1074,Printer,pri-1074,Windows 11,130,Tallinn,Retired
+75,EC-SER-1075,Server,ser-1075,Windows Server 2022,77,Tampere,Lost
+76,EC-ROU-1076,Router,rou-1076,Windows Server 2022,39,Berlin,Lost
+77,EC-PRI-1077,Printer,pri-1077,Windows Server 2022,89,London,Lost
+78,EC-PRI-1078,Printer,pri-1078,Ubuntu 24.04,117,Tampere,Repair
+79,EC-ROU-1079,Router,rou-1079,Ubuntu 24.04,147,Tallinn,Lost
+80,EC-PRI-1080,Printer,pri-1080,Debian 13,12,Tallinn,Lost
+81,EC-PHO-1081,Phone,pho-1081,Ubuntu 24.04,99,Berlin,Lost
+82,EC-DES-1082,Desktop,des-1082,Windows Server 2022,10,Tallinn,Retired
+83,EC-ROU-1083,Router,rou-1083,Windows 11,26,Turku,Lost
+84,EC-PHO-1084,Phone,pho-1084,Ubuntu 24.04,4,Tampere,Lost
+85,EC-LAP-1085,Laptop,lap-1085,Debian 13,40,Tallinn,Retired
+86,EC-SER-1086,Server,ser-1086,Debian 13,87,Tampere,Active
+87,EC-PHO-1087,Phone,pho-1087,Windows Server 2022,85,Berlin,Lost
+88,EC-PHO-1088,Phone,pho-1088,Debian 13,82,London,Active
+89,EC-DES-1089,Desktop,des-1089,macOS 15,18,Tallinn,Repair
+90,EC-ROU-1090,Router,rou-1090,Windows 11,24,Turku,Active
+91,EC-DES-1091,Desktop,des-1091,macOS 15,114,Tampere,Active
+92,EC-PRI-1092,Printer,pri-1092,Windows 11,12,Tallinn,Retired
+93,EC-PRI-1093,Printer,pri-1093,Debian 13,92,Tampere,Repair
+94,EC-SER-1094,Server,ser-1094,Debian 13,63,Helsinki,Repair
+95,EC-DES-1095,Desktop,des-1095,Windows 11,44,Tallinn,Lost
+96,EC-ROU-1096,Router,rou-1096,Windows Server 2022,62,Helsinki,Repair
+97,EC-ROU-1097,Router,rou-1097,macOS 15,60,Tampere,Lost
+98,EC-PHO-1098,Phone,pho-1098,Windows 11,66,Tallinn,Lost
+99,EC-PHO-1099,Phone,pho-1099,Windows Server 2022,74,Berlin,Repair
+100,EC-ROU-1100,Router,rou-1100,macOS 15,19,Stockholm,Retired
+101,EC-PHO-1101,Phone,pho-1101,macOS 15,109,Tallinn,Lost
+102,EC-DES-1102,Desktop,des-1102,Debian 13,78,London,Lost
+103,EC-DES-1103,Desktop,des-1103,Debian 13,28,Berlin,Retired
+104,EC-PRI-1104,Printer,pri-1104,macOS 15,148,London,Active
+105,EC-PRI-1105,Printer,pri-1105,Windows 11,102,Berlin,Active
+106,EC-PRI-1106,Printer,pri-1106,Ubuntu 24.04,128,London,Retired
+107,EC-PHO-1107,Phone,pho-1107,Ubuntu 24.04,57,Stockholm,Retired
+108,EC-PHO-1108,Phone,pho-1108,Windows 11,36,Turku,Active
+109,EC-ROU-1109,Router,rou-1109,Windows 11,80,Tampere,Retired
+110,EC-LAP-1110,Laptop,lap-1110,macOS 15,34,Tampere,Retired
+111,EC-DES-1111,Desktop,des-1111,Ubuntu 24.04,107,Stockholm,Repair
+112,EC-PRI-1112,Printer,pri-1112,Windows Server 2022,139,Helsinki,Retired
+113,EC-PRI-1113,Printer,pri-1113,Debian 13,43,Helsinki,Retired
+114,EC-LAP-1114,Laptop,lap-1114,Debian 13,87,Tampere,Active
+115,EC-DES-1115,Desktop,des-1115,Debian 13,37,Tallinn,Retired
+116,EC-ROU-1116,Router,rou-1116,Windows 11,24,Turku,Retired
+117,EC-LAP-1117,Laptop,lap-1117,Debian 13,138,London,Retired
+118,EC-SER-1118,Server,ser-1118,Debian 13,68,Turku,Retired
+119,EC-PHO-1119,Phone,pho-1119,Ubuntu 24.04,28,Berlin,Lost
+120,EC-SER-1120,Server,ser-1120,Windows Server 2022,7,London,Retired
+121,EC-PHO-1121,Phone,pho-1121,Windows 11,57,Stockholm,Lost
+122,EC-PHO-1122,Phone,pho-1122,Debian 13,78,London,Active
+123,EC-LAP-1123,Laptop,lap-1123,Windows 11,36,Turku,Retired
+124,EC-LAP-1124,Laptop,lap-1124,Windows 11,127,Tampere,Repair
+125,EC-DES-1125,Desktop,des-1125,Debian 13,138,London,Lost
+126,EC-PHO-1126,Phone,pho-1126,Windows Server 2022,95,Helsinki,Lost
+127,EC-ROU-1127,Router,rou-1127,Windows 11,40,Tallinn,Lost
+128,EC-PRI-1128,Printer,pri-1128,Windows 11,105,Stockholm,Retired
+129,EC-ROU-1129,Router,rou-1129,Debian 13,56,London,Repair
+130,EC-LAP-1130,Laptop,lap-1130,macOS 15,93,Turku,Retired
+131,EC-ROU-1131,Router,rou-1131,macOS 15,16,Turku,Repair
+132,EC-ROU-1132,Router,rou-1132,Windows 11,32,Tampere,Repair
+133,EC-LAP-1133,Laptop,lap-1133,macOS 15,6,Tampere,Repair
+134,EC-SER-1134,Server,ser-1134,Ubuntu 24.04,33,Tallinn,Active
+135,EC-DES-1135,Desktop,des-1135,Windows Server 2022,142,Tampere,Repair
+136,EC-PRI-1136,Printer,pri-1136,Ubuntu 24.04,60,Tampere,Active
+137,EC-DES-1137,Desktop,des-1137,Ubuntu 24.04,71,Tampere,Retired
+138,EC-LAP-1138,Laptop,lap-1138,Windows 11,45,Tampere,Repair
+139,EC-PRI-1139,Printer,pri-1139,Ubuntu 24.04,4,Tampere,Retired
+140,EC-DES-1140,Desktop,des-1140,macOS 15,5,Tallinn,Active
+141,EC-PHO-1141,Phone,pho-1141,Debian 13,33,Tallinn,Active
+142,EC-ROU-1142,Router,rou-1142,Debian 13,17,Turku,Retired
+143,EC-SER-1143,Server,ser-1143,Windows 11,132,Helsinki,Lost
+144,EC-DES-1144,Desktop,des-1144,Windows Server 2022,129,Turku,Active
+145,EC-PRI-1145,Printer,pri-1145,Debian 13,134,Stockholm,Active
+146,EC-ROU-1146,Router,rou-1146,Debian 13,16,Turku,Lost
+147,EC-ROU-1147,Router,rou-1147,Debian 13,28,Berlin,Active
+148,EC-PRI-1148,Printer,pri-1148,Windows Server 2022,21,London,Repair
+149,EC-DES-1149,Desktop,des-1149,macOS 15,17,Turku,Retired
+150,EC-SER-1150,Server,ser-1150,Windows Server 2022,98,Stockholm,Retired
+151,EC-SER-1151,Server,ser-1151,Windows Server 2022,117,Tampere,Lost
+152,EC-PHO-1152,Phone,pho-1152,Windows 11,26,Turku,Repair
+153,EC-ROU-1153,Router,rou-1153,Ubuntu 24.04,111,Helsinki,Lost
+154,EC-ROU-1154,Router,rou-1154,Debian 13,87,Tampere,Lost
+155,EC-PRI-1155,Printer,pri-1155,Debian 13,25,Berlin,Retired
+156,EC-PRI-1156,Printer,pri-1156,Ubuntu 24.04,66,Tallinn,Lost
+157,EC-LAP-1157,Laptop,lap-1157,Windows 11,18,Tallinn,Active
+158,EC-LAP-1158,Laptop,lap-1158,macOS 15,111,Helsinki,Repair
+159,EC-LAP-1159,Laptop,lap-1159,Windows Server 2022,143,Stockholm,Retired
+160,EC-ROU-1160,Router,rou-1160,macOS 15,32,Tampere,Lost
+161,EC-PRI-1161,Printer,pri-1161,Windows Server 2022,14,Berlin,Retired
+162,EC-LAP-1162,Laptop,lap-1162,Windows Server 2022,91,Tampere,Repair
+163,EC-PHO-1163,Phone,pho-1163,Debian 13,40,Tallinn,Repair
+164,EC-PRI-1164,Printer,pri-1164,Windows Server 2022,28,Berlin,Retired
+165,EC-PRI-1165,Printer,pri-1165,Windows Server 2022,30,Tallinn,Repair
+166,EC-SER-1166,Server,ser-1166,Windows Server 2022,110,Berlin,Active
+167,EC-LAP-1167,Laptop,lap-1167,Ubuntu 24.04,69,Turku,Retired
+168,EC-PRI-1168,Printer,pri-1168,macOS 15,80,Tampere,Active
+169,EC-DES-1169,Desktop,des-1169,Windows Server 2022,47,Tampere,Lost
+170,EC-DES-1170,Desktop,des-1170,Windows 11,18,Tallinn,Active
+171,EC-DES-1171,Desktop,des-1171,Debian 13,136,Helsinki,Lost
+172,EC-PRI-1172,Printer,pri-1172,Ubuntu 24.04,117,Tampere,Retired
+173,EC-PHO-1173,Phone,pho-1173,macOS 15,80,Tampere,Active
+174,EC-DES-1174,Desktop,des-1174,Ubuntu 24.04,14,Berlin,Active
+175,EC-PRI-1175,Printer,pri-1175,Debian 13,21,London,Lost
+176,EC-SER-1176,Server,ser-1176,Debian 13,125,Berlin,Lost
+177,EC-DES-1177,Desktop,des-1177,Windows Server 2022,70,Helsinki,Active
+178,EC-ROU-1178,Router,rou-1178,Windows 11,89,London,Retired
+179,EC-SER-1179,Server,ser-1179,macOS 15,125,Berlin,Active
+180,EC-ROU-1180,Router,rou-1180,Windows Server 2022,57,Stockholm,Active
+181,EC-DES-1181,Desktop,des-1181,macOS 15,2,Berlin,Repair
+182,EC-PRI-1182,Printer,pri-1182,macOS 15,36,Turku,Retired
+183,EC-LAP-1183,Laptop,lap-1183,Debian 13,31,London,Lost
+184,EC-DES-1184,Desktop,des-1184,Debian 13,45,Tampere,Repair
+185,EC-SER-1185,Server,ser-1185,macOS 15,129,Turku,Active
+186,EC-PHO-1186,Phone,pho-1186,Windows 11,102,Berlin,Lost
+187,EC-ROU-1187,Router,rou-1187,Windows 11,5,Tallinn,Retired
+188,EC-ROU-1188,Router,rou-1188,Windows Server 2022,148,London,Lost
+189,EC-PRI-1189,Printer,pri-1189,Windows 11,107,Stockholm,Lost
+190,EC-PRI-1190,Printer,pri-1190,Ubuntu 24.04,6,Tampere,Lost
+191,EC-LAP-1191,Laptop,lap-1191,Debian 13,93,Turku,Active
+192,EC-ROU-1192,Router,rou-1192,Windows Server 2022,63,Helsinki,Lost
+193,EC-LAP-1193,Laptop,lap-1193,Debian 13,135,Berlin,Retired
+194,EC-DES-1194,Desktop,des-1194,macOS 15,87,Tampere,Repair
+195,EC-SER-1195,Server,ser-1195,Windows 11,20,Berlin,Repair
+196,EC-PRI-1196,Printer,pri-1196,Ubuntu 24.04,90,Stockholm,Repair
+197,EC-DES-1197,Desktop,des-1197,macOS 15,27,Helsinki,Repair
+198,EC-SER-1198,Server,ser-1198,Ubuntu 24.04,45,Tampere,Active
+199,EC-PHO-1199,Phone,pho-1199,Debian 13,46,Helsinki,Lost
+200,EC-SER-1200,Server,ser-1200,Debian 13,145,Turku,Retired
+201,EC-DES-1201,Desktop,des-1201,Debian 13,81,Helsinki,Active
+202,EC-ROU-1202,Router,rou-1202,macOS 15,121,London,Retired
+203,EC-PRI-1203,Printer,pri-1203,Windows Server 2022,15,London,Active
+204,EC-ROU-1204,Router,rou-1204,Debian 13,80,Tampere,Active
+205,EC-PRI-1205,Printer,pri-1205,macOS 15,15,London,Active
+206,EC-SER-1206,Server,ser-1206,Windows Server 2022,24,Turku,Lost
+207,EC-SER-1207,Server,ser-1207,Windows Server 2022,119,London,Active
+208,EC-SER-1208,Server,ser-1208,Ubuntu 24.04,116,Helsinki,Retired
+209,EC-SER-1209,Server,ser-1209,Ubuntu 24.04,122,Stockholm,Active
+210,EC-LAP-1210,Laptop,lap-1210,macOS 15,116,Helsinki,Active
+211,EC-PHO-1211,Phone,pho-1211,Ubuntu 24.04,130,Tallinn,Active
+212,EC-PHO-1212,Phone,pho-1212,Debian 13,64,Tallinn,Lost
+213,EC-SER-1213,Server,ser-1213,Windows Server 2022,135,Berlin,Repair
+214,EC-PRI-1214,Printer,pri-1214,macOS 15,94,Turku,Lost
+215,EC-PRI-1215,Printer,pri-1215,Windows Server 2022,105,Stockholm,Active
+216,EC-LAP-1216,Laptop,lap-1216,macOS 15,86,London,Active
+217,EC-PHO-1217,Phone,pho-1217,Debian 13,143,Stockholm,Retired
+218,EC-PHO-1218,Phone,pho-1218,Windows Server 2022,65,Helsinki,Repair
+219,EC-LAP-1219,Laptop,lap-1219,Windows Server 2022,86,London,Repair
+220,EC-PRI-1220,Printer,pri-1220,Debian 13,90,Stockholm,Repair
+221,EC-PRI-1221,Printer,pri-1221,Windows Server 2022,22,Turku,Lost
+222,EC-DES-1222,Desktop,des-1222,Windows Server 2022,85,Berlin,Active
+223,EC-SER-1223,Server,ser-1223,macOS 15,109,Tallinn,Active
+224,EC-PRI-1224,Printer,pri-1224,Ubuntu 24.04,93,Turku,Repair
+225,EC-ROU-1225,Router,rou-1225,Ubuntu 24.04,88,Helsinki,Repair
+226,EC-DES-1226,Desktop,des-1226,Windows 11,36,Turku,Retired
+227,EC-SER-1227,Server,ser-1227,Windows Server 2022,26,Turku,Active
+228,EC-SER-1228,Server,ser-1228,Ubuntu 24.04,87,Tampere,Lost
+229,EC-DES-1229,Desktop,des-1229,Ubuntu 24.04,40,Tallinn,Repair
+230,EC-LAP-1230,Laptop,lap-1230,Debian 13,113,Berlin,Retired
+231,EC-ROU-1231,Router,rou-1231,Windows Server 2022,61,Tallinn,Retired
+232,EC-DES-1232,Desktop,des-1232,Windows Server 2022,115,Tampere,Repair
+233,EC-ROU-1233,Router,rou-1233,Ubuntu 24.04,80,Tampere,Retired
+234,EC-ROU-1234,Router,rou-1234,Debian 13,147,Tallinn,Retired
+235,EC-SER-1235,Server,ser-1235,Windows Server 2022,98,Stockholm,Lost
+236,EC-DES-1236,Desktop,des-1236,Windows Server 2022,42,Tallinn,Repair
+237,EC-LAP-1237,Laptop,lap-1237,Debian 13,65,Helsinki,Retired
+238,EC-LAP-1238,Laptop,lap-1238,Windows Server 2022,142,Tampere,Active
+239,EC-LAP-1239,Laptop,lap-1239,Ubuntu 24.04,73,Tallinn,Retired
+240,EC-SER-1240,Server,ser-1240,Ubuntu 24.04,116,Helsinki,Lost

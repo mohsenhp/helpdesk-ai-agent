@@ -1,0 +1,14 @@
+From: sofia.niemi134@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with CI/CD
+
+Hello Service Desk,
+
+I am in the Engineering department in Stockholm. I need help with a CI/CD problem.
+The issue started after password reset.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Sofia Niemi

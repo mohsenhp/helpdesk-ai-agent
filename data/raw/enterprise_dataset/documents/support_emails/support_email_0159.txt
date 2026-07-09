@@ -1,0 +1,14 @@
+From: emma.wilson107@examplecorp.local
+To: servicedesk@examplecorp.local
+Subject: Help needed with VPN
+
+Hello Service Desk,
+
+I am in the IT department in Stockholm. I need help with a VPN problem.
+The issue started after a software update.
+It is affecting my ability to work.
+
+Please check whether there are other related tickets or known incidents.
+
+Regards,
+Emma Wilson

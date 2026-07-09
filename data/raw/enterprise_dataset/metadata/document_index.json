@@ -1,0 +1,3062 @@
+[
+  {
+    "path": "documents/kb_articles/kb_0001_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0002_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0003_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0004_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0005_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0006_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0007_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0008_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0009_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0010_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0011_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0012_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0013_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0014_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0015_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0016_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0017_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0018_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0019_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0020_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0021_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0022_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0023_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0024_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0025_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0026_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0027_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0028_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0029_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0030_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0031_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0032_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0033_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0034_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0035_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0036_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0037_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0038_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0039_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0040_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0041_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0042_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0043_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0044_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0045_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0046_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0047_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0048_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0049_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0050_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0051_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0052_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0053_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0054_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0055_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0056_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0057_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0058_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0059_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0060_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0061_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0062_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0063_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0064_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0065_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0066_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0067_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0068_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0069_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0070_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0071_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0072_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0073_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0074_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0075_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0076_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0077_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0078_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0079_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0080_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0081_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0082_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0083_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0084_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0085_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0086_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0087_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0088_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0089_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0090_printer.md",
+    "type": "kb_article",
+    "category": "Printer",
+    "title": "Printer offline troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0091_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0092_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0093_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0094_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0095_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0096_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0097_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0098_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0099_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0100_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0101_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0102_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0103_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0104_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0105_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0106_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0107_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0108_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0109_email.md",
+    "type": "kb_article",
+    "category": "Email",
+    "title": "Email delivery delay investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0110_azure_login.md",
+    "type": "kb_article",
+    "category": "Azure Login",
+    "title": "Azure SSO conditional access troubleshooting"
+  },
+  {
+    "path": "documents/kb_articles/kb_0111_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0112_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0113_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0114_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0115_vpn.md",
+    "type": "kb_article",
+    "category": "VPN",
+    "title": "VPN connection fails after Windows update"
+  },
+  {
+    "path": "documents/kb_articles/kb_0116_laptop.md",
+    "type": "kb_article",
+    "category": "Laptop",
+    "title": "Laptop overheating and fan noise"
+  },
+  {
+    "path": "documents/kb_articles/kb_0117_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/kb_articles/kb_0118_ci_cd.md",
+    "type": "kb_article",
+    "category": "CI/CD",
+    "title": "CI pipeline failure investigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0119_database.md",
+    "type": "kb_article",
+    "category": "Database",
+    "title": "Database timeout mitigation"
+  },
+  {
+    "path": "documents/kb_articles/kb_0120_crm.md",
+    "type": "kb_article",
+    "category": "CRM",
+    "title": "CRM slow performance checklist"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0001.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0001"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0002.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0002"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0003.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0003"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0004.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0004"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0005.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0005"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0006.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0006"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0007.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0007"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0008.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0008"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0009.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0009"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0010.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0010"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0011.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0011"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0012.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0012"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0013.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0013"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0014.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0014"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0015.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0015"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0016.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0016"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0017.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0017"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0018.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0018"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0019.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0019"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0020.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0020"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0021.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0021"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0022.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0022"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0023.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0023"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0024.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0024"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0025.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0025"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0026.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0026"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0027.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0027"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0028.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0028"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0029.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0029"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0030.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0030"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0031.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0031"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0032.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0032"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0033.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0033"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0034.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0034"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0035.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0035"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0036.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0036"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0037.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0037"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0038.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0038"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0039.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0039"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0040.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0040"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0041.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0041"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0042.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0042"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0043.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0043"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0044.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0044"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0045.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0045"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0046.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0046"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0047.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0047"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0048.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0048"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0049.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0049"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0050.md",
+    "type": "incident_report",
+    "category": "VPN",
+    "title": "Incident Report IR-0050"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0051.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0051"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0052.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0052"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0053.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0053"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0054.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0054"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0055.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0055"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0056.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0056"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0057.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0057"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0058.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0058"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0059.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0059"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0060.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0060"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0061.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0061"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0062.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0062"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0063.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0063"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0064.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0064"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0065.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0065"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0066.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0066"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0067.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0067"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0068.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0068"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0069.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0069"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0070.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0070"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0071.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0071"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0072.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0072"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0073.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0073"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0074.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0074"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0075.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0075"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0076.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0076"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0077.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0077"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0078.md",
+    "type": "incident_report",
+    "category": "Email",
+    "title": "Incident Report IR-0078"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0079.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0079"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0080.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0080"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0081.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0081"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0082.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0082"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0083.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0083"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0084.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0084"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0085.md",
+    "type": "incident_report",
+    "category": "Laptop",
+    "title": "Incident Report IR-0085"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0086.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0086"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0087.md",
+    "type": "incident_report",
+    "category": "CI/CD",
+    "title": "Incident Report IR-0087"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0088.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0088"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0089.md",
+    "type": "incident_report",
+    "category": "Network",
+    "title": "Incident Report IR-0089"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0090.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0090"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0091.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0091"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0092.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0092"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0093.md",
+    "type": "incident_report",
+    "category": "CRM",
+    "title": "Incident Report IR-0093"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0094.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0094"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0095.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0095"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0096.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0096"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0097.md",
+    "type": "incident_report",
+    "category": "Azure Login",
+    "title": "Incident Report IR-0097"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0098.md",
+    "type": "incident_report",
+    "category": "Database",
+    "title": "Incident Report IR-0098"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0099.md",
+    "type": "incident_report",
+    "category": "Access Request",
+    "title": "Incident Report IR-0099"
+  },
+  {
+    "path": "documents/incident_reports/incident_report_0100.md",
+    "type": "incident_report",
+    "category": "Printer",
+    "title": "Incident Report IR-0100"
+  },
+  {
+    "path": "documents/runbooks/runbook_0001_crm.md",
+    "type": "runbook",
+    "category": "CRM",
+    "title": "CRM Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0002_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0003_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0004_access_request.md",
+    "type": "runbook",
+    "category": "Access Request",
+    "title": "Access Request Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0005_network.md",
+    "type": "runbook",
+    "category": "Network",
+    "title": "Network Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0006_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0007_database.md",
+    "type": "runbook",
+    "category": "Database",
+    "title": "Database Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0008_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0009_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0010_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0011_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0012_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0013_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0014_network.md",
+    "type": "runbook",
+    "category": "Network",
+    "title": "Network Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0015_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0016_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0017_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0018_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0019_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0020_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0021_crm.md",
+    "type": "runbook",
+    "category": "CRM",
+    "title": "CRM Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0022_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0023_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0024_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0025_crm.md",
+    "type": "runbook",
+    "category": "CRM",
+    "title": "CRM Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0026_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0027_database.md",
+    "type": "runbook",
+    "category": "Database",
+    "title": "Database Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0028_crm.md",
+    "type": "runbook",
+    "category": "CRM",
+    "title": "CRM Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0029_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0030_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0031_database.md",
+    "type": "runbook",
+    "category": "Database",
+    "title": "Database Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0032_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0033_crm.md",
+    "type": "runbook",
+    "category": "CRM",
+    "title": "CRM Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0034_vpn.md",
+    "type": "runbook",
+    "category": "VPN",
+    "title": "VPN Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0035_network.md",
+    "type": "runbook",
+    "category": "Network",
+    "title": "Network Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0036_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0037_database.md",
+    "type": "runbook",
+    "category": "Database",
+    "title": "Database Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0038_crm.md",
+    "type": "runbook",
+    "category": "CRM",
+    "title": "CRM Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0039_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0040_database.md",
+    "type": "runbook",
+    "category": "Database",
+    "title": "Database Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0041_vpn.md",
+    "type": "runbook",
+    "category": "VPN",
+    "title": "VPN Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0042_vpn.md",
+    "type": "runbook",
+    "category": "VPN",
+    "title": "VPN Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0043_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0044_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0045_access_request.md",
+    "type": "runbook",
+    "category": "Access Request",
+    "title": "Access Request Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0046_network.md",
+    "type": "runbook",
+    "category": "Network",
+    "title": "Network Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0047_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0048_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0049_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0050_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0051_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0052_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0053_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0054_ci_cd.md",
+    "type": "runbook",
+    "category": "CI/CD",
+    "title": "CI/CD Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0055_azure_login.md",
+    "type": "runbook",
+    "category": "Azure Login",
+    "title": "Azure Login Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0056_laptop.md",
+    "type": "runbook",
+    "category": "Laptop",
+    "title": "Laptop Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0057_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0058_email.md",
+    "type": "runbook",
+    "category": "Email",
+    "title": "Email Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0059_database.md",
+    "type": "runbook",
+    "category": "Database",
+    "title": "Database Escalation"
+  },
+  {
+    "path": "documents/runbooks/runbook_0060_printer.md",
+    "type": "runbook",
+    "category": "Printer",
+    "title": "Printer Escalation"
+  },
+  {
+    "path": "documents/support_emails/support_email_0001.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0002.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0003.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0004.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0005.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0006.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0007.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0008.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0009.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0010.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0011.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0012.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0013.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0014.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0015.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0016.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0017.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0018.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0019.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0020.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0021.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0022.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0023.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0024.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0025.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0026.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0027.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0028.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0029.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0030.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0031.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0032.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0033.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0034.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0035.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0036.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0037.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0038.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0039.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0040.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0041.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0042.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0043.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0044.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0045.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0046.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0047.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0048.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0049.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0050.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0051.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0052.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0053.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0054.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0055.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0056.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0057.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0058.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0059.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0060.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0061.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0062.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0063.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0064.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0065.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0066.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0067.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0068.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0069.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0070.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0071.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0072.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0073.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0074.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0075.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0076.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0077.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0078.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0079.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0080.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0081.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0082.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0083.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0084.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0085.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0086.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0087.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0088.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0089.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0090.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0091.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0092.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0093.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0094.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0095.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0096.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0097.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0098.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0099.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0100.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0101.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0102.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0103.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0104.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0105.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0106.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0107.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0108.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0109.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0110.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0111.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0112.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0113.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0114.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0115.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0116.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0117.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0118.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0119.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0120.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0121.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0122.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0123.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0124.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0125.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0126.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0127.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0128.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0129.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0130.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0131.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0132.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0133.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0134.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0135.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0136.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0137.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0138.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0139.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0140.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0141.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0142.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0143.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0144.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0145.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0146.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0147.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0148.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0149.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0150.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0151.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0152.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0153.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0154.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0155.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0156.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0157.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0158.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0159.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0160.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0161.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0162.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0163.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0164.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0165.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0166.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0167.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0168.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0169.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0170.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0171.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0172.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0173.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0174.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0175.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0176.txt",
+    "type": "support_email",
+    "category": "Azure Login",
+    "title": "Help needed with Azure Login"
+  },
+  {
+    "path": "documents/support_emails/support_email_0177.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0178.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0179.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0180.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0181.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0182.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0183.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0184.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0185.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0186.txt",
+    "type": "support_email",
+    "category": "Network",
+    "title": "Help needed with Network"
+  },
+  {
+    "path": "documents/support_emails/support_email_0187.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0188.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0189.txt",
+    "type": "support_email",
+    "category": "Database",
+    "title": "Help needed with Database"
+  },
+  {
+    "path": "documents/support_emails/support_email_0190.txt",
+    "type": "support_email",
+    "category": "Printer",
+    "title": "Help needed with Printer"
+  },
+  {
+    "path": "documents/support_emails/support_email_0191.txt",
+    "type": "support_email",
+    "category": "VPN",
+    "title": "Help needed with VPN"
+  },
+  {
+    "path": "documents/support_emails/support_email_0192.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0193.txt",
+    "type": "support_email",
+    "category": "CI/CD",
+    "title": "Help needed with CI/CD"
+  },
+  {
+    "path": "documents/support_emails/support_email_0194.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0195.txt",
+    "type": "support_email",
+    "category": "Access Request",
+    "title": "Help needed with Access Request"
+  },
+  {
+    "path": "documents/support_emails/support_email_0196.txt",
+    "type": "support_email",
+    "category": "Email",
+    "title": "Help needed with Email"
+  },
+  {
+    "path": "documents/support_emails/support_email_0197.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0198.txt",
+    "type": "support_email",
+    "category": "CRM",
+    "title": "Help needed with CRM"
+  },
+  {
+    "path": "documents/support_emails/support_email_0199.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/support_emails/support_email_0200.txt",
+    "type": "support_email",
+    "category": "Laptop",
+    "title": "Help needed with Laptop"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0001.md",
+    "type": "release_notes",
+    "category": "CRM Portal",
+    "title": "CRM Portal 1.7.9"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0002.md",
+    "type": "release_notes",
+    "category": "Slack",
+    "title": "Slack 4.7.3"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0003.md",
+    "type": "release_notes",
+    "category": "PostgreSQL",
+    "title": "PostgreSQL 5.5.7"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0004.md",
+    "type": "release_notes",
+    "category": "Jenkins",
+    "title": "Jenkins 1.3.8"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0005.md",
+    "type": "release_notes",
+    "category": "Slack",
+    "title": "Slack 4.4.9"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0006.md",
+    "type": "release_notes",
+    "category": "VPN Client",
+    "title": "VPN Client 2.8.2"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0007.md",
+    "type": "release_notes",
+    "category": "Azure SSO",
+    "title": "Azure SSO 5.2.2"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0008.md",
+    "type": "release_notes",
+    "category": "VPN Client",
+    "title": "VPN Client 1.4.2"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0009.md",
+    "type": "release_notes",
+    "category": "Endpoint Protection",
+    "title": "Endpoint Protection 4.2.7"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0010.md",
+    "type": "release_notes",
+    "category": "CRM Portal",
+    "title": "CRM Portal 2.2.4"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0011.md",
+    "type": "release_notes",
+    "category": "Outlook",
+    "title": "Outlook 2.3.3"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0012.md",
+    "type": "release_notes",
+    "category": "Outlook",
+    "title": "Outlook 2.2.8"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0013.md",
+    "type": "release_notes",
+    "category": "VPN Client",
+    "title": "VPN Client 4.2.5"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0014.md",
+    "type": "release_notes",
+    "category": "Endpoint Protection",
+    "title": "Endpoint Protection 5.6.3"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0015.md",
+    "type": "release_notes",
+    "category": "Slack",
+    "title": "Slack 4.3.1"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0016.md",
+    "type": "release_notes",
+    "category": "CRM Portal",
+    "title": "CRM Portal 3.2.6"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0017.md",
+    "type": "release_notes",
+    "category": "Jenkins",
+    "title": "Jenkins 4.9.6"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0018.md",
+    "type": "release_notes",
+    "category": "Outlook",
+    "title": "Outlook 3.7.9"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0019.md",
+    "type": "release_notes",
+    "category": "Azure SSO",
+    "title": "Azure SSO 5.2.3"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0020.md",
+    "type": "release_notes",
+    "category": "PostgreSQL",
+    "title": "PostgreSQL 3.8.0"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0021.md",
+    "type": "release_notes",
+    "category": "Slack",
+    "title": "Slack 1.3.2"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0022.md",
+    "type": "release_notes",
+    "category": "Azure SSO",
+    "title": "Azure SSO 1.3.4"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0023.md",
+    "type": "release_notes",
+    "category": "Outlook",
+    "title": "Outlook 3.6.2"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0024.md",
+    "type": "release_notes",
+    "category": "CRM Portal",
+    "title": "CRM Portal 3.4.6"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0025.md",
+    "type": "release_notes",
+    "category": "VPN Client",
+    "title": "VPN Client 3.6.2"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0026.md",
+    "type": "release_notes",
+    "category": "Slack",
+    "title": "Slack 5.1.7"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0027.md",
+    "type": "release_notes",
+    "category": "PostgreSQL",
+    "title": "PostgreSQL 1.6.0"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0028.md",
+    "type": "release_notes",
+    "category": "PostgreSQL",
+    "title": "PostgreSQL 2.9.8"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0029.md",
+    "type": "release_notes",
+    "category": "Endpoint Protection",
+    "title": "Endpoint Protection 1.7.6"
+  },
+  {
+    "path": "documents/release_notes/release_notes_0030.md",
+    "type": "release_notes",
+    "category": "VPN Client",
+    "title": "VPN Client 3.6.4"
+  }
+]
