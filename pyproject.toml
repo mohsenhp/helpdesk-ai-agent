@@ -1,0 +1,12 @@
+[project]
+name = "helpdesk-ai-agent"
+version = "0.1.0"
+description = "Hybrid SQL + Vector AI Help Desk Agent built with LangGraph and Gemini"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
