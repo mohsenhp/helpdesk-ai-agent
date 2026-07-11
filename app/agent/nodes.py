@@ -3,6 +3,7 @@ from typing import Any
 from app.agent.planner import plan_retrieval
 from app.agent.router import classify_question
 from app.agent.state import AgentState, DocumentType, Route
+from app.agent.synthesizer import synthesize_answer
 from app.database.search import search_database
 from app.vector.search import search_documents
 
@@ -84,4 +85,24 @@ def retrieve_hybrid(
             k=5,
             document_type=state["document_type"],
         ),
+    }
+
+
+def generate_answer(
+    state: AgentState,
+) -> dict[str, str]:
+    route = state["route"]
+
+    if route is None:
+        raise RuntimeError("Cannot generate an answer without a route.")
+
+    answer = synthesize_answer(
+        question=state["question"],
+        route=route,
+        sql_results=state["sql_results"],
+        vector_results=state["vector_results"],
+    )
+
+    return {
+        "answer": answer,
     }

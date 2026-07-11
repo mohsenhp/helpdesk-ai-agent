@@ -1,6 +1,3 @@
-import json
-from typing import Any
-
 from app.agent.graph import agent_graph
 
 
@@ -14,17 +11,6 @@ TEST_QUESTIONS = [
 ]
 
 
-def print_json(value: Any) -> None:
-    print(
-        json.dumps(
-            value,
-            indent=2,
-            ensure_ascii=False,
-            default=str,
-        )
-    )
-
-
 def main() -> None:
     for question in TEST_QUESTIONS:
         result = agent_graph.invoke(
@@ -36,6 +22,7 @@ def main() -> None:
                 "document_type": None,
                 "sql_results": None,
                 "vector_results": [],
+                "answer": None,
             }
         )
 
@@ -45,14 +32,10 @@ def main() -> None:
         print(f"SQL query: {result['sql_query']}")
         print(f"Vector query: {result['vector_query']}")
         print(f"Document type: {result['document_type']}")
-
-        if result["sql_results"] is not None:
-            print("\nSQL results:")
-            print_json(result["sql_results"])
-
-        if result["vector_results"]:
-            print("\nVector results:")
-            print_json(result["vector_results"])
+        print()
+        print("Answer:")
+        print(result["answer"])
+        print()
 
 
 if __name__ == "__main__":

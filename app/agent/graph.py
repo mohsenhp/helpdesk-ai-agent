@@ -2,6 +2,7 @@ from langgraph.graph import END, START, StateGraph
 
 from app.agent.nodes import (
     create_retrieval_plan,
+    generate_answer,
     retrieve_hybrid,
     retrieve_sql,
     retrieve_vector,
@@ -27,6 +28,7 @@ def build_graph():
     builder.add_node("retrieve_sql", retrieve_sql)
     builder.add_node("retrieve_vector", retrieve_vector)
     builder.add_node("retrieve_hybrid", retrieve_hybrid)
+    builder.add_node("generate_answer", generate_answer)
 
     builder.add_edge(START, "route_question")
     builder.add_edge("route_question", "plan_retrieval")
@@ -41,9 +43,11 @@ def build_graph():
         },
     )
 
-    builder.add_edge("retrieve_sql", END)
-    builder.add_edge("retrieve_vector", END)
-    builder.add_edge("retrieve_hybrid", END)
+    builder.add_edge("retrieve_sql", "generate_answer")
+    builder.add_edge("retrieve_vector", "generate_answer")
+    builder.add_edge("retrieve_hybrid", "generate_answer")
+
+    builder.add_edge("generate_answer", END)
 
     return builder.compile()
 
