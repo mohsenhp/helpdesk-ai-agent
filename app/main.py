@@ -31,6 +31,9 @@ def main() -> None:
             {
                 "question": question,
                 "route": None,
+                "sql_query": None,
+                "vector_query": None,
+                "document_type": None,
                 "sql_results": None,
                 "vector_results": [],
             }
@@ -39,6 +42,9 @@ def main() -> None:
         print("=" * 80)
         print(f"Question: {question}")
         print(f"Route: {result['route']}")
+        print(f"SQL query: {result['sql_query']}")
+        print(f"Vector query: {result['vector_query']}")
+        print(f"Document type: {result['document_type']}")
 
         if result["sql_results"] is not None:
             print("\nSQL results:")
