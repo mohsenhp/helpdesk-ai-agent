@@ -1,23 +1,46 @@
 from langgraph.graph import END, START, StateGraph
 
-from app.agent.router import classify_question
-from app.agent.state import AgentState
+from app.agent.nodes import (
+    retrieve_hybrid,
+    retrieve_sql,
+    retrieve_vector,
+    route_question,
+)
+from app.agent.state import AgentState, Route
 
 
-def route_question(state: AgentState) -> dict[str, str]:
-    decision = classify_question(state["question"])
+def select_retrieval_route(state: AgentState) -> Route:
+    route = state["route"]
 
-    return {
-        "route": decision.route,
-    }
+    if route is None:
+        raise RuntimeError("The routing node did not select a route.")
+
+    return route
+
 
 def build_graph():
     builder = StateGraph(AgentState)
 
     builder.add_node("route_question", route_question)
+    builder.add_node("retrieve_sql", retrieve_sql)
+    builder.add_node("retrieve_vector", retrieve_vector)
+    builder.add_node("retrieve_hybrid", retrieve_hybrid)
 
     builder.add_edge(START, "route_question")
-    builder.add_edge("route_question", END)
+
+    builder.add_conditional_edges(
+        "route_question",
+        select_retrieval_route,
+        {
+            "sql": "retrieve_sql",
+            "vector": "retrieve_vector",
+            "hybrid": "retrieve_hybrid",
+        },
+    )
+
+    builder.add_edge("retrieve_sql", END)
+    builder.add_edge("retrieve_vector", END)
+    builder.add_edge("retrieve_hybrid", END)
 
     return builder.compile()
 

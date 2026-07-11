@@ -7,6 +7,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from app.config import DATASET_DIR, VECTOR_DB_PATH
 from app.vector.embeddings import embeddings
 
+from app.vector.constants import COLLECTION_NAME
+
 
 DOCUMENTS_DIR = DATASET_DIR / "documents"
 SUPPORTED_EXTENSIONS = {".md", ".txt"}
@@ -64,7 +66,7 @@ def build_vector_database() -> None:
         documents=chunks,
         embedding=embeddings,
         persist_directory=str(VECTOR_DB_PATH),
-        collection_name="helpdesk_documents",
+        collection_name=COLLECTION_NAME
     )
 
     print(f"Loaded documents: {len(raw_documents)}")
