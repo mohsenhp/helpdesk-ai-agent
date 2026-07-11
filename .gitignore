@@ -23,3 +23,5 @@ venv/
 *.sqlite3
 
 *.egg-info/
+
+data/chroma/
