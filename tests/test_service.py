@@ -1,6 +1,6 @@
 import pytest
 
-from app import main
+from app import service
 
 
 class FakeGraph:
@@ -22,12 +22,12 @@ class GraphWithoutAnswer:
 
 def test_ask_agent_returns_generated_answer(monkeypatch) -> None:
     monkeypatch.setattr(
-        main,
+        service,
         "agent_graph",
         FakeGraph(),
     )
 
-    answer = main.ask_agent(
+    answer = service.ask_agent(
         "How many open Critical VPN tickets are there?"
     )
 
@@ -36,7 +36,7 @@ def test_ask_agent_returns_generated_answer(monkeypatch) -> None:
 
 def test_ask_agent_rejects_missing_answer(monkeypatch) -> None:
     monkeypatch.setattr(
-        main,
+        service,
         "agent_graph",
         GraphWithoutAnswer(),
     )
@@ -45,4 +45,4 @@ def test_ask_agent_rejects_missing_answer(monkeypatch) -> None:
         RuntimeError,
         match="The agent did not generate an answer",
     ):
-        main.ask_agent("Question")
+        service.ask_agent("Question")

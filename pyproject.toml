@@ -18,6 +18,8 @@ dependencies = [
     "pydantic>=2.0",
     "sqlalchemy>=2.0",
     "pandas>=2.0",
+    "fastapi[standard]",
+
 ]
 
 [build-system]
@@ -32,6 +34,8 @@ exclude = ["data*", "tests*"]
 test = [
     "pytest>=8.0",
     "pytest-cov>=5.0",
+    "httpx",
+
 ]
 
 [tool.pytest.ini_options]
