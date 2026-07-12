@@ -1,0 +1,29 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -e ".[test]"
+
+      - name: Run tests
+        env:
+          GOOGLE_API_KEY: test-api-key
+          GEMINI_MODEL: test-model
+          EMBEDDING_MODEL: sentence-transformers/all-MiniLM-L6-v2
+        run: pytest --cov=app --cov-report=term-missing
