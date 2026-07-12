@@ -4,7 +4,7 @@ from langchain_chroma import Chroma
 
 from app.config import VECTOR_DB_PATH
 from app.vector.constants import COLLECTION_NAME
-from app.vector.embeddings import embeddings
+from app.vector.embeddings import get_embeddings
 
 
 def get_vector_store() -> Chroma:
@@ -16,7 +16,7 @@ def get_vector_store() -> Chroma:
 
     return Chroma(
         persist_directory=str(VECTOR_DB_PATH),
-        embedding_function=embeddings,
+        embedding_function=get_embeddings(),
         collection_name=COLLECTION_NAME,
     )
 

@@ -1,6 +1,8 @@
 from typing import Literal
+
 from pydantic import BaseModel, Field
-from app.llm import llm
+
+from app.llm import get_llm
 
 
 class RoutingDecision(BaseModel):
@@ -11,9 +13,6 @@ class RoutingDecision(BaseModel):
             "document retrieval, and hybrid when both are required."
         )
     )
-
-
-router_llm = llm.with_structured_output(RoutingDecision)
 
 
 ROUTER_PROMPT = """
@@ -53,5 +52,12 @@ User question:
 
 
 def classify_question(question: str) -> RoutingDecision:
-    prompt = ROUTER_PROMPT.format(question=question)
+    router_llm = get_llm().with_structured_output(
+        RoutingDecision
+    )
+
+    prompt = ROUTER_PROMPT.format(
+        question=question,
+    )
+
     return router_llm.invoke(prompt)

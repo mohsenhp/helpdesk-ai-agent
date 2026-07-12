@@ -1,7 +1,7 @@
 import json
 from typing import Any
 
-from app.llm import llm
+from app.llm import get_llm
 
 
 SYNTHESIS_PROMPT = """
@@ -82,6 +82,6 @@ def synthesize_answer(
         vector_evidence=_serialize_evidence(vector_results),
     )
 
-    response = llm.invoke(prompt)
+    response = get_llm().invoke(prompt)
 
     return _extract_text(response)

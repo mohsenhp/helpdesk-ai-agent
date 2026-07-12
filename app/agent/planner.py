@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 
-from app.agent.state import Route, DocumentType
-from app.llm import llm
+from app.agent.state import DocumentType, Route
+from app.llm import get_llm
 
 
 class RetrievalPlan(BaseModel):
@@ -24,9 +24,6 @@ class RetrievalPlan(BaseModel):
             "for a specific kind of document. Otherwise use null."
         )
     )
-
-
-planner_llm = llm.with_structured_output(RetrievalPlan)
 
 
 PLANNER_PROMPT = """
@@ -107,6 +104,10 @@ def plan_retrieval(
     question: str,
     route: Route,
 ) -> RetrievalPlan:
+    planner_llm = get_llm().with_structured_output(
+        RetrievalPlan
+    )
+
     prompt = PLANNER_PROMPT.format(
         question=question,
         route=route,

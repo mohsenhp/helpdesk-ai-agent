@@ -5,7 +5,7 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from app.config import DATASET_DIR, VECTOR_DB_PATH
-from app.vector.embeddings import embeddings
+from app.vector.embeddings import get_embeddings
 
 from app.vector.constants import COLLECTION_NAME
 
@@ -64,9 +64,9 @@ def build_vector_database() -> None:
 
     Chroma.from_documents(
         documents=chunks,
-        embedding=embeddings,
+        embedding=get_embeddings(),
         persist_directory=str(VECTOR_DB_PATH),
-        collection_name=COLLECTION_NAME
+        collection_name=COLLECTION_NAME,
     )
 
     print(f"Loaded documents: {len(raw_documents)}")
