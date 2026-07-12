@@ -1,3 +1,5 @@
+from uuid import uuid4
+
 from app.service import ask_agent
 
 
@@ -5,6 +7,8 @@ EXIT_COMMANDS = {"exit", "quit"}
 
 
 def main() -> None:
+    conversation_id = str(uuid4())
+
     print("HelpDesk AI Agent")
     print('Type "exit" or "quit" to stop.')
     print()
@@ -20,7 +24,10 @@ def main() -> None:
             break
 
         try:
-            answer = ask_agent(question)
+            answer = ask_agent(
+                question=question,
+                conversation_id=conversation_id,
+            )
         except Exception as error:
             print(f"\nAgent error: {error}\n")
             continue

@@ -20,27 +20,39 @@ def test_ask_returns_agent_answer(monkeypatch) -> None:
     monkeypatch.setattr(
         routes,
         "ask_agent",
-        lambda question: "There are 2 open Critical VPN tickets.",
+        lambda question, conversation_id: (
+            "There are 2 open Critical VPN tickets."
+        ),
     )
 
     response = client.post(
         "/ask",
         json={
-            "question": "How many open Critical VPN tickets are there?",
+            "question": (
+                "How many open Critical VPN tickets are there?"
+            ),
+            "conversation_id": "conversation-123",
         },
     )
 
     assert response.status_code == 200
     assert response.json() == {
         "answer": "There are 2 open Critical VPN tickets.",
+        "conversation_id": "conversation-123",
     }
 
 
-def test_ask_strips_surrounding_whitespace(monkeypatch) -> None:
+def test_ask_strips_surrounding_whitespace(
+    monkeypatch,
+) -> None:
     captured_questions: list[str] = []
 
-    def fake_ask_agent(question: str) -> str:
+    def fake_ask_agent(
+        question: str,
+        conversation_id: str,
+    ) -> str:
         captured_questions.append(question)
+
         return "Answer"
 
     monkeypatch.setattr(
@@ -53,6 +65,7 @@ def test_ask_strips_surrounding_whitespace(monkeypatch) -> None:
         "/ask",
         json={
             "question": "   Show open VPN tickets.   ",
+            "conversation_id": "conversation-123",
         },
     )
 
@@ -67,6 +80,7 @@ def test_ask_rejects_blank_question() -> None:
         "/ask",
         json={
             "question": "   ",
+            "conversation_id": "conversation-123",
         },
     )
 
@@ -76,7 +90,9 @@ def test_ask_rejects_blank_question() -> None:
 def test_ask_rejects_missing_question() -> None:
     response = client.post(
         "/ask",
-        json={},
+        json={
+            "conversation_id": "conversation-123",
+        },
     )
 
     assert response.status_code == 422
@@ -85,7 +101,10 @@ def test_ask_rejects_missing_question() -> None:
 def test_ask_returns_service_unavailable_on_agent_failure(
     monkeypatch,
 ) -> None:
-    def failing_agent(question: str) -> str:
+    def failing_agent(
+        question: str,
+        conversation_id: str,
+    ) -> str:
         raise RuntimeError("Gemini unavailable")
 
     monkeypatch.setattr(
@@ -98,6 +117,7 @@ def test_ask_returns_service_unavailable_on_agent_failure(
         "/ask",
         json={
             "question": "How many open VPN tickets are there?",
+            "conversation_id": "conversation-123",
         },
     )
 
@@ -105,3 +125,41 @@ def test_ask_returns_service_unavailable_on_agent_failure(
     assert response.json() == {
         "detail": "The agent is temporarily unavailable.",
     }
+
+
+def test_ask_generates_conversation_id_when_missing(
+    monkeypatch,
+) -> None:
+    captured_ids: list[str] = []
+
+    def fake_ask_agent(
+        question: str,
+        conversation_id: str,
+    ) -> str:
+        captured_ids.append(conversation_id)
+
+        return "Answer"
+
+    monkeypatch.setattr(
+        routes,
+        "ask_agent",
+        fake_ask_agent,
+    )
+
+    response = client.post(
+        "/ask",
+        json={
+            "question": "Show open VPN tickets.",
+        },
+    )
+
+    assert response.status_code == 200
+
+    response_data = response.json()
+
+    assert response_data["answer"] == "Answer"
+    assert response_data["conversation_id"]
+
+    assert captured_ids == [
+        response_data["conversation_id"],
+    ]

@@ -1,10 +1,14 @@
 from app.agent.graph import agent_graph
 
 
-def ask_agent(question: str) -> str:
+def ask_agent(
+    question: str,
+    conversation_id: str,
+) -> str:
     result = agent_graph.invoke(
         {
             "question": question,
+            "standalone_question": None,
             "route": None,
             "sql_query": None,
             "vector_query": None,
@@ -12,12 +16,20 @@ def ask_agent(question: str) -> str:
             "sql_results": None,
             "vector_results": [],
             "answer": None,
-        }
+            "history": [],
+        },
+        config={
+            "configurable": {
+                "thread_id": conversation_id,
+            }
+        },
     )
 
     answer = result["answer"]
 
     if answer is None:
-        raise RuntimeError("The agent did not generate an answer.")
+        raise RuntimeError(
+            "The agent did not generate an answer."
+        )
 
     return answer

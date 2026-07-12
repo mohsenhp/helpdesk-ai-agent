@@ -1,4 +1,5 @@
-from typing import Any, Literal, TypedDict
+from operator import add
+from typing import Annotated, Any, Literal, TypedDict
 
 
 Route = Literal["sql", "vector", "hybrid"]
@@ -12,8 +13,14 @@ DocumentType = Literal[
 ]
 
 
+class ConversationTurn(TypedDict):
+    question: str
+    answer: str
+
+
 class AgentState(TypedDict):
     question: str
+    standalone_question: str | None
     route: Route | None
 
     sql_query: str | None
@@ -24,3 +31,5 @@ class AgentState(TypedDict):
     vector_results: list[dict[str, Any]]
 
     answer: str | None
+
+    history: Annotated[list[ConversationTurn], add]

@@ -23,11 +23,18 @@ def health_check() -> HealthResponse:
 )
 def ask(request: AskRequest) -> AskResponse:
     try:
-        answer = ask_agent(request.question)
+        answer = ask_agent(
+            question=request.question,
+            conversation_id=request.conversation_id,
+        )
     except Exception as error:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="The agent is temporarily unavailable.",
         ) from error
 
-    return AskResponse(answer=answer)
+    return AskResponse(
+        answer=answer,
+        conversation_id=request.conversation_id,
+    )
+

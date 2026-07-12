@@ -4,12 +4,20 @@ from app.agent.planner import plan_retrieval
 from app.agent.router import classify_question
 from app.agent.state import AgentState, DocumentType, Route
 from app.agent.synthesizer import synthesize_answer
+from app.agent.resolver import resolve_question
 from app.database.search import search_database
 from app.vector.search import search_documents
 
 
 def route_question(state: AgentState) -> dict[str, Route]:
-    decision = classify_question(state["question"])
+    question = state["standalone_question"]
+
+    if question is None:
+        raise RuntimeError(
+            "The current question was not resolved."
+        )
+
+    decision = classify_question(question)
 
     return {
         "route": decision.route,
@@ -20,12 +28,20 @@ def create_retrieval_plan(
     state: AgentState,
 ) -> dict[str, str | DocumentType | None]:
     route = state["route"]
+    question = state["standalone_question"]
 
     if route is None:
-        raise RuntimeError("The routing node did not select a route.")
+        raise RuntimeError(
+            "The routing node did not select a route."
+        )
+
+    if question is None:
+        raise RuntimeError(
+            "The current question was not resolved."
+        )
 
     plan = plan_retrieval(
-        question=state["question"],
+        question=question,
         route=route,
     )
 
@@ -105,4 +121,37 @@ def generate_answer(
 
     return {
         "answer": answer,
+    }
+
+
+def resolve_current_question(
+    state: AgentState,
+) -> dict[str, str]:
+    resolved = resolve_question(
+        question=state["question"],
+        history=state["history"],
+    )
+
+    return {
+        "standalone_question": resolved.standalone_question,
+    }
+
+
+def save_conversation_turn(
+    state: AgentState,
+) -> dict[str, list[dict[str, str]]]:
+    answer = state["answer"]
+
+    if answer is None:
+        raise RuntimeError(
+            "Cannot save a conversation turn without an answer."
+        )
+
+    return {
+        "history": [
+            {
+                "question": state["question"],
+                "answer": answer,
+            }
+        ]
     }

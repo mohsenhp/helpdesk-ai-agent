@@ -8,6 +8,7 @@ from app.agent.router import RoutingDecision
 def make_state() -> dict:
     return {
         "question": "Which users have open VPN tickets?",
+        "standalone_question": "Which users have open VPN tickets?",
         "route": None,
         "sql_query": None,
         "vector_query": None,
@@ -15,6 +16,7 @@ def make_state() -> dict:
         "sql_results": None,
         "vector_results": [],
         "answer": None,
+        "history": [],
     }
 
 
@@ -171,3 +173,55 @@ def test_generate_answer_uses_retrieved_evidence(monkeypatch) -> None:
     assert result == {
         "answer": "There are 2 tickets.",
     }
+
+def test_resolve_current_question(monkeypatch) -> None:
+    state = make_state()
+    state["standalone_question"] = None
+
+    monkeypatch.setattr(
+        nodes,
+        "resolve_question",
+        lambda question, history: type(
+            "ResolvedQuestion",
+            (),
+            {
+                "standalone_question": (
+                    "Which users with open VPN tickets are in Finance?"
+                )
+            },
+        )(),
+    )
+
+    result = nodes.resolve_current_question(state)
+
+    assert result == {
+        "standalone_question": (
+            "Which users with open VPN tickets are in Finance?"
+        )
+    }
+
+
+def test_save_conversation_turn() -> None:
+    state = make_state()
+    state["answer"] = "There are 3 matching users."
+
+    result = nodes.save_conversation_turn(state)
+
+    assert result == {
+        "history": [
+            {
+                "question": "Which users have open VPN tickets?",
+                "answer": "There are 3 matching users.",
+            }
+        ]
+    }
+
+
+def test_save_conversation_turn_rejects_missing_answer() -> None:
+    state = make_state()
+
+    with pytest.raises(
+        RuntimeError,
+        match="Cannot save a conversation turn without an answer",
+    ):
+        nodes.save_conversation_turn(state)
