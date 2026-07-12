@@ -1,0 +1,33 @@
+# Git
+.git/
+.github/
+.gitignore
+
+# IDEs
+.idea/
+.vscode/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Tests and coverage
+tests/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+
+# Generated runtime data
+runtime/
+
+# Operating system files
+.DS_Store
+Thumbs.db

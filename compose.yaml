@@ -1,0 +1,34 @@
+services:
+  helpdesk-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: helpdesk-ai-agent
+
+    ports:
+      - "8000:8000"
+
+    env_file:
+      - .env
+
+    volumes:
+      - helpdesk-runtime:/app/runtime
+      - huggingface-cache:/app/.cache/huggingface
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 180s
+
+volumes:
+  helpdesk-runtime:
+  huggingface-cache:
