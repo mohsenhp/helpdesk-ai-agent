@@ -1,16 +1,25 @@
 from dataclasses import dataclass
-from pathlib import Path
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
+
 
 load_dotenv()
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-DATASET_DIR = PROJECT_ROOT / "data" / "raw" / "enterprise_dataset"
-DATABASE_PATH = PROJECT_ROOT / "data" / "helpdesk.db"
-VECTOR_DB_PATH = PROJECT_ROOT / "data" / "chroma"
+DATASET_DIR = (
+    PROJECT_ROOT
+    / "data"
+    / "raw"
+    / "enterprise_dataset"
+)
+
+RUNTIME_DIR = PROJECT_ROOT / "runtime"
+
+DATABASE_PATH = RUNTIME_DIR / "helpdesk.db"
+VECTOR_DB_PATH = RUNTIME_DIR / "chroma"
 
 
 @dataclass(frozen=True)

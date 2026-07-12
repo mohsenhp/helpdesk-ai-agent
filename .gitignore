@@ -24,4 +24,5 @@ venv/
 
 *.egg-info/
 
-data/chroma/
+# Generated runtime data
+runtime/
