@@ -42,8 +42,8 @@ def test_ask_agent_returns_generated_answer(
 
     monkeypatch.setattr(
         service,
-        "agent_graph",
-        fake_graph,
+        "get_agent_graph",
+        lambda: fake_graph,
     )
 
     answer = service.ask_agent(
@@ -66,10 +66,12 @@ def test_ask_agent_returns_generated_answer(
 def test_ask_agent_rejects_missing_answer(
     monkeypatch,
 ) -> None:
+    graph = GraphWithoutAnswer()
+
     monkeypatch.setattr(
         service,
-        "agent_graph",
-        GraphWithoutAnswer(),
+        "get_agent_graph",
+        lambda: graph,
     )
 
     with pytest.raises(

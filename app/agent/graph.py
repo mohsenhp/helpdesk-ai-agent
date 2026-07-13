@@ -1,4 +1,6 @@
-from langgraph.checkpoint.memory import InMemorySaver
+from functools import lru_cache
+
+from app.agent.checkpoint import get_checkpointer
 from langgraph.graph import END, START, StateGraph
 
 from app.agent.nodes import (
@@ -112,8 +114,8 @@ def build_graph(
         checkpointer=checkpointer,
     )
 
-
-checkpointer = InMemorySaver()
-agent_graph = build_graph(
-    checkpointer=checkpointer,
-)
+@lru_cache(maxsize=1)
+def get_agent_graph():
+    return build_graph(
+        checkpointer=get_checkpointer(),
+    )

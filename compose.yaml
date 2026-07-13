@@ -1,4 +1,26 @@
 services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: helpdesk-checkpoint-postgres
+
+    environment:
+      POSTGRES_USER: helpdesk
+      POSTGRES_PASSWORD: helpdesk
+      POSTGRES_DB: helpdesk_checkpoint
+
+    volumes:
+      - checkpoint-postgres-data:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U helpdesk -d helpdesk_checkpoint",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
   helpdesk-agent:
     build:
       context: .
@@ -11,6 +33,15 @@ services:
 
     env_file:
       - .env
+
+    environment:
+      CHECKPOINT_DATABASE_URL: >-
+        postgresql://helpdesk:helpdesk@postgres:5432/helpdesk_checkpoint?sslmode=disable
+      LANGGRAPH_STRICT_MSGPACK: "true"
+
+    depends_on:
+      postgres:
+        condition: service_healthy
 
     volumes:
       - helpdesk-runtime:/app/runtime
@@ -32,3 +63,4 @@ services:
 volumes:
   helpdesk-runtime:
   huggingface-cache:
+  checkpoint-postgres-data:

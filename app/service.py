@@ -1,11 +1,11 @@
-from app.agent.graph import agent_graph
+from app.agent.graph import get_agent_graph
 
 
 def ask_agent(
     question: str,
     conversation_id: str,
 ) -> str:
-    result = agent_graph.invoke(
+    result = get_agent_graph().invoke(
         {
             "question": question,
             "standalone_question": None,
@@ -33,3 +33,4 @@ def ask_agent(
         )
 
     return answer
+

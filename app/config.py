@@ -27,6 +27,18 @@ class Settings:
     google_api_key: str
     gemini_model: str
     embedding_model: str
+    checkpoint_database_url: str | None
+
+
+def _optional_environment_variable(name: str) -> str | None:
+    value = os.getenv(name)
+
+    if value is None:
+        return None
+
+    stripped_value = value.strip()
+
+    return stripped_value or None
 
 
 settings = Settings(
@@ -35,5 +47,8 @@ settings = Settings(
     embedding_model=os.getenv(
         "EMBEDDING_MODEL",
         "sentence-transformers/all-MiniLM-L6-v2",
+    ),
+    checkpoint_database_url=_optional_environment_variable(
+        "CHECKPOINT_DATABASE_URL"
     ),
 )
