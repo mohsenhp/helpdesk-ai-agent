@@ -1115,6 +1115,4 @@ The goal is not only to demonstrate an AI chatbot, but to explore how an enterpr
 
 ## License
 
-This project is intended for demonstration, learning, and portfolio purposes.
-
-Add a license file before redistributing or using the project under a specific open-source license.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
