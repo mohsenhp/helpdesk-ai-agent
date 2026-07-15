@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     # Existing local embedding settings
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
 
+    # Embedding provider
+    embedding_provider: str = "local"
+
     # Existing LangGraph/database settings
     checkpoint_database_url: str | None = None
     langgraph_strict_msgpack: bool = True
