@@ -2,7 +2,7 @@ import shutil
 
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
-from langchain_text_splitters import RecursiveCharacterTextSplitter
+from app.vector.pipeline import split_documents
 
 from app.config import DATASET_DIR, VECTOR_DB_PATH
 from app.vector.embeddings import get_embeddings
@@ -53,12 +53,7 @@ def build_vector_database() -> None:
     if not raw_documents:
         raise RuntimeError(f"No documents found in {DOCUMENTS_DIR}")
 
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=150,
-    )
-
-    chunks = splitter.split_documents(raw_documents)
+    chunks = split_documents(raw_documents)
 
     reset_vector_database()
 
