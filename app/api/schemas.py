@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field, field_validator
 
 class HealthResponse(BaseModel):
     status: str
+    environment: str
 
 
 class AskRequest(BaseModel):

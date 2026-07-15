@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     # Application
     app_name: str = "Helpdesk AI Agent"
     environment: str = "local"
+    debug: bool = False
 
     # Current LLM provider
     llm_provider: str = "google"

@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, status
 
 from app.api.schemas import AskRequest, AskResponse, HealthResponse
 from app.service import ask_agent
-
+from app.config.settings import get_settings
 
 router = APIRouter()
 
@@ -13,7 +13,12 @@ router = APIRouter()
     tags=["system"],
 )
 def health_check() -> HealthResponse:
-    return HealthResponse(status="ok")
+    settings = get_settings()
+
+    return HealthResponse(
+        status="ok",
+        environment=settings.environment,
+    )
 
 
 @router.post(
