@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     environment: str = "local"
     debug: bool = False
     initialize_local_data: bool = True
+    database_provider: str = "local"
 
     # Current LLM provider
     llm_provider: str = "google"
