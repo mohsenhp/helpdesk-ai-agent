@@ -1,23 +1,22 @@
 from typing import Any
 
-from langchain_chroma import Chroma
+from app.config import settings
+from app.providers.vector_store import (
+    get_local_vector_store,
+    get_azure_vector_store,
+)
 
-from app.config import VECTOR_DB_PATH
-from app.vector.constants import COLLECTION_NAME
-from app.vector.embeddings import get_embeddings
 
+def get_vector_store():
+    if settings.vector_store_provider == "local":
+        return get_local_vector_store()
 
-def get_vector_store() -> Chroma:
-    if not VECTOR_DB_PATH.exists():
-        raise RuntimeError(
-            "Vector database does not exist. "
-            "Run 'python -m app.vector.loader' first."
-        )
+    if settings.vector_store_provider == "azure":
+        return get_azure_vector_store()
 
-    return Chroma(
-        persist_directory=str(VECTOR_DB_PATH),
-        embedding_function=get_embeddings(),
-        collection_name=COLLECTION_NAME,
+    raise ValueError(
+        f"Unsupported vector store provider: "
+        f"{settings.vector_store_provider}"
     )
 
 
