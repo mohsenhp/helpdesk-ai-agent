@@ -1,3 +1,6 @@
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+
 from app.config import settings
 
 
@@ -7,13 +10,10 @@ if not settings.azure_sql_connection_string:
     )
 
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-
-
 engine = create_engine(
     settings.azure_sql_connection_string,
     echo=False,
+    pool_pre_ping=True,
 )
 
 SessionLocal = sessionmaker(
