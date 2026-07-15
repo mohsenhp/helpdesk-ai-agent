@@ -22,6 +22,16 @@ def get_local_vector_store():
 
 
 def get_azure_vector_store():
+    if not settings.azure_search_endpoint:
+        raise RuntimeError(
+            "Azure Search endpoint is not configured"
+        )
+
+    if not settings.azure_search_api_key:
+        raise RuntimeError(
+            "Azure Search API key is not configured"
+        )
+
     from langchain_community.vectorstores.azuresearch import AzureSearch
 
     return AzureSearch(
