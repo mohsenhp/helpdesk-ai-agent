@@ -2,11 +2,18 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-DATASET_DIR = BASE_DIR / "data" / "raw" / "enterprise_dataset"
+DATASET_DIR = (
+    BASE_DIR
+    / "data"
+    / "raw"
+    / "enterprise_dataset"
+)
 
-DATABASE_PATH = BASE_DIR / "data" / "helpdesk.db"
+RUNTIME_DIR = BASE_DIR / "runtime"
 
-VECTOR_DB_PATH = BASE_DIR / "data" / "chroma"
+DATABASE_PATH = RUNTIME_DIR / "helpdesk.db"
+
+VECTOR_DB_PATH = RUNTIME_DIR / "chroma"
 
 from app.config.settings import (
     Settings,
@@ -16,6 +23,7 @@ from app.config.settings import (
 
 __all__ = [
     "DATASET_DIR",
+    "RUNTIME_DIR",
     "DATABASE_PATH",
     "VECTOR_DB_PATH",
     "Settings",

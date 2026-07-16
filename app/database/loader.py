@@ -42,11 +42,12 @@ def load_csv_files(engine) -> None:
             )
 
         with engine.begin() as connection:
-            connection.execute(
-                text(
-                    f"SET IDENTITY_INSERT {table_name} ON"
+            is_sql_server = connection.dialect.name == "mssql"
+
+            if is_sql_server:
+                connection.execute(
+                    text(f"SET IDENTITY_INSERT {table_name} ON")
                 )
-            )
 
             dataframe.to_sql(
                 table_name,
@@ -55,11 +56,10 @@ def load_csv_files(engine) -> None:
                 index=False,
             )
 
-            connection.execute(
-                text(
-                    f"SET IDENTITY_INSERT {table_name} OFF"
+            if is_sql_server:
+                connection.execute(
+                    text(f"SET IDENTITY_INSERT {table_name} OFF")
                 )
-            )
 
         print(
             f"Loaded {table_name}: "

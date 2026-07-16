@@ -3,22 +3,21 @@ from app.database.models import Base
 from app.database.providers.azure_sql import engine
 
 
-def create_database() -> None:
+def recreate_database() -> None:
+    Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
 
 def main() -> None:
-    print("Creating Azure SQL database schema...")
+    print("Recreating Azure SQL database schema...")
 
-    create_database()
+    recreate_database()
 
     print("Loading enterprise dataset...")
 
     load_csv_files(engine)
 
-    print(
-        "Azure SQL database initialized."
-    )
+    print("Azure SQL database initialized.")
 
 
 if __name__ == "__main__":
