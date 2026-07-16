@@ -1,23 +1,6 @@
 from typing import Any
 
-from app.config import settings
-from app.providers.vector_store import (
-    get_local_vector_store,
-    get_azure_vector_store,
-)
-
-
-def get_vector_store():
-    if settings.vector_store_provider == "local":
-        return get_local_vector_store()
-
-    if settings.vector_store_provider == "azure":
-        return get_azure_vector_store()
-
-    raise ValueError(
-        f"Unsupported vector store provider: "
-        f"{settings.vector_store_provider}"
-    )
+from app.providers.vector_store import get_vector_store
 
 
 def search_documents(
