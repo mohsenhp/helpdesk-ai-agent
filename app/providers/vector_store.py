@@ -40,3 +40,15 @@ def get_azure_vector_store():
         index_name=settings.azure_search_index,
         embedding_function=get_embeddings(),
     )
+
+def get_vector_store():
+    if settings.vector_store_provider == "local":
+        return get_local_vector_store()
+
+    if settings.vector_store_provider == "azure":
+        return get_azure_vector_store()
+
+    raise RuntimeError(
+        f"Unsupported vector store provider: "
+        f"{settings.vector_store_provider}"
+    )
