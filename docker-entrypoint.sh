@@ -17,7 +17,11 @@ else
 fi
 
 echo "Initializing LangGraph checkpoint storage..."
-python -m app.agent.checkpoint
+
+python -m app.agent.checkpoint || {
+    echo "Checkpoint initialization failed."
+    exit 1
+}
 
 echo "Starting HelpDesk AI Agent API..."
 
