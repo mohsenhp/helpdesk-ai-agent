@@ -14,6 +14,7 @@ engine = create_engine(
     settings.azure_sql_connection_string,
     echo=False,
     pool_pre_ping=True,
+    fast_executemany=True,
 )
 
 SessionLocal = sessionmaker(

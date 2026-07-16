@@ -1,7 +1,7 @@
 import pandas as pd
+from sqlalchemy import text
 
 from app.config import DATASET_DIR
-from app.database.models import Base
 
 
 DATASET_SQL_PATH = DATASET_DIR / "sql"
@@ -41,12 +41,25 @@ def load_csv_files(engine) -> None:
                 )
             )
 
-        dataframe.to_sql(
-            table_name,
-            con=engine,
-            if_exists="append",
-            index=False,
-        )
+        with engine.begin() as connection:
+            connection.execute(
+                text(
+                    f"SET IDENTITY_INSERT {table_name} ON"
+                )
+            )
+
+            dataframe.to_sql(
+                table_name,
+                con=connection,
+                if_exists="append",
+                index=False,
+            )
+
+            connection.execute(
+                text(
+                    f"SET IDENTITY_INSERT {table_name} OFF"
+                )
+            )
 
         print(
             f"Loaded {table_name}: "
