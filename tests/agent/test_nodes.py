@@ -100,7 +100,7 @@ def test_retrieve_sql_uses_planned_query(monkeypatch) -> None:
 
     monkeypatch.setattr(
         nodes,
-        "search_database",
+        "search_sql",
         fake_search_database,
     )
 
@@ -141,7 +141,7 @@ def test_retrieve_vector_uses_query_and_filter(monkeypatch) -> None:
 
     monkeypatch.setattr(
         nodes,
-        "search_documents",
+        "search_knowledge",
         fake_search_documents,
     )
 

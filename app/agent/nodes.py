@@ -5,8 +5,8 @@ from app.agent.router import classify_question
 from app.agent.state import AgentState, DocumentType, Route
 from app.agent.synthesizer import synthesize_answer
 from app.agent.resolver import resolve_question
-from app.database.search import search_database
-from app.vector.search import search_documents
+from app.tools.sql import search_sql
+from app.tools.knowledge import search_knowledge
 
 
 def route_question(state: AgentState) -> dict[str, Route]:
@@ -61,7 +61,7 @@ def retrieve_sql(
         raise RuntimeError("SQL retrieval query was not planned.")
 
     return {
-        "sql_results": search_database(query),
+        "sql_results": search_sql(query),
     }
 
 
@@ -74,7 +74,7 @@ def retrieve_vector(
         raise RuntimeError("Vector retrieval query was not planned.")
 
     return {
-        "vector_results": search_documents(
+        "vector_results": search_knowledge(
             query=query,
             k=5,
             document_type=state["document_type"],
@@ -95,8 +95,8 @@ def retrieve_hybrid(
         raise RuntimeError("Vector retrieval query was not planned.")
 
     return {
-        "sql_results": search_database(sql_query),
-        "vector_results": search_documents(
+        "sql_results": search_sql(sql_query),
+        "vector_results": search_knowledge(
             query=vector_query,
             k=5,
             document_type=state["document_type"],
