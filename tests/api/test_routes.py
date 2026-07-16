@@ -164,3 +164,13 @@ def test_ask_generates_conversation_id_when_missing(
     assert captured_ids == [
         response_data["conversation_id"],
     ]
+
+def test_metadata_endpoint():
+    response = client.get("/metadata")
+
+    assert response.status_code == 200
+
+    data = response.json()
+
+    assert data["name"] == "HelpDesk AI Agent"
+    assert "ticket_search" in data["capabilities"]

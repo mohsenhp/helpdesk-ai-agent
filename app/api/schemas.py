@@ -42,3 +42,9 @@ class AskRequest(BaseModel):
 class AskResponse(BaseModel):
     answer: str
     conversation_id: str
+
+class MetadataResponse(BaseModel):
+    name: str
+    version: str
+    capabilities: list[str]
+    environment: str

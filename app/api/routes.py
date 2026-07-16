@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
 
-from app.api.schemas import AskRequest, AskResponse, HealthResponse
+from app.api.schemas import AskRequest, AskResponse, HealthResponse, MetadataResponse
 from app.service import ask_agent
 from app.config.settings import get_settings
 
@@ -41,5 +41,25 @@ def ask(request: AskRequest) -> AskResponse:
     return AskResponse(
         answer=answer,
         conversation_id=request.conversation_id,
+    )
+
+
+@router.get(
+    "/metadata",
+    response_model=MetadataResponse,
+    tags=["system"],
+)
+def metadata() -> MetadataResponse:
+    settings = get_settings()
+
+    return MetadataResponse(
+        name="HelpDesk AI Agent",
+        version="0.1.0",
+        capabilities=[
+            "ticket_search",
+            "incident_analysis",
+            "knowledge_base_search",
+        ],
+        environment=settings.environment,
     )
 
