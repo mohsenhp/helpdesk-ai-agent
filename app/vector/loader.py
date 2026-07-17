@@ -1,35 +1,30 @@
-import shutil
-from app.providers.vector_loader import load_vector_store
-
-from langchain_chroma import Chroma
 from langchain_core.documents import Document
+
+from app.config import settings
 from app.vector.pipeline import split_documents
-
-from app.config import DATASET_DIR, VECTOR_DB_PATH
-from app.vector.embeddings import get_embeddings
-
-from app.vector.constants import COLLECTION_NAME
-
-
-DOCUMENTS_DIR = DATASET_DIR / "documents"
-SUPPORTED_EXTENSIONS = {".md", ".txt"}
 
 
 def load_documents() -> list[Document]:
+    from app.config import DATASET_DIR
+
+    documents_dir = DATASET_DIR / "documents"
+
     documents: list[Document] = []
 
-    for path in DOCUMENTS_DIR.rglob("*"):
+    for path in documents_dir.rglob("*"):
         if not path.is_file():
             continue
 
-        if path.suffix.lower() not in SUPPORTED_EXTENSIONS:
+        if path.suffix.lower() not in {".md", ".txt"}:
             continue
 
         relative_path = path.relative_to(DATASET_DIR)
 
         documents.append(
             Document(
-                page_content=path.read_text(encoding="utf-8"),
+                page_content=path.read_text(
+                    encoding="utf-8"
+                ),
                 metadata={
                     "source": str(relative_path),
                     "file_name": path.name,
@@ -41,22 +36,26 @@ def load_documents() -> list[Document]:
     return documents
 
 
-def reset_vector_database() -> None:
+def load_to_local_vector_store(
+    documents: list[Document],
+) -> None:
+    import shutil
+
+    from langchain_chroma import Chroma
+
+    from app.config import VECTOR_DB_PATH
+    from app.vector.constants import COLLECTION_NAME
+    from app.vector.embeddings import get_embeddings
+
+    chunks = split_documents(documents)
+
     if VECTOR_DB_PATH.exists():
         shutil.rmtree(VECTOR_DB_PATH)
 
-    VECTOR_DB_PATH.mkdir(parents=True, exist_ok=True)
-
-
-def build_local_vector_database() -> None:
-    raw_documents = load_documents()
-
-    if not raw_documents:
-        raise RuntimeError(f"No documents found in {DOCUMENTS_DIR}")
-
-    chunks = split_documents(raw_documents)
-
-    reset_vector_database()
+    VECTOR_DB_PATH.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     Chroma.from_documents(
         documents=chunks,
@@ -65,13 +64,63 @@ def build_local_vector_database() -> None:
         collection_name=COLLECTION_NAME,
     )
 
-    print(f"Loaded documents: {len(raw_documents)}")
-    print(f"Created chunks: {len(chunks)}")
-    print(f"Vector database created at: {VECTOR_DB_PATH}")
+    print(
+        f"Created local vector database: {VECTOR_DB_PATH}"
+    )
+    print(f"Documents: {len(documents)}")
+    print(f"Chunks: {len(chunks)}")
+
+
+def load_to_azure_vector_store(
+    documents: list[Document],
+) -> None:
+    from app.providers.vector_store import (
+        get_azure_vector_store,
+    )
+
+    chunks = split_documents(documents)
+
+    vector_store = get_azure_vector_store()
+
+    vector_store.add_documents(
+        documents=chunks,
+    )
+
+    print(
+        "Uploaded documents to Azure AI Search"
+    )
+    print(f"Documents: {len(documents)}")
+    print(f"Chunks: {len(chunks)}")
+
+
+def build_vector_database() -> None:
+    documents = load_documents()
+
+    if not documents:
+        raise RuntimeError(
+            "No documents found."
+        )
+
+    if settings.vector_store_provider == "local":
+        load_to_local_vector_store(documents)
+
+    elif settings.vector_store_provider == "azure":
+        load_to_azure_vector_store(documents)
+
+    else:
+        raise RuntimeError(
+            f"Unsupported vector store provider: "
+            f"{settings.vector_store_provider}"
+        )
 
 
 def main() -> None:
-    load_vector_store()
+    print(
+        f"Vector store provider: "
+        f"{settings.vector_store_provider}"
+    )
+
+    build_vector_database()
 
 
 if __name__ == "__main__":
