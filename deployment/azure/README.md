@@ -90,6 +90,14 @@ Deploy using:
 
 The application listens on port **8000**.
 
+## Migrate Documents to Azure AI Search
+
+After configuring Azure AI Search credentials, migrate the knowledge base documents:
+
+```bash
+python -m app.vector.migrate
+```
+
 ## Notes
 
 - Do not commit production secrets.
