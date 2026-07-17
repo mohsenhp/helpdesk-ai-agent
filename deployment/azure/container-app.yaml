@@ -1,0 +1,31 @@
+apiVersion: 2024-03-01
+kind: ContainerApp
+
+properties:
+  managedEnvironmentId: <managed-environment-id>
+
+  configuration:
+    ingress:
+      external: true
+      targetPort: 8000
+
+  template:
+    containers:
+      - name: helpdesk-ai-agent
+        image: your-registry/helpdesk-ai-agent:latest
+
+        resources:
+          cpu: 1.0
+          memory: 2Gi
+
+        env:
+          - name: ENVIRONMENT
+            value: production
+          - name: VECTOR_STORE_PROVIDER
+            value: azure
+          - name: DATABASE_PROVIDER
+            value: azure
+
+    scale:
+      minReplicas: 1
+      maxReplicas: 3
