@@ -10,6 +10,9 @@ on:
 permissions:
   contents: read
 
+env:
+  IMAGE_NAME: helpdesk-ai-agent
+
 jobs:
   build:
     name: Test and build
@@ -30,12 +33,25 @@ jobs:
       - name: Run tests
         run: pytest
 
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Login to Azure Container Registry
+        run: |
+          az acr login --name ${{ secrets.ACR_NAME }}
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: false
-          tags: helpdesk-ai-agent:latest
+        run: |
+          docker build \
+            -t ${{ secrets.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest \
+            .
+
+      - name: Push Docker image
+        run: |
+          docker push \
+            ${{ secrets.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:latest
