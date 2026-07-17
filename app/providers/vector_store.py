@@ -26,10 +26,6 @@ def get_azure_vector_store():
         raise RuntimeError(
             "Azure Search endpoint is not configured"
         )
-    if not settings.azure_search_index:
-        raise RuntimeError(
-            "Azure Search index is not configured"
-        )
 
     if not settings.azure_search_api_key:
         raise RuntimeError(
@@ -38,7 +34,31 @@ def get_azure_vector_store():
 
     from langchain_community.vectorstores.azuresearch import AzureSearch
 
-    return AzureSearch(
+    class HelpdeskAzureSearch(AzureSearch):
+        def similarity_search(
+            self,
+            query,
+            k=4,
+            **kwargs,
+        ):
+            metadata_filter = kwargs.pop("filter", None)
+
+            if isinstance(metadata_filter, dict):
+                filters = " and ".join(
+                    [
+                        f"{key} eq '{value}'"
+                        for key, value in metadata_filter.items()
+                    ]
+                )
+                kwargs["filters"] = filters
+
+            return super().similarity_search(
+                query,
+                k=k,
+                **kwargs,
+            )
+
+    return HelpdeskAzureSearch(
         azure_search_endpoint=settings.azure_search_endpoint,
         azure_search_key=settings.azure_search_api_key,
         index_name=settings.azure_search_index,
