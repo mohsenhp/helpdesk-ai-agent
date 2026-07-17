@@ -26,6 +26,10 @@ def get_azure_vector_store():
         raise RuntimeError(
             "Azure Search endpoint is not configured"
         )
+    if not settings.azure_search_index:
+        raise RuntimeError(
+            "Azure Search index is not configured"
+        )
 
     if not settings.azure_search_api_key:
         raise RuntimeError(

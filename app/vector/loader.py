@@ -1,4 +1,5 @@
 import shutil
+from app.providers.vector_loader import load_vector_store
 
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
@@ -47,7 +48,7 @@ def reset_vector_database() -> None:
     VECTOR_DB_PATH.mkdir(parents=True, exist_ok=True)
 
 
-def build_vector_database() -> None:
+def build_local_vector_database() -> None:
     raw_documents = load_documents()
 
     if not raw_documents:
@@ -70,7 +71,7 @@ def build_vector_database() -> None:
 
 
 def main() -> None:
-    build_vector_database()
+    load_vector_store()
 
 
 if __name__ == "__main__":
