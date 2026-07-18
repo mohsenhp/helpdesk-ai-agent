@@ -3,6 +3,9 @@ from fastapi import APIRouter, HTTPException, status
 from app.api.schemas import AskRequest, AskResponse, HealthResponse, MetadataResponse
 from app.service import ask_agent
 from app.config.settings import get_settings
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
@@ -32,11 +35,9 @@ def ask(request: AskRequest) -> AskResponse:
             question=request.question,
             conversation_id=request.conversation_id,
         )
-    except Exception as error:
-        raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail="The agent is temporarily unavailable.",
-        ) from error
+    except Exception:
+        logger.exception("Unhandled exception while processing /ask")
+        raise
 
     return AskResponse(
         answer=answer,
