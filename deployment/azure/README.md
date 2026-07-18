@@ -1,127 +1,256 @@
 # Azure Container Apps Deployment
 
-This directory contains the deployment configuration for running the Helpdesk AI Agent on Azure Container Apps.
+This directory contains the deployment documentation and configuration for running the HelpDesk AI Agent on Azure Container Apps.
 
 ## Architecture
 
-The production deployment uses the following Azure services:
+The production deployment uses:
 
 * Azure Container Apps
 * Azure Container Registry (ACR)
 * Azure AI Search
 * Azure SQL Database
-* Azure OpenAI or Google Gemini
-* PostgreSQL (LangGraph checkpoints, optional)
+* Google Gemini (LLM provider)
+* PostgreSQL (optional LangGraph checkpoint storage)
 
-## Files
+Production flow:
 
-| File                  | Purpose                                  |
-| --------------------- | ---------------------------------------- |
-| `container-app.yaml`  | Azure Container Apps deployment manifest |
-| `environment.example` | Example production environment variables |
-| `README.md`           | Deployment documentation                 |
+```
+Client
+  |
+  v
+Azure Container Apps
+  |
+  v
+FastAPI API
+  |
+  v
+LangGraph Agent
+  |
+  +--> Azure SQL Database
+  |
+  +--> Azure AI Search
+  |
+  +--> Google Gemini
+```
+
+---
 
 ## Prerequisites
 
-Create the following Azure resources before deployment:
+Create the following Azure resources:
 
 * Azure Container Registry
 * Azure Container Apps Environment
 * Azure Container App
-* Azure AI Search
+* Azure AI Search service
 * Azure SQL Database
 
 Optional:
 
-* Azure OpenAI
-* Azure Database for PostgreSQL (LangGraph checkpoints)
+* Azure Database for PostgreSQL (LangGraph checkpoint storage)
+* Azure OpenAI Service
 
-## Build the Docker image
+---
+
+# Build the Docker image
+
+Build locally:
 
 ```bash
 docker build -t helpdesk-ai-agent .
 ```
 
-## Push the image
+Or build directly in Azure Container Registry:
 
 ```bash
-docker tag helpdesk-ai-agent <registry>/helpdesk-ai-agent:latest
-docker push <registry>/helpdesk-ai-agent:latest
+az acr build \
+  --registry <registry-name> \
+  --image helpdesk-ai-agent:latest .
 ```
 
-Replace `<registry>` with your Azure Container Registry name.
+---
+
+# Push the image
+
+Tag the image:
+
+```bash
+docker tag helpdesk-ai-agent \
+  <registry>.azurecr.io/helpdesk-ai-agent:latest
+```
+
+Push:
+
+```bash
+docker push \
+  <registry>.azurecr.io/helpdesk-ai-agent:latest
+```
 
 Example:
 
 ```bash
-docker tag helpdesk-ai-agent myregistry.azurecr.io/helpdesk-ai-agent:latest
-docker push myregistry.azurecr.io/helpdesk-ai-agent:latest
+docker tag helpdesk-ai-agent \
+  helpdeskaiagentacr.azurecr.io/helpdesk-ai-agent:latest
+
+docker push \
+  helpdeskaiagentacr.azurecr.io/helpdesk-ai-agent:latest
 ```
 
-## Configure environment variables
+---
 
-Use `environment.example` as a reference when configuring environment variables and secrets in Azure Container Apps.
+# Configure environment variables
 
-At minimum configure:
+Configure the following variables in Azure Container Apps.
 
-* `ENVIRONMENT`
-* `DATABASE_PROVIDER`
-* `VECTOR_STORE_PROVIDER`
-* `LLM_PROVIDER`
-* `AZURE_SEARCH_ENDPOINT`
-* `AZURE_SEARCH_API_KEY`
-* `AZURE_SEARCH_INDEX`
-* `AZURE_SQL_CONNECTION_STRING`
+Required:
 
-Depending on the selected LLM provider:
+| Variable | Description |
+|---|---|
+| `ENVIRONMENT` | Application environment |
+| `DATABASE_PROVIDER` | Database backend |
+| `VECTOR_STORE_PROVIDER` | Vector database backend |
+| `LLM_PROVIDER` | LLM provider |
+| `AZURE_SEARCH_ENDPOINT` | Azure AI Search endpoint |
+| `AZURE_SEARCH_API_KEY` | Azure AI Search key |
+| `AZURE_SEARCH_INDEX` | Search index name |
+| `AZURE_SQL_CONNECTION_STRING` | SQL Database connection string |
 
-### Google Gemini
+Production example:
 
-Configure:
+```text
+ENVIRONMENT=production
+DATABASE_PROVIDER=azure
+VECTOR_STORE_PROVIDER=azure
+INITIALIZE_LOCAL_DATA=false
+```
 
-* `GOOGLE_API_KEY`
+---
 
-### Azure OpenAI
+# LLM Configuration
 
-Configure:
+## Google Gemini
 
-* `AZURE_OPENAI_ENDPOINT`
-* `AZURE_OPENAI_API_KEY`
-* `AZURE_OPENAI_DEPLOYMENT`
-* `AZURE_OPENAI_API_VERSION`
+Required:
 
-## Migrate documents to Azure AI Search
+```text
+GOOGLE_API_KEY
+```
 
-After configuring Azure AI Search credentials, upload the knowledge base documents:
+Optional:
+
+```text
+GEMINI_MODEL
+```
+
+Example:
+
+```text
+GEMINI_MODEL=gemini-3.5-flash
+```
+
+---
+
+## Azure OpenAI
+
+Required:
+
+```text
+AZURE_OPENAI_ENDPOINT
+AZURE_OPENAI_API_KEY
+AZURE_OPENAI_DEPLOYMENT
+AZURE_OPENAI_API_VERSION
+```
+
+---
+
+# Migrate documents to Azure AI Search
+
+After configuring Azure AI Search:
 
 ```bash
 python -m app.vector.migrate
 ```
 
-This will migrate documents from the local dataset into the configured Azure AI Search index.
+This uploads knowledge base documents from the local dataset into Azure AI Search.
 
-## Deploy
+Production should use:
 
-Deploy using:
+```text
+VECTOR_STORE_PROVIDER=azure
+```
 
-* Azure Portal
-* Azure CLI
-* GitHub Actions
-* Azure DevOps
+and:
 
-The application listens on port **8000**.
+```text
+INITIALIZE_LOCAL_DATA=false
+```
 
-## Verify deployment
+---
 
-After deployment, Azure Container Apps provides a public endpoint (FQDN).
+# Deploy the Container App
 
-Check application health:
+Update the application image:
+
+```bash
+az containerapp update \
+  --name helpdesk-ai-agent \
+  --resource-group <resource-group> \
+  --image <registry>.azurecr.io/helpdesk-ai-agent:latest
+```
+
+Azure Container Apps creates a new revision automatically.
+
+Check revisions:
+
+```bash
+az containerapp revision list \
+  --name helpdesk-ai-agent \
+  --resource-group <resource-group> \
+  -o table
+```
+
+Example output:
+
+```text
+Name                         HealthState
+---------------------------  ----------
+helpdesk-ai-agent--revision1 Healthy
+```
+
+---
+
+# Route traffic to a revision
+
+Send 100% traffic to a revision:
+
+```bash
+az containerapp ingress traffic set \
+  --name helpdesk-ai-agent \
+  --resource-group <resource-group> \
+  --revision-weight <revision-name>=100
+```
+
+Example:
+
+```bash
+az containerapp ingress traffic set \
+  --name helpdesk-ai-agent \
+  --resource-group rg-hadianpour-5629 \
+  --revision-weight helpdesk-ai-agent--gemini-fix1=100
+```
+
+---
+
+# Verify deployment
+
+## Health check
 
 ```bash
 curl https://<container-app-fqdn>/health
 ```
 
-Expected response:
+Expected:
 
 ```json
 {
@@ -130,18 +259,114 @@ Expected response:
 }
 ```
 
-Verify:
+---
 
-* Container App is running
-* Azure SQL connection succeeds
-* Azure AI Search queries return documents
-* Vector store provider is set to `azure`
+## Metadata endpoint
 
-## Notes
+```bash
+curl https://<container-app-fqdn>/metadata
+```
 
-* Do not commit production secrets.
-* Store secrets using Azure Container Apps secrets or Azure Key Vault.
-* Set `INITIALIZE_LOCAL_DATA=false` in production.
-* Use Azure AI Search as the production vector store.
-* Use Azure SQL Database as the production database provider.
-* Keep `environment.example` updated when adding new configuration values.
+Example:
+
+```json
+{
+  "name": "HelpDesk AI Agent",
+  "version": "0.1.0",
+  "capabilities": [
+    "ticket_search",
+    "incident_analysis",
+    "knowledge_base_search"
+  ],
+  "environment": "production"
+}
+```
+
+---
+
+## Test the AI agent
+
+Example:
+
+```bash
+curl -X POST https://<container-app-fqdn>/ask \
+  -H "Content-Type: application/json" \
+  -d '{"question":"How many open Critical VPN tickets are there?"}'
+```
+
+Expected:
+
+```json
+{
+  "answer": "There are 2 open Critical VPN tickets.",
+  "conversation_id": "..."
+}
+```
+
+---
+
+# Troubleshooting
+
+## View application logs
+
+```bash
+az containerapp logs show \
+  --name helpdesk-ai-agent \
+  --resource-group <resource-group> \
+  --revision <revision-name> \
+  --type console
+```
+
+---
+
+## Check environment variables
+
+```bash
+az containerapp exec \
+  --name helpdesk-ai-agent \
+  --resource-group <resource-group> \
+  --revision <revision-name> \
+  --command printenv
+```
+
+---
+
+## Check active revisions
+
+```bash
+az containerapp revision list \
+  --name helpdesk-ai-agent \
+  --resource-group <resource-group> \
+  -o table
+```
+
+---
+
+# Secrets
+
+Never commit production secrets.
+
+Use:
+
+* Azure Container Apps secrets
+* Azure Key Vault
+
+Example secret names:
+
+```text
+azure-sql-connection-string
+google-api-key
+azure-openai-api-key
+```
+
+---
+
+# Production Notes
+
+* Production uses Azure SQL Database.
+* Production uses Azure AI Search.
+* Local SQLite and Chroma initialization should be disabled.
+* Keep `environment.example` updated when adding configuration values.
+* Each deployment creates a new Container Apps revision.
+* Test the new revision before moving 100% traffic.
+* Remove unused revisions periodically.
