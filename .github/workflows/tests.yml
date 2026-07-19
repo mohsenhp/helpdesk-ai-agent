@@ -1,4 +1,4 @@
-name: CI
+name: Tests
 
 on:
   push:
@@ -26,6 +26,10 @@ jobs:
 
       - name: Install dependencies
         run: python -m pip install -e ".[test]"
+
+      - name: Build vector database
+        run: |
+          python -m app.vector.loader
 
       - name: Run tests
         env:

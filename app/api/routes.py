@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException
 
 from app.api.schemas import AskRequest, AskResponse, HealthResponse, MetadataResponse
 from app.service import ask_agent
@@ -36,8 +36,14 @@ def ask(request: AskRequest) -> AskResponse:
             conversation_id=request.conversation_id,
         )
     except Exception:
-        logger.exception("Unhandled exception while processing /ask")
-        raise
+        logger.exception(
+            "Unhandled exception while processing /ask"
+        )
+
+        raise HTTPException(
+            status_code=503,
+            detail="The agent is temporarily unavailable.",
+        )
 
     return AskResponse(
         answer=answer,

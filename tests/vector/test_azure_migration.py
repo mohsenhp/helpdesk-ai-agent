@@ -1,7 +1,14 @@
 from app.providers.vector_store import get_azure_vector_store
+import os
+import pytest
 
 
 def test_azure_search_contains_documents():
+    if not os.getenv("AZURE_SEARCH_ENDPOINT"):
+        pytest.skip(
+            "Azure Search not configured",
+            allow_module_level=True,
+        )
     vector_store = get_azure_vector_store()
 
     results = vector_store.similarity_search(

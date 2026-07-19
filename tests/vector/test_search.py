@@ -92,6 +92,6 @@ def test_search_documents_applies_document_type_filter(
         document_type="kb_articles",
     )
 
-    assert fake_store.received_filter == (
-        "document_type eq 'kb_articles'"
-    )
+    assert fake_store.received_filter == {
+        "document_type": "kb_articles"
+    }
