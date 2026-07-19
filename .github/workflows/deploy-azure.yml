@@ -94,6 +94,10 @@ jobs:
             --name ${{ secrets.CONTAINER_APP_NAME }} \
             --resource-group ${{ secrets.RESOURCE_GROUP }} \
             --image ${{ secrets.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+            --set-env-vars \
+            AZURE_SEARCH_ENDPOINT=${{ secrets.AZURE_SEARCH_ENDPOINT }} \
+            AZURE_SEARCH_API_KEY=${{ secrets.AZURE_SEARCH_API_KEY }} \
+            AZURE_SEARCH_INDEX=${{ secrets.AZURE_SEARCH_INDEX }}
 
       - name: Detect new revision
         id: new_revision

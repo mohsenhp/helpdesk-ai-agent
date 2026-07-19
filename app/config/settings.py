@@ -28,7 +28,7 @@ class Settings(BaseSettings):
 
     # Embedding provider
     embedding_provider: str = "local"
-    vector_store_provider: str = "local"
+    vector_store_provider: str = "azure"
 
     # Existing LangGraph/database settings
     checkpoint_database_url: str | None = None
