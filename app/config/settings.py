@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     # Azure AI Search
     azure_search_endpoint: str | None = None
     azure_search_api_key: str | None = None
-    azure_search_index: str | None = None
+    azure_search_index: str = "helpdesk-documents"
 
     # Azure SQL
     azure_sql_connection_string: str | None = None

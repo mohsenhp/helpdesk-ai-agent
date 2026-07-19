@@ -34,31 +34,7 @@ def get_azure_vector_store():
 
     from langchain_community.vectorstores.azuresearch import AzureSearch
 
-    class HelpdeskAzureSearch(AzureSearch):
-        def similarity_search(
-            self,
-            query,
-            k=4,
-            **kwargs,
-        ):
-            metadata_filter = kwargs.pop("filter", None)
-
-            if isinstance(metadata_filter, dict):
-                filters = " and ".join(
-                    [
-                        f"{key} eq '{value}'"
-                        for key, value in metadata_filter.items()
-                    ]
-                )
-                kwargs["filters"] = filters
-
-            return super().similarity_search(
-                query,
-                k=k,
-                **kwargs,
-            )
-
-    return HelpdeskAzureSearch(
+    return AzureSearch(
         azure_search_endpoint=settings.azure_search_endpoint,
         azure_search_key=settings.azure_search_api_key,
         index_name=settings.azure_search_index,
@@ -66,13 +42,17 @@ def get_azure_vector_store():
     )
 
 def get_vector_store():
-    if settings.vector_store_provider == "local":
-        return get_local_vector_store()
+    providers = {
+        "local": get_local_vector_store,
+        "azure": get_azure_vector_store,
+    }
 
-    if settings.vector_store_provider == "azure":
-        return get_azure_vector_store()
-
-    raise RuntimeError(
-        f"Unsupported vector store provider: "
-        f"{settings.vector_store_provider}"
-    )
+    try:
+        return providers[
+            settings.vector_store_provider
+        ]()
+    except KeyError:
+        raise RuntimeError(
+            f"Unsupported vector store provider: "
+            f"{settings.vector_store_provider}"
+        )
