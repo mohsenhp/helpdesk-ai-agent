@@ -69,6 +69,8 @@ jobs:
       - name: Wait for API health check
         shell: bash
         run: |
+          set -euo pipefail
+
           echo "Waiting for the HelpDesk API..."
 
           for attempt in {1..120}; do
@@ -102,8 +104,11 @@ jobs:
               )
           )
 
-          assert response == {"status": "ok"}, response
+          assert response["status"] == "ok", response
+          assert "environment" in response, response
+
           print("Health response is valid.")
+          print(response)
           PY
 
       - name: Show container status
