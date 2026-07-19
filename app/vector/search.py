@@ -19,7 +19,7 @@ def search_documents(
     results = get_vector_store().similarity_search_with_score(
         query=query,
         k=k,
-        filter=metadata_filter,
+        filters=metadata_filter,
     )
 
     return [

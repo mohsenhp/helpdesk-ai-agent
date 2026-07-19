@@ -4,6 +4,7 @@ from app.vector.constants import COLLECTION_NAME
 from app.config import settings
 from app.vector.embeddings import get_embeddings
 
+from langchain_core.documents import Document
 
 def get_local_vector_store():
     from langchain_chroma import Chroma
@@ -34,12 +35,97 @@ def get_azure_vector_store():
 
     from langchain_community.vectorstores.azuresearch import AzureSearch
 
-    return AzureSearch(
+    class HelpdeskAzureSearch(AzureSearch):
+
+        def add_embeddings(
+                self,
+                text_embeddings,
+                metadatas=None,
+                **kwargs,
+        ):
+            import uuid
+
+            documents = []
+
+            for index, (text, embedding) in enumerate(text_embeddings):
+                metadata = (
+                    metadatas[index]
+                    if metadatas
+                    else {}
+                )
+
+                documents.append(
+                    {
+                        "id": str(uuid.uuid4()),
+                        "content": text,
+                        "source": metadata.get("source", ""),
+                        "file_name": metadata.get("file_name", ""),
+                        "document_type": metadata.get("document_type", ""),
+                        "content_vector": embedding,
+                    }
+                )
+
+            result = self.client.upload_documents(
+                documents=documents
+            )
+
+            return [
+                item.key
+                for item in result
+                if item.succeeded
+            ]
+
+        def add_documents(
+                self,
+                documents,
+                **kwargs,
+        ):
+            texts = [
+                document.page_content
+                for document in documents
+            ]
+
+            metadatas = [
+                document.metadata
+                for document in documents
+            ]
+
+            embeddings = self.embedding_function.embed_documents(
+                texts
+            )
+
+            return self.add_embeddings(
+                zip(texts, embeddings),
+                metadatas,
+            )
+
+        def similarity_search(
+                self,
+                query,
+                k=4,
+                **kwargs,
+        ):
+            metadata_filter = kwargs.pop(
+                "filter",
+                None,
+            )
+
+            if metadata_filter is not None:
+                kwargs["filters"] = metadata_filter
+
+            return super().similarity_search(
+                query,
+                k=k,
+                **kwargs,
+            )
+
+    return HelpdeskAzureSearch(
         azure_search_endpoint=settings.azure_search_endpoint,
         azure_search_key=settings.azure_search_api_key,
         index_name=settings.azure_search_index,
         embedding_function=get_embeddings(),
     )
+
 
 def get_vector_store():
     providers = {

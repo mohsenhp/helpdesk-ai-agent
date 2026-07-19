@@ -1,4 +1,5 @@
 from app.vector import search
+from app.providers.vector_store import get_azure_vector_store
 
 
 class FakeDocument:
@@ -95,3 +96,14 @@ def test_search_documents_applies_document_type_filter(
     assert fake_store.received_filter == {
         "document_type": "kb_articles"
     }
+
+
+def test_azure_search_returns_documents():
+    vector_store = get_azure_vector_store()
+
+    results = vector_store.similarity_search(
+        "VPN troubleshooting",
+        k=3,
+    )
+
+    assert len(results) > 0
