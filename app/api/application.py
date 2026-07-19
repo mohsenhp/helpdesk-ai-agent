@@ -1,34 +1,25 @@
-from collections.abc import AsyncIterator
-from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 
-from app.agent.checkpoint import close_checkpoint_resources
 from app.api.routes import router
 
 
-@asynccontextmanager
-async def lifespan(
-    application: FastAPI,
-) -> AsyncIterator[None]:
-    yield
-    close_checkpoint_resources()
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 def create_application() -> FastAPI:
     application = FastAPI(
         title="HelpDesk AI Agent",
-        description=(
-            "An enterprise help-desk agent that combines structured "
-            "database queries with semantic document retrieval."
-        ),
-        version="0.1.0",
-        lifespan=lifespan,
     )
+
+    @application.get("/", include_in_schema=False)
+    def landing_page():
+        return FileResponse(
+            BASE_DIR / "static" / "index.html"
+        )
 
     application.include_router(router)
 
     return application
-
-
-app = create_application()

@@ -25,6 +25,7 @@ python -m app.agent.checkpoint || {
 
 echo "Starting HelpDesk AI Agent API..."
 
-exec uvicorn app.api.application:app \
+exec uvicorn app.api.application:create_application \
+    --factory \
     --host 0.0.0.0 \
     --port 8000
