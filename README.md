@@ -1,29 +1,89 @@
 # Helpdesk AI Agent 🤖💼
 
-An enterprise-grade, containerized AI assistant designed to automate IT support workflows, triage helpdesk tickets, and resolve internal queries. This project is built with cloud-native principles and is explicitly tailored for seamless hosting on **Azure Container Apps**.
+An AI-powered IT support assistant that combines structured SQL data with semantic knowledge retrieval to answer helpdesk questions using a Retrieval-Augmented Generation (RAG) architecture.
+
+The application is built with **Python**, **LangGraph**, **FastAPI**, **Azure AI Search**, and **Google Gemini**, and is automatically deployed to **Azure Container Apps** through **GitHub Actions**.
 
 ---
 
-## 🏗️ Architecture & Branching Strategy
+## 🌐 Live Demo
 
-The repository follows a progressive development pipeline aimed at modernizing legacy agent software into secure, scalable cloud infrastructure:
+The application is available at:
 
-* **`main`**: Houses the stable core logic of the Helpdesk AI engine.
-* **`cloud-foundation`**: Introduces containerization standards and agnostic cloud architecture patterns.
-* **`azure-migration` (Active)**: Adapts the application to run natively on Azure infrastructure using Managed Identities, Azure OpenAI, and serverless containers.
+**https://helpdesk-ai-agent.kindmoss-7afefc50.northeurope.azurecontainerapps.io/**
 
 ---
 
-## ⚙️ Configuration & Environment Matrix
+## 🚀 Features
 
-The application utilizes targeted environment configurations depending on your deployment stage. **Never commit active `.env` files containing real secrets to the repository.**
+- 🤖 AI-powered IT support assistant
+- 🔍 Hybrid search
+  - Structured queries against SQL
+  - Semantic search using Azure AI Search
+- 📚 Retrieval-Augmented Generation (RAG)
+- 🧠 LangGraph agent workflow
+- 🌐 REST API with FastAPI
+- ☁️ Azure-native deployment
+- 🐳 Docker containerized
+- 🔄 Automated CI/CD with GitHub Actions
 
-| Environment File | Intended Target | Usage Key Elements |
-| --- | --- | --- |
-| `.env.example` | Local Machine Development | Direct LLM endpoints, local databases, debug logging. |
-| `.env.production.example` | Hardened On-Prem/Standard VPS | High-performance configs, strict CORS, production telemetry. |
-| `.env.azure.example` | Generic Azure Environments | Integrations with Azure App Services / VM scale groups. |
-| `.env.azure.containerapp.example` | Azure Container Apps (ACA) | Managed Identity targets, Azure Key Vault secret injection. |
+---
+
+## 🛠️ Technology Stack
+
+| Category | Technologies |
+|----------|--------------|
+| AI | LangChain, LangGraph, Google Gemini |
+| Vector Search | Azure AI Search |
+| Database | Azure SQL, SQLite |
+| API | FastAPI |
+| Language | Python |
+| Containerization | Docker |
+| Cloud | Azure Container Apps |
+| CI/CD | GitHub Actions |
+
+---
+
+## 🏗️ Architecture
+
+```text
+                User
+                  │
+                  ▼
+             FastAPI API
+                  │
+                  ▼
+            LangGraph Agent
+           ┌────────┴────────┐
+           ▼                 ▼
+     Azure SQL         Azure AI Search
+           │                 │
+           └────────┬────────┘
+                    ▼
+               Google Gemini
+                    │
+                    ▼
+                 Response
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+app/
+├── agent/
+├── api/
+├── config/
+├── database/
+├── providers/
+├── tools/
+└── vector/
+
+tests/
+
+.github/workflows/
+```
 
 ---
 
@@ -31,47 +91,118 @@ The application utilizes targeted environment configurations depending on your d
 
 ### Prerequisites
 
-* Docker (Desktop or Engine)
-* Azure CLI (If deploying to cloud)
+- Python 3.13+
+- Docker (optional)
+- Azure CLI (for deployment)
 
-### 1. Local Development Setup
+### Clone the repository
 
-Clone the repository and switch to the active migration branch:
+```bash
+git clone https://github.com/mohsenhp/helpdesk-ai-agent.git
+cd helpdesk-ai-agent
+```
 
-git checkout azure-migration
+### Create a virtual environment
 
-Configure your local environment variables:
+**Linux/macOS**
 
-cp .env.example .env
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 
-*Open `.env` and fill out your local runtime configurations and API endpoints.*
+**Windows**
 
-### 2. Running via Docker
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+```
 
-The application is pre-configured to build into a lightweight runtime container.
+### Install dependencies
 
-Build the local image:
+```bash
+pip install -r requirements.txt
+```
 
-docker build -t helpdesk-ai-agent:local .
+### Configure environment
 
-Run the container locally:
+Create a `.env` file from `.env.example`.
 
-docker run -d -p 8080:8080 --env-file .env helpdesk-ai-agent:local
+Example settings:
+
+```env
+GOOGLE_API_KEY=
+
+DATABASE_PROVIDER=sqlite
+
+VECTOR_STORE_PROVIDER=azure
+
+AZURE_SEARCH_ENDPOINT=
+AZURE_SEARCH_API_KEY=
+AZURE_SEARCH_INDEX=
+
+AZURE_SQL_CONNECTION_STRING=
+```
 
 ---
 
-## ☁️ Azure Container Apps Deployment
+## ▶️ Running the application
 
-When moving to production on Azure, the environment relies heavily on configuration files designed for container environments.
+```bash
+python -m app.main
+```
 
-1. **Prepare Secrets:** Copy the Container App configuration template:
-cp .env.azure.containerapp.example .env.azure.containerapp
-2. **Provision Infrastructure:** Use your Bicep, Terraform, or Azure CLI script to spin up an Azure Container Apps Environment and Link it to an Azure OpenAI service endpoint.
-3. **Deploy Container:** Push the Docker image to an **Azure Container Registry (ACR)** and deploy directly into the serverless ACA infrastructure container pool.
+or
+
+```bash
+uvicorn app.main:app --reload
+```
 
 ---
 
-## 🔒 Security & Git Hygiene
+## 🧪 Running tests
 
-* **Exclusions:** The `.dockerignore` file ensures that heavy dependencies, testing cache, and local secret credentials are never embedded into production Docker images.
-* **Secrets:** Ensure `.env` is present in your local `.gitignore` file to prevent accidental upstream pushes of private API keys.
+Run all tests:
+
+```bash
+pytest
+```
+
+Run with coverage:
+
+```bash
+pytest --cov=app --cov-report=term-missing
+```
+
+---
+
+## ☁️ Azure Deployment
+
+The project is automatically deployed using GitHub Actions.
+
+Deployment pipeline:
+
+1. Run the test suite
+2. Build the Docker image
+3. Push the image to Azure Container Registry
+4. Deploy to Azure Container Apps
+5. Configure Azure AI Search and Azure SQL environment variables
+
+---
+
+
+
+## 🔄 Continuous Integration & Deployment
+
+Every push to the `main` branch:
+
+- ✅ Runs all tests
+- ✅ Builds the Docker image
+- ✅ Pushes the image to Azure Container Registry
+- ✅ Deploys the latest version to Azure Container Apps
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
