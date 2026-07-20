@@ -61,18 +61,45 @@ knowledge retrieval, and LLM reasoning.
 
 
 <div class="card">
-<h2>Try it</h2>
+<h2>Ask the AI</h2>
+
+<p>
+Type a helpdesk question and the agent will answer it.
+</p>
+
+<input
+    id="question"
+    type="text"
+    placeholder="How do I troubleshoot VPN after a Windows update?"
+    style="width:100%;padding:12px;font-size:16px;box-sizing:border-box;"
+>
+
+<br><br>
+
+<button
+    id="askButton"
+    style="padding:10px 20px;font-size:16px;cursor:pointer;"
+>
+Ask
+</button>
+
+<p id="status"></p>
+
+<pre
+    id="answer"
+    style="
+        white-space:pre-wrap;
+        background:#f4f4f4;
+        padding:15px;
+        border-radius:8px;
+        min-height:80px;
+    "
+></pre>
 
 <p>
 API documentation:
 <br>
 <a href="/docs">Open Swagger UI</a>
-</p>
-
-<p>
-Health status:
-<br>
-<a href="/health">Check API health</a>
 </p>
 
 </div>
@@ -88,6 +115,59 @@ Health status:
 </ul>
 </div>
 
+<script>
+const questionInput = document.getElementById("question");
+const askButton = document.getElementById("askButton");
+const status = document.getElementById("status");
+const answer = document.getElementById("answer");
+
+async function askQuestion() {
+    const question = questionInput.value.trim();
+
+    if (!question) {
+        return;
+    }
+
+    askButton.disabled = true;
+    status.textContent = "Thinking...";
+    answer.textContent = "";
+
+    try {
+        const response = await fetch("/ask", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                question: question
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error("Request failed");
+        }
+
+        const data = await response.json();
+
+        answer.textContent = data.answer;
+        status.textContent = "";
+    }
+    catch (error) {
+        status.textContent = "Error contacting the AI agent.";
+    }
+    finally {
+        askButton.disabled = false;
+    }
+}
+
+askButton.addEventListener("click", askQuestion);
+
+questionInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        askQuestion();
+    }
+});
+</script>
 
 </body>
 </html>
