@@ -1,173 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>HelpDesk AI Agent</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        h1 {
-            font-size: 42px;
-        }
-
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        code {
-            background: #f4f4f4;
-            padding: 3px 6px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
-<h1>🤖 HelpDesk AI Agent</h1>
+<div class="chat-container">
 
-<p>
-An AI-powered support assistant combining ticket search,
-knowledge retrieval, and LLM reasoning.
-</p>
+    <header>
+        <h1>🤖 HelpDesk AI Assistant</h1>
+        <p>
+            Ask me about tickets, incidents, and knowledge base articles.
+        </p>
+    </header>
 
-<div class="card">
-<h2>Features</h2>
 
-<ul>
-    <li>🎫 Ticket and incident analysis</li>
-    <li>🔎 Hybrid search (SQL + Vector Search)</li>
-    <li>📚 Knowledge base question answering</li>
-    <li>🧠 LangGraph-powered AI workflow</li>
-    <li>☁️ Azure Container Apps deployment</li>
-</ul>
+    <main id="chat"></main>
+
+
+    <footer class="chat-input">
+
+        <input
+            id="question"
+            type="text"
+            placeholder="Ask a helpdesk question..."
+        >
+
+        <button id="send-button">
+            Send
+        </button>
+
+    </footer>
+
+    <div class="suggestions">
+
+    <button>
+        How many open critical VPN tickets are there?
+    </button>
+
+    <button>
+        How do I troubleshoot VPN after a Windows update?
+    </button>
+
+    <button>
+        Show recent authentication incidents
+    </button>
+
 </div>
-
-
-<div class="card">
-<h2>Ask the AI</h2>
-
-<p>
-Type a helpdesk question and the agent will answer it.
-</p>
-
-<input
-    id="question"
-    type="text"
-    placeholder="How do I troubleshoot VPN after a Windows update?"
-    style="width:100%;padding:12px;font-size:16px;box-sizing:border-box;"
->
-
-<br><br>
-
-<button
-    id="askButton"
-    style="padding:10px 20px;font-size:16px;cursor:pointer;"
->
-Ask
-</button>
-
-<p id="status"></p>
-
-<pre
-    id="answer"
-    style="
-        white-space:pre-wrap;
-        background:#f4f4f4;
-        padding:15px;
-        border-radius:8px;
-        min-height:80px;
-    "
-></pre>
-
-<p>
-API documentation:
-<br>
-<a href="/docs">Open Swagger UI</a>
-</p>
 
 </div>
 
 
-<div class="card">
-<h2>Example questions</h2>
-
-<ul>
-    <li>"How many open critical VPN tickets are there?"</li>
-    <li>"How do I troubleshoot VPN after a Windows update?"</li>
-    <li>"Show recent incidents related to authentication"</li>
-</ul>
-</div>
-
-<script>
-const questionInput = document.getElementById("question");
-const askButton = document.getElementById("askButton");
-const status = document.getElementById("status");
-const answer = document.getElementById("answer");
-
-async function askQuestion() {
-    const question = questionInput.value.trim();
-
-    if (!question) {
-        return;
-    }
-
-    askButton.disabled = true;
-    status.textContent = "Thinking...";
-    answer.textContent = "";
-
-    try {
-        const response = await fetch("/ask", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                question: question
-            })
-        });
-
-        if (!response.ok) {
-            throw new Error("Request failed");
-        }
-
-        const data = await response.json();
-
-        answer.textContent = data.answer;
-        status.textContent = "";
-    }
-    catch (error) {
-        status.textContent = "Error contacting the AI agent.";
-    }
-    finally {
-        askButton.disabled = false;
-    }
-}
-
-askButton.addEventListener("click", askQuestion);
-
-questionInput.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        askQuestion();
-    }
-});
-</script>
+<script src="/app.js"></script>
 
 </body>
+
 </html>

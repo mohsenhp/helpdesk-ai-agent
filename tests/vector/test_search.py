@@ -21,14 +21,14 @@ class FakeVectorStore:
         self.received_filter: dict | None = None
 
     def similarity_search_with_score(
-        self,
-        query: str,
-        k: int,
-        filter: dict | None = None,
+            self,
+            query,
+            k,
+            filters=None,
     ) -> list[tuple[FakeDocument, float]]:
         self.received_query = query
         self.received_k = k
-        self.received_filter = filter
+        self.received_filter = filters
 
         return [
             (

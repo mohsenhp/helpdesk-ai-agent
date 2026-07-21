@@ -2,6 +2,7 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.api.routes import router
 
@@ -14,14 +15,23 @@ def create_application() -> FastAPI:
         title="HelpDesk AI Agent",
     )
 
+    application.include_router(router)
+
     @application.get("/", include_in_schema=False)
     def landing_page():
         return FileResponse(
             BASE_DIR / "static" / "index.html"
         )
 
-    application.include_router(router)
+    application.mount(
+        "/",
+        StaticFiles(
+            directory=BASE_DIR / "static",
+        ),
+        name="static",
+    )
 
     return application
+
 
 app = create_application()
