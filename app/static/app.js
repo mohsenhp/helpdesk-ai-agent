@@ -4,6 +4,9 @@ const chat = document.getElementById("chat");
 const input = document.getElementById("question");
 const button = document.getElementById("send-button");
 
+const newChatButton =
+    document.getElementById("new-chat-button");
+
 
 let conversationId =
     localStorage.getItem("conversation_id");
@@ -268,3 +271,9 @@ document
         );
 
     });
+
+
+newChatButton.addEventListener(
+    "click",
+    resetConversation
+);
