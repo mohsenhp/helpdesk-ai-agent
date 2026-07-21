@@ -233,6 +233,16 @@ async function askQuestion() {
         question
     );
 
+    const welcome =
+    document.getElementById("welcome-screen");
+
+
+if (welcome) {
+
+    welcome.remove();
+
+}
+
 
     input.value = "";
 
@@ -334,12 +344,7 @@ const hasHistory =
 
 
 if (!hasHistory) {
-
-    addMessage(
-        "assistant",
-        "Hello! 👋 I am your HelpDesk AI assistant. Ask me about tickets, incidents, or knowledge base articles."
-    );
-
+    showWelcomeScreen();
 }
 
 function addTypingIndicator() {
@@ -376,6 +381,81 @@ function addTypingIndicator() {
     chat.scrollTop =
         chat.scrollHeight;
 }
+
+
+function showWelcomeScreen() {
+
+    const welcome = document.createElement("div");
+
+    welcome.id = "welcome-screen";
+
+    welcome.innerHTML = `
+
+        <div class="welcome-icon">
+            🤖
+        </div>
+
+
+        <h2>
+            Welcome to HelpDesk AI
+        </h2>
+
+
+        <p>
+            Your enterprise AI assistant for
+            tickets, incidents, and knowledge base support.
+        </p>
+
+
+        <div class="welcome-features">
+
+            <div>
+                🎫
+                <span>
+                    Analyze tickets
+                </span>
+            </div>
+
+
+            <div>
+                📚
+                <span>
+                    Search knowledge base
+                </span>
+            </div>
+
+
+            <div>
+                🚨
+                <span>
+                    Investigate incidents
+                </span>
+            </div>
+
+
+            <div>
+                🔧
+                <span>
+                    Troubleshoot issues
+                </span>
+            </div>
+
+        </div>
+
+
+        <p class="welcome-hint">
+            Try asking:
+            <br>
+            "How many critical VPN tickets are open?"
+        </p>
+
+    `;
+
+
+    chat.appendChild(welcome);
+
+}
+
 
 function removeTypingIndicator() {
 
