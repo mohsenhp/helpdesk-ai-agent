@@ -12,60 +12,126 @@
 
 <body>
 
-<div class="chat-container">
+<div class="page">
 
-    <header>
-        <h1>🤖 HelpDesk AI Assistant</h1>
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>🤖 HelpDesk AI Agent</h1>
+
+            <p class="subtitle">
+                Enterprise AI support assistant powered by LangGraph,
+                Azure AI Search, and Azure SQL.
+            </p>
+
+            <p class="description">
+                Search tickets, investigate incidents, explore your knowledge
+                base, and receive AI-powered troubleshooting assistance through
+                a conversational interface.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+            <h3>🎫 Ticket Intelligence</h3>
+            <p>Search and analyze helpdesk tickets in seconds.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>📚 Knowledge Base</h3>
+            <p>Find relevant documentation and troubleshooting guides.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🚨 Incident Analysis</h3>
+            <p>Review incidents and identify related issues quickly.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🧠 AI Reasoning</h3>
+            <p>Combine structured data and semantic search with LLM reasoning.</p>
+        </div>
+
+    </section>
+
+    <section class="chat-section">
+
+        <div class="chat-container">
+
+            <header>
+
+                <h2>AI Assistant</h2>
+
+                <p>
+                    Ask a question or choose one of the suggested prompts below.
+                </p>
+
+            </header>
+
+            <main id="chat"></main>
+
+            <footer>
+
+                <button
+                    id="new-chat-button"
+                    class="new-chat"
+                >
+                    + New Chat
+                </button>
+
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="Ask a helpdesk question..."
+                    autocomplete="off"
+                >
+
+                <button id="send-button">
+                    Send
+                </button>
+
+            </footer>
+
+            <div class="suggestions">
+
+                <button>
+                    How many open critical VPN tickets are there?
+                </button>
+
+                <button>
+                    How do I troubleshoot VPN after a Windows update?
+                </button>
+
+                <button>
+                    Show recent authentication incidents.
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="page-footer">
+
         <p>
-            Ask me about tickets, incidents, and knowledge base articles.
+            Built with
+            <strong>Python</strong> •
+            <strong>FastAPI</strong> •
+            <strong>LangGraph</strong> •
+            <strong>Azure AI Search</strong> •
+            <strong>Azure SQL</strong> •
+            <strong>Azure Container Apps</strong>
         </p>
-    </header>
 
-
-    <main id="chat"></main>
-
-
-    <footer>
-
-    <button
-        id="new-chat-button"
-        class="new-chat"
-    >
-        + New Chat
-    </button>
-
-
-    <input
-        id="question"
-        type="text"
-        placeholder="Ask a helpdesk question..."
-    >
-
-
-    <button id="send-button">
-        Send
-    </button>
-
-</footer>
-
-    <div class="suggestions">
-
-    <button>
-        How many open critical VPN tickets are there?
-    </button>
-
-    <button>
-        How do I troubleshoot VPN after a Windows update?
-    </button>
-
-    <button>
-        Show recent authentication incidents
-    </button>
+    </footer>
 
 </div>
-
-</div>
-
 
 <script src="/app.js"></script>
 
