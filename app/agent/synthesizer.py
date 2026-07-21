@@ -75,12 +75,24 @@ def synthesize_answer(
     sql_results: dict[str, Any] | None,
     vector_results: list[dict[str, Any]],
 ) -> str:
-    prompt = SYNTHESIS_PROMPT.format(
-        question=question,
-        route=route,
-        sql_evidence=_serialize_evidence(sql_results),
-        vector_evidence=_serialize_evidence(vector_results),
-    )
+    if route == "chat":
+        prompt = f"""
+    You are an enterprise help-desk assistant.
+
+    Respond naturally to the user's message.
+    If it is a greeting, greet the user and offer help.
+    Do not mention documents, tickets, incidents, or retrieved information.
+
+    User message:
+    {question}
+    """.strip()
+    else:
+        prompt = SYNTHESIS_PROMPT.format(
+            question=question,
+            route=route,
+            sql_evidence=_serialize_evidence(sql_results),
+            vector_evidence=_serialize_evidence(vector_results),
+        )
 
     response = get_llm().invoke(prompt)
 

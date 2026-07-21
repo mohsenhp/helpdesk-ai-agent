@@ -85,6 +85,7 @@ def build_graph(
             "sql": "retrieve_sql",
             "vector": "retrieve_vector",
             "hybrid": "retrieve_hybrid",
+            "chat": "generate_answer",
         },
     )
 

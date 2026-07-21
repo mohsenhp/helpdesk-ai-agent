@@ -2,7 +2,7 @@ from operator import add
 from typing import Annotated, Any, Literal, TypedDict
 
 
-Route = Literal["sql", "vector", "hybrid"]
+Route = Literal["sql", "vector", "hybrid", "chat"]
 
 DocumentType = Literal[
     "kb_articles",

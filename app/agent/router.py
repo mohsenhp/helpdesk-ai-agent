@@ -6,7 +6,7 @@ from app.llm import get_llm
 
 
 class RoutingDecision(BaseModel):
-    route: Literal["sql", "vector", "hybrid"] = Field(
+    route: Literal["sql", "vector", "hybrid", "chat"] = Field(
         description=(
             "The retrieval route required to answer the question. "
             "Use sql for structured database facts, vector for semantic "
@@ -19,6 +19,10 @@ ROUTER_PROMPT = """
 You are a routing component for an enterprise help-desk AI agent.
 
 Classify the user's question into exactly one retrieval route:
+
+- chat:
+  Use for greetings, thanks, acknowledgements, casual conversation,
+  or questions that do not require enterprise help-desk data.
 
 - sql:
   Use when the question requires exact structured facts, counts, filters,

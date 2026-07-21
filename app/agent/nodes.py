@@ -29,6 +29,12 @@ def create_retrieval_plan(
 ) -> dict[str, str | DocumentType | None]:
     route = state["route"]
     question = state["standalone_question"]
+    if route == "chat":
+        return {
+            "sql_query": None,
+            "vector_query": None,
+            "document_type": None,
+        }
 
     if route is None:
         raise RuntimeError(
@@ -111,6 +117,17 @@ def generate_answer(
 
     if route is None:
         raise RuntimeError("Cannot generate an answer without a route.")
+    if route == "chat":
+        answer = synthesize_answer(
+            question=state["question"],
+            route=route,
+            sql_results=None,
+            vector_results=[],
+        )
+
+        return {
+            "answer": answer,
+        }
 
     answer = synthesize_answer(
         question=state["question"],
