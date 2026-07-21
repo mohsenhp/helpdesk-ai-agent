@@ -564,3 +564,53 @@ button {
         #dcfce7;
 
 }
+
+/* Copy button */
+
+.copy-button {
+
+    display: block;
+
+    margin-top: 12px;
+
+    margin-left: auto;
+
+
+    background:
+        transparent;
+
+    border:
+        1px solid var(--border);
+
+
+    color:
+        var(--muted);
+
+
+    padding:
+        5px 10px;
+
+
+    border-radius:
+        8px;
+
+
+    font-size:
+        12px;
+
+
+    cursor:
+        pointer;
+
+}
+
+
+.copy-button:hover {
+
+    background:
+        #f1f5f9;
+
+    color:
+        var(--primary);
+
+}

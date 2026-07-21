@@ -141,15 +141,43 @@ function addMessage(role, text) {
 
     if (role === "assistant") {
 
-        bubble.innerHTML =
-            marked.parse(text);
+    bubble.innerHTML =
+        marked.parse(text);
 
-    } else {
+    const copyButton = document.createElement("button");
 
-        bubble.textContent =
-            text;
+    copyButton.className = "copy-button";
 
-    }
+    copyButton.innerHTML = "📋 Copy";
+
+
+    copyButton.addEventListener(
+        "click",
+        async () => {
+
+            await navigator.clipboard.writeText(text);
+
+            copyButton.innerHTML = "✅ Copied";
+
+            setTimeout(() => {
+
+                copyButton.innerHTML = "📋 Copy";
+
+            }, 2000);
+
+        }
+    );
+
+
+    bubble.appendChild(copyButton);
+
+
+} else {
+
+    bubble.textContent =
+        text;
+
+}
 
 
     if (role === "assistant") {
