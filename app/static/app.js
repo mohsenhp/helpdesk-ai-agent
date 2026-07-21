@@ -35,6 +35,10 @@ function resetConversation() {
         conversationId
     );
 
+    localStorage.removeItem(
+    "chat_history"
+    );
+
 
     chat.innerHTML = "";
 
@@ -43,6 +47,71 @@ function resetConversation() {
         "assistant",
         "Hello! 👋 I started a new conversation. How can I help you?"
     );
+
+}
+
+function saveChatHistory() {
+
+    const messages =
+        Array.from(
+            document.querySelectorAll(".message")
+        )
+        .map(message => {
+
+            return {
+
+                role:
+                    message.classList.contains("user")
+                        ? "user"
+                        : "assistant",
+
+                text:
+                    message.querySelector(".bubble").textContent
+
+            };
+
+        });
+
+
+    localStorage.setItem(
+        "chat_history",
+        JSON.stringify(messages)
+    );
+
+}
+
+
+
+function loadChatHistory() {
+
+    const history =
+        localStorage.getItem(
+            "chat_history"
+        );
+
+
+    if (!history) {
+
+        return false;
+
+    }
+
+
+    const messages =
+        JSON.parse(history);
+
+
+    messages.forEach(message => {
+
+        addMessage(
+            message.role,
+            message.text
+        );
+
+    });
+
+
+    return true;
 
 }
 
@@ -69,6 +138,8 @@ function addMessage(role, text) {
 
     chat.scrollTop =
         chat.scrollHeight;
+
+    saveChatHistory();
 }
 
 
@@ -200,10 +271,18 @@ input.addEventListener(
 
 
 
-addMessage(
-    "assistant",
-    "Hello! 👋 I am your HelpDesk AI assistant. Ask me about tickets, incidents, or knowledge base articles."
-);
+const hasHistory =
+    loadChatHistory();
+
+
+if (!hasHistory) {
+
+    addMessage(
+        "assistant",
+        "Hello! 👋 I am your HelpDesk AI assistant. Ask me about tickets, incidents, or knowledge base articles."
+    );
+
+}
 
 function addTypingIndicator() {
 
