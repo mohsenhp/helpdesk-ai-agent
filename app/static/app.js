@@ -124,26 +124,52 @@ function addMessage(role, text) {
         `message ${role}`;
 
 
+    const avatar = document.createElement("div");
+
+    avatar.className = "avatar";
+
+    avatar.textContent =
+        role === "assistant"
+            ? "🤖"
+            : "🧑";
+
+
     const bubble = document.createElement("div");
 
     bubble.className = "bubble";
 
+
     if (role === "assistant") {
-        bubble.innerHTML = marked.parse(text);
+
+        bubble.innerHTML =
+            marked.parse(text);
+
     } else {
-        bubble.textContent = text;
+
+        bubble.textContent =
+            text;
+
     }
 
 
-    message.appendChild(bubble);
+    if (role === "assistant") {
+
+        message.appendChild(avatar);
+        message.appendChild(bubble);
+
+    } else {
+
+        message.appendChild(bubble);
+        message.appendChild(avatar);
+
+    }
+
 
     chat.appendChild(message);
 
 
     chat.scrollTop =
         chat.scrollHeight;
-
-    saveChatHistory();
 }
 
 
