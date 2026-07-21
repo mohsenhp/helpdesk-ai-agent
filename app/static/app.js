@@ -128,7 +128,11 @@ function addMessage(role, text) {
 
     bubble.className = "bubble";
 
-    bubble.textContent = text;
+    if (role === "assistant") {
+        bubble.innerHTML = marked.parse(text);
+    } else {
+        bubble.textContent = text;
+    }
 
 
     message.appendChild(bubble);
