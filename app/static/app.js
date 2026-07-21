@@ -1,5 +1,3 @@
-console.log("HelpDesk AI Chat loaded");
-
 const chat = document.getElementById("chat");
 const input = document.getElementById("question");
 const button = document.getElementById("send-button");
@@ -36,7 +34,7 @@ function resetConversation() {
     );
 
     localStorage.removeItem(
-    "chat_history"
+        "chat_history"
     );
 
 
@@ -60,13 +58,11 @@ function saveChatHistory() {
 
             return {
 
-                role:
-                    message.classList.contains("user")
-                        ? "user"
-                        : "assistant",
+                role: message.classList.contains("user") ?
+                    "user" :
+                    "assistant",
 
-                text:
-                    message.querySelector(".bubble").textContent
+                text: message.querySelector(".bubble").textContent
 
             };
 
@@ -129,9 +125,9 @@ function addMessage(role, text) {
     avatar.className = "avatar";
 
     avatar.textContent =
-        role === "assistant"
-            ? "🤖"
-            : "🧑";
+        role === "assistant" ?
+        "🤖" :
+        "🧑";
 
 
     const bubble = document.createElement("div");
@@ -141,43 +137,43 @@ function addMessage(role, text) {
 
     if (role === "assistant") {
 
-    bubble.innerHTML =
-        marked.parse(text);
+        bubble.innerHTML =
+            marked.parse(text);
 
-    const copyButton = document.createElement("button");
+        const copyButton = document.createElement("button");
 
-    copyButton.className = "copy-button";
+        copyButton.className = "copy-button";
 
-    copyButton.innerHTML = "📋 Copy";
-
-
-    copyButton.addEventListener(
-        "click",
-        async () => {
-
-            await navigator.clipboard.writeText(text);
-
-            copyButton.innerHTML = "✅ Copied";
-
-            setTimeout(() => {
-
-                copyButton.innerHTML = "📋 Copy";
-
-            }, 2000);
-
-        }
-    );
+        copyButton.innerHTML = "📋 Copy";
 
 
-    bubble.appendChild(copyButton);
+        copyButton.addEventListener(
+            "click",
+            async () => {
+
+                await navigator.clipboard.writeText(text);
+
+                copyButton.innerHTML = "✅ Copied";
+
+                setTimeout(() => {
+
+                    copyButton.innerHTML = "📋 Copy";
+
+                }, 2000);
+
+            }
+        );
 
 
-} else {
+        bubble.appendChild(copyButton);
 
-    bubble.textContent =
-        text;
 
-}
+    } else {
+
+        bubble.textContent =
+            text;
+
+    }
 
 
     if (role === "assistant") {
@@ -234,14 +230,14 @@ async function askQuestion() {
     );
 
     const welcome =
-    document.getElementById("welcome-screen");
+        document.getElementById("welcome-screen");
 
 
-if (welcome) {
+    if (welcome) {
 
-    welcome.remove();
+        welcome.remove();
 
-}
+    }
 
 
     input.value = "";
@@ -259,16 +255,14 @@ if (welcome) {
                 method: "POST",
 
                 headers: {
-                    "Content-Type":
-                        "application/json"
+                    "Content-Type": "application/json"
                 },
 
                 body: JSON.stringify({
 
                     question: question,
 
-                    conversation_id:
-                        conversationId
+                    conversation_id: conversationId
 
                 })
 
@@ -292,21 +286,21 @@ if (welcome) {
         removeTypingIndicator();
 
         addMessage(
-        "assistant",
-        data.answer
-);
+            "assistant",
+            data.answer
+        );
 
 
-    } catch(error) {
+    } catch (error) {
 
-    removeTypingIndicator();
+        removeTypingIndicator();
 
-    addMessage(
-        "assistant",
-        "⚠️ " + error.message
-    );
+        addMessage(
+            "assistant",
+            "⚠️ " + error.message
+        );
 
-} finally {
+    } finally {
 
         setThinking(false);
 
