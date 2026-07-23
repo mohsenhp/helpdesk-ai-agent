@@ -22,9 +22,7 @@ def load_csv_files(engine) -> None:
         csv_path = DATASET_SQL_PATH / file_name
 
         if not csv_path.exists():
-            raise FileNotFoundError(
-                f"Missing CSV file: {csv_path}"
-            )
+            raise FileNotFoundError(f"Missing CSV file: {csv_path}")
 
         dataframe = pd.read_csv(csv_path)
 
@@ -45,9 +43,7 @@ def load_csv_files(engine) -> None:
             is_sql_server = connection.dialect.name == "mssql"
 
             if is_sql_server:
-                connection.execute(
-                    text(f"SET IDENTITY_INSERT {table_name} ON")
-                )
+                connection.execute(text(f"SET IDENTITY_INSERT {table_name} ON"))
 
             dataframe.to_sql(
                 table_name,
@@ -57,11 +53,6 @@ def load_csv_files(engine) -> None:
             )
 
             if is_sql_server:
-                connection.execute(
-                    text(f"SET IDENTITY_INSERT {table_name} OFF")
-                )
+                connection.execute(text(f"SET IDENTITY_INSERT {table_name} OFF"))
 
-        print(
-            f"Loaded {table_name}: "
-            f"{len(dataframe)} rows"
-        )
+        print(f"Loaded {table_name}: {len(dataframe)} rows")

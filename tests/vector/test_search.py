@@ -21,10 +21,10 @@ class FakeVectorStore:
         self.received_filter: dict | None = None
 
     def similarity_search_with_score(
-            self,
-            query,
-            k,
-            filters=None,
+        self,
+        query,
+        k,
+        filters=None,
     ) -> list[tuple[FakeDocument, float]]:
         self.received_query = query
         self.received_k = k
@@ -95,17 +95,13 @@ def test_search_documents_applies_document_type_filter(
         document_type="kb_articles",
     )
 
-    assert fake_store.received_filter == {
-        "document_type": "kb_articles"
-    }
+    assert fake_store.received_filter == {"document_type": "kb_articles"}
 
 
 def test_azure_search_returns_documents():
 
     if not settings.azure_search_endpoint:
-        pytest.skip(
-            "Azure Search not configured"
-        )
+        pytest.skip("Azure Search not configured")
 
     vector_store = get_azure_vector_store()
 

@@ -56,9 +56,7 @@ User question:
 
 
 def classify_question(question: str) -> RoutingDecision:
-    router_llm = get_llm().with_structured_output(
-        RoutingDecision
-    )
+    router_llm = get_llm().with_structured_output(RoutingDecision)
 
     prompt = ROUTER_PROMPT.format(
         question=question,

@@ -20,9 +20,7 @@ def select_retrieval_route(state: AgentState) -> Route:
     route = state["route"]
 
     if route is None:
-        raise RuntimeError(
-            "The routing node did not select a route."
-        )
+        raise RuntimeError("The routing node did not select a route.")
 
     return route
 
@@ -114,6 +112,7 @@ def build_graph(
     return builder.compile(
         checkpointer=checkpointer,
     )
+
 
 @lru_cache(maxsize=1)
 def get_agent_graph():

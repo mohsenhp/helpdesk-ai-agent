@@ -21,17 +21,13 @@ def test_ask_returns_agent_answer(monkeypatch) -> None:
     monkeypatch.setattr(
         routes,
         "ask_agent",
-        lambda question, conversation_id: (
-            "There are 2 open Critical VPN tickets."
-        ),
+        lambda question, conversation_id: "There are 2 open Critical VPN tickets.",
     )
 
     response = client.post(
         "/ask",
         json={
-            "question": (
-                "How many open Critical VPN tickets are there?"
-            ),
+            "question": ("How many open Critical VPN tickets are there?"),
             "conversation_id": "conversation-123",
         },
     )
@@ -164,6 +160,7 @@ def test_ask_generates_conversation_id_when_missing(
     assert captured_ids == [
         response_data["conversation_id"],
     ]
+
 
 def test_metadata_endpoint():
     response = client.get("/metadata")

@@ -28,9 +28,6 @@ def ask_agent(
     answer = result["answer"]
 
     if answer is None:
-        raise RuntimeError(
-            "The agent did not generate an answer."
-        )
+        raise RuntimeError("The agent did not generate an answer.")
 
     return answer
-

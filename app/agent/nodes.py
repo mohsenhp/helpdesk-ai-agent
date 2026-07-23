@@ -13,9 +13,7 @@ def route_question(state: AgentState) -> dict[str, Route]:
     question = state["standalone_question"]
 
     if question is None:
-        raise RuntimeError(
-            "The current question was not resolved."
-        )
+        raise RuntimeError("The current question was not resolved.")
 
     decision = classify_question(question)
 
@@ -37,14 +35,10 @@ def create_retrieval_plan(
         }
 
     if route is None:
-        raise RuntimeError(
-            "The routing node did not select a route."
-        )
+        raise RuntimeError("The routing node did not select a route.")
 
     if question is None:
-        raise RuntimeError(
-            "The current question was not resolved."
-        )
+        raise RuntimeError("The current question was not resolved.")
 
     plan = plan_retrieval(
         question=question,
@@ -160,9 +154,7 @@ def save_conversation_turn(
     answer = state["answer"]
 
     if answer is None:
-        raise RuntimeError(
-            "Cannot save a conversation turn without an answer."
-        )
+        raise RuntimeError("Cannot save a conversation turn without an answer.")
 
     return {
         "history": [

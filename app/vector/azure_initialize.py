@@ -19,14 +19,10 @@ from app.config import settings
 
 def get_index_client() -> SearchIndexClient:
     if not settings.azure_search_endpoint:
-        raise RuntimeError(
-            "Azure Search endpoint is not configured"
-        )
+        raise RuntimeError("Azure Search endpoint is not configured")
 
     if not settings.azure_search_api_key:
-        raise RuntimeError(
-            "Azure Search API key is not configured"
-        )
+        raise RuntimeError("Azure Search API key is not configured")
 
     return SearchIndexClient(
         endpoint=settings.azure_search_endpoint,
@@ -34,6 +30,7 @@ def get_index_client() -> SearchIndexClient:
             settings.azure_search_api_key,
         ),
     )
+
 
 def list_indexes(
     client: SearchIndexClient,
@@ -49,6 +46,7 @@ def list_indexes(
     for index in indexes:
         print(f"  - {index.name}")
 
+
 def index_exists(
     client: SearchIndexClient,
 ) -> bool:
@@ -61,19 +59,17 @@ def index_exists(
     except ResourceNotFoundError:
         return False
 
+
 def create_index(
     client: SearchIndexClient,
 ) -> None:
 
     definition = create_index_definition()
 
-    client.create_index(
-        definition
-    )
+    client.create_index(definition)
 
-    print(
-        f"Created index: {definition.name}"
-    )
+    print(f"Created index: {definition.name}")
+
 
 def create_index_definition() -> SearchIndex:
     fields = [
@@ -83,36 +79,29 @@ def create_index_definition() -> SearchIndex:
             key=True,
             filterable=True,
         ),
-
         SearchableField(
             name="content",
             type=SearchFieldDataType.String,
         ),
-
         SearchableField(
             name="source",
             type=SearchFieldDataType.String,
             filterable=True,
         ),
-
         SearchableField(
             name="file_name",
             type=SearchFieldDataType.String,
             filterable=True,
         ),
-
         SimpleField(
             name="document_type",
             type=SearchFieldDataType.String,
             filterable=True,
             searchable=False,
         ),
-
         SearchField(
             name="content_vector",
-            type=SearchFieldDataType.Collection(
-                SearchFieldDataType.Single
-            ),
+            type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
             searchable=True,
             vector_search_dimensions=384,
             vector_search_profile_name="vector-profile",
@@ -139,6 +128,7 @@ def create_index_definition() -> SearchIndex:
         vector_search=vector_search,
     )
 
+
 def delete_index(
     client: SearchIndexClient,
 ) -> None:
@@ -146,9 +136,7 @@ def delete_index(
         settings.azure_search_index,
     )
 
-    print(
-        f"Deleted index: {settings.azure_search_index}"
-    )
+    print(f"Deleted index: {settings.azure_search_index}")
 
 
 def main() -> None:
@@ -164,27 +152,18 @@ def main() -> None:
 
     client = get_index_client()
 
-    print(
-        f"Connected to Azure AI Search: "
-        f"{settings.azure_search_endpoint}"
-    )
+    print(f"Connected to Azure AI Search: {settings.azure_search_endpoint}")
 
     print()
 
     if index_exists(client):
-
         if args.recreate:
-            print(
-                f"Recreating index: "
-                f"{settings.azure_search_index}"
-            )
+            print(f"Recreating index: {settings.azure_search_index}")
 
             delete_index(client)
 
         else:
-            print(
-                f"Index '{settings.azure_search_index}' already exists."
-            )
+            print(f"Index '{settings.azure_search_index}' already exists.")
 
             return
 

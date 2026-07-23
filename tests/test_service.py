@@ -17,9 +17,7 @@ class FakeGraph:
         return {
             **state,
             "route": "sql",
-            "answer": (
-                "There are 2 open Critical VPN tickets."
-            ),
+            "answer": ("There are 2 open Critical VPN tickets."),
         }
 
 
@@ -47,15 +45,11 @@ def test_ask_agent_returns_generated_answer(
     )
 
     answer = service.ask_agent(
-        question=(
-            "How many open Critical VPN tickets are there?"
-        ),
+        question=("How many open Critical VPN tickets are there?"),
         conversation_id="conversation-123",
     )
 
-    assert answer == (
-        "There are 2 open Critical VPN tickets."
-    )
+    assert answer == ("There are 2 open Critical VPN tickets.")
     assert fake_graph.received_config == {
         "configurable": {
             "thread_id": "conversation-123",

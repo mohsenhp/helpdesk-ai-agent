@@ -4,15 +4,13 @@ from app.vector.constants import COLLECTION_NAME
 from app.config import settings
 from app.vector.embeddings import get_embeddings
 
-from langchain_core.documents import Document
 
 def get_local_vector_store():
     from langchain_chroma import Chroma
 
     if not VECTOR_DB_PATH.exists():
         raise RuntimeError(
-            "Vector database does not exist. "
-            "Run 'python -m app.vector.loader' first."
+            "Vector database does not exist. Run 'python -m app.vector.loader' first."
         )
 
     return Chroma(
@@ -24,35 +22,26 @@ def get_local_vector_store():
 
 def get_azure_vector_store():
     if not settings.azure_search_endpoint:
-        raise RuntimeError(
-            "Azure Search endpoint is not configured"
-        )
+        raise RuntimeError("Azure Search endpoint is not configured")
 
     if not settings.azure_search_api_key:
-        raise RuntimeError(
-            "Azure Search API key is not configured"
-        )
+        raise RuntimeError("Azure Search API key is not configured")
 
     from langchain_community.vectorstores.azuresearch import AzureSearch
 
     class HelpdeskAzureSearch(AzureSearch):
-
         def add_embeddings(
-                self,
-                text_embeddings,
-                metadatas=None,
-                **kwargs,
+            self,
+            text_embeddings,
+            metadatas=None,
+            **kwargs,
         ):
             import uuid
 
             documents = []
 
             for index, (text, embedding) in enumerate(text_embeddings):
-                metadata = (
-                    metadatas[index]
-                    if metadatas
-                    else {}
-                )
+                metadata = metadatas[index] if metadatas else {}
 
                 documents.append(
                     {
@@ -65,34 +54,20 @@ def get_azure_vector_store():
                     }
                 )
 
-            result = self.client.upload_documents(
-                documents=documents
-            )
+            result = self.client.upload_documents(documents=documents)
 
-            return [
-                item.key
-                for item in result
-                if item.succeeded
-            ]
+            return [item.key for item in result if item.succeeded]
 
         def add_documents(
-                self,
-                documents,
-                **kwargs,
+            self,
+            documents,
+            **kwargs,
         ):
-            texts = [
-                document.page_content
-                for document in documents
-            ]
+            texts = [document.page_content for document in documents]
 
-            metadatas = [
-                document.metadata
-                for document in documents
-            ]
+            metadatas = [document.metadata for document in documents]
 
-            embeddings = self.embedding_function.embed_documents(
-                texts
-            )
+            embeddings = self.embedding_function.embed_documents(texts)
 
             return self.add_embeddings(
                 zip(texts, embeddings),
@@ -100,10 +75,10 @@ def get_azure_vector_store():
             )
 
         def similarity_search(
-                self,
-                query,
-                k=4,
-                **kwargs,
+            self,
+            query,
+            k=4,
+            **kwargs,
         ):
             metadata_filter = kwargs.pop(
                 "filter",
@@ -134,11 +109,8 @@ def get_vector_store():
     }
 
     try:
-        return providers[
-            settings.vector_store_provider
-        ]()
+        return providers[settings.vector_store_provider]()
     except KeyError:
         raise RuntimeError(
-            f"Unsupported vector store provider: "
-            f"{settings.vector_store_provider}"
+            f"Unsupported vector store provider: {settings.vector_store_provider}"
         )

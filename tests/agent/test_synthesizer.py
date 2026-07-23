@@ -122,9 +122,7 @@ def test_synthesize_answer_invokes_llm_with_evidence(
                 content_blocks=[
                     {
                         "type": "text",
-                        "text": (
-                            "There are 2 open Critical VPN tickets."
-                        ),
+                        "text": ("There are 2 open Critical VPN tickets."),
                     }
                 ]
             )
@@ -138,9 +136,7 @@ def test_synthesize_answer_invokes_llm_with_evidence(
     )
 
     answer = synthesizer.synthesize_answer(
-        question=(
-            "How many open Critical VPN tickets are there?"
-        ),
+        question=("How many open Critical VPN tickets are there?"),
         route="sql",
         sql_results={
             "query_type": "ticket_count",
@@ -153,16 +149,11 @@ def test_synthesize_answer_invokes_llm_with_evidence(
         vector_results=[],
     )
 
-    assert answer == (
-        "There are 2 open Critical VPN tickets."
-    )
+    assert answer == ("There are 2 open Critical VPN tickets.")
     assert len(captured_prompts) == 1
 
     prompt = captured_prompts[0]
 
-    assert (
-        "How many open Critical VPN tickets are there?"
-        in prompt
-    )
+    assert "How many open Critical VPN tickets are there?" in prompt
     assert '"count": 2' in prompt
     assert "No evidence retrieved." in prompt

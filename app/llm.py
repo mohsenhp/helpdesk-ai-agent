@@ -22,6 +22,4 @@ def get_llm():
     if settings.llm_provider == "google":
         return get_google_llm()
 
-    raise ValueError(
-        f"Unsupported LLM provider: {settings.llm_provider}"
-    )
+    raise ValueError(f"Unsupported LLM provider: {settings.llm_provider}")

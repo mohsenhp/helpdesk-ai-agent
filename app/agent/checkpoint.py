@@ -44,9 +44,7 @@ def _get_postgres_checkpointer() -> PostgresSaver:
         database_url = settings.checkpoint_database_url
 
         if database_url is None:
-            raise RuntimeError(
-                "Checkpoint database URL is not configured."
-            )
+            raise RuntimeError("Checkpoint database URL is not configured.")
 
         _postgres_pool = ConnectionPool(
             conninfo=database_url,
@@ -61,9 +59,7 @@ def _get_postgres_checkpointer() -> PostgresSaver:
         )
         _postgres_pool.open(wait=True)
 
-        _postgres_checkpointer = PostgresSaver(
-            _postgres_pool
-        )
+        _postgres_checkpointer = PostgresSaver(_postgres_pool)
         _postgres_checkpointer.setup()
 
         return _postgres_checkpointer
@@ -85,9 +81,7 @@ def main() -> None:
     checkpointer = get_checkpointer()
 
     if isinstance(checkpointer, PostgresSaver):
-        print(
-            "PostgreSQL checkpoint storage initialized."
-        )
+        print("PostgreSQL checkpoint storage initialized.")
     else:
         print(
             "CHECKPOINT_DATABASE_URL is not configured; "

@@ -61,9 +61,7 @@ def resolve_question(
         ensure_ascii=False,
     )
 
-    resolver_llm = get_llm().with_structured_output(
-        ResolvedQuestion
-    )
+    resolver_llm = get_llm().with_structured_output(ResolvedQuestion)
 
     prompt = RESOLUTION_PROMPT.format(
         history=history_json,

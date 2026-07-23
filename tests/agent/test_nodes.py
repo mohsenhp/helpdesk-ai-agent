@@ -174,6 +174,7 @@ def test_generate_answer_uses_retrieved_evidence(monkeypatch) -> None:
         "answer": "There are 2 tickets.",
     }
 
+
 def test_resolve_current_question(monkeypatch) -> None:
     state = make_state()
     state["standalone_question"] = None
@@ -195,9 +196,7 @@ def test_resolve_current_question(monkeypatch) -> None:
     result = nodes.resolve_current_question(state)
 
     assert result == {
-        "standalone_question": (
-            "Which users with open VPN tickets are in Finance?"
-        )
+        "standalone_question": ("Which users with open VPN tickets are in Finance?")
     }
 
 

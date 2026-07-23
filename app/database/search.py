@@ -180,8 +180,7 @@ def search_database(question: str) -> dict[str, Any]:
     status = _find_known_value(question, KNOWN_STATUSES)
 
     asks_for_count = any(
-        phrase in normalized_question
-        for phrase in ("how many", "count", "number of")
+        phrase in normalized_question for phrase in ("how many", "count", "number of")
     )
 
     if asks_for_count:

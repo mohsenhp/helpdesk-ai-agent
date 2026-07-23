@@ -5,9 +5,7 @@ def test_first_question_is_returned_without_llm(
     monkeypatch,
 ) -> None:
     def fail_if_called():
-        raise AssertionError(
-            "The LLM should not be used for the first question."
-        )
+        raise AssertionError("The LLM should not be used for the first question.")
 
     monkeypatch.setattr(
         resolver,
@@ -20,9 +18,7 @@ def test_first_question_is_returned_without_llm(
         history=[],
     )
 
-    assert result.standalone_question == (
-        "Which users have open VPN tickets?"
-    )
+    assert result.standalone_question == ("Which users have open VPN tickets?")
 
 
 def test_follow_up_is_rewritten_using_history(
@@ -38,8 +34,7 @@ def test_follow_up_is_rewritten_using_history(
 
             return resolver.ResolvedQuestion(
                 standalone_question=(
-                    "Which users with open VPN tickets "
-                    "are in Finance?"
+                    "Which users with open VPN tickets are in Finance?"
                 )
             )
 
@@ -57,9 +52,7 @@ def test_follow_up_is_rewritten_using_history(
         question="Which of them are in Finance?",
         history=[
             {
-                "question": (
-                    "Which users have open VPN tickets?"
-                ),
+                "question": ("Which users have open VPN tickets?"),
                 "answer": "Several users have open VPN tickets.",
             }
         ],

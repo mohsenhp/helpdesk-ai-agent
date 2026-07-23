@@ -104,9 +104,7 @@ def plan_retrieval(
     question: str,
     route: Route,
 ) -> RetrievalPlan:
-    planner_llm = get_llm().with_structured_output(
-        RetrievalPlan
-    )
+    planner_llm = get_llm().with_structured_output(RetrievalPlan)
 
     prompt = PLANNER_PROMPT.format(
         question=question,

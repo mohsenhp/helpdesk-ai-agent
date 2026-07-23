@@ -19,9 +19,7 @@ def create_application() -> FastAPI:
 
     @application.get("/", include_in_schema=False)
     def landing_page():
-        return FileResponse(
-            BASE_DIR / "static" / "index.html"
-        )
+        return FileResponse(BASE_DIR / "static" / "index.html")
 
     application.mount(
         "/",

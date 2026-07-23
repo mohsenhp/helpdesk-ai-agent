@@ -18,12 +18,8 @@ def migrate_documents_to_azure_search() -> None:
 
     vector_store.add_documents(chunks)
 
-    print(
-        f"Migrated documents: {len(raw_documents)}"
-    )
-    print(
-        f"Migrated chunks: {len(chunks)}"
-    )
+    print(f"Migrated documents: {len(raw_documents)}")
+    print(f"Migrated chunks: {len(chunks)}")
 
 
 def main() -> None:

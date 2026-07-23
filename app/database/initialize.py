@@ -20,10 +20,7 @@ def main() -> None:
     create_database()
     load_csv_files(engine)
 
-    print(
-        "\nSQLite database created at: "
-        f"{DATABASE_PATH}"
-    )
+    print(f"\nSQLite database created at: {DATABASE_PATH}")
 
 
 if __name__ == "__main__":

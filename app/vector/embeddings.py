@@ -26,6 +26,4 @@ def get_embeddings():
     if settings.embedding_provider == "local":
         return get_local_embeddings()
 
-    raise ValueError(
-        f"Unsupported embedding provider: {settings.embedding_provider}"
-    )
+    raise ValueError(f"Unsupported embedding provider: {settings.embedding_provider}")

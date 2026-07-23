@@ -42,10 +42,7 @@ def build_test_graph(
 
         if history:
             previous_question = history[-1]["question"]
-            standalone_question = (
-                f"{state['question']} "
-                f"(context: {previous_question})"
-            )
+            standalone_question = f"{state['question']} (context: {previous_question})"
         else:
             standalone_question = state["question"]
 
@@ -103,9 +100,7 @@ def build_test_graph(
         state: AgentState,
     ) -> dict[str, str]:
         return {
-            "answer": (
-                f"Answer to: {state['standalone_question']}"
-            ),
+            "answer": (f"Answer to: {state['standalone_question']}"),
         }
 
     def fake_save_conversation_turn(
@@ -114,9 +109,7 @@ def build_test_graph(
         answer = state["answer"]
 
         if answer is None:
-            raise RuntimeError(
-                "Cannot save a conversation turn without an answer."
-            )
+            raise RuntimeError("Cannot save a conversation turn without an answer.")
 
         return {
             "history": [
@@ -204,27 +197,19 @@ def test_same_thread_restores_previous_history(
     assert observed_histories[follow_up] == [
         {
             "question": first_question,
-            "answer": (
-                "Answer to: "
-                "Which users have open VPN tickets?"
-            ),
+            "answer": ("Answer to: Which users have open VPN tickets?"),
         }
     ]
 
     assert second_result["standalone_question"] == (
-        "Which of them are in Finance? "
-        "(context: Which users have open VPN tickets?)"
+        "Which of them are in Finance? (context: Which users have open VPN tickets?)"
     )
 
     assert len(first_result["history"]) == 1
     assert len(second_result["history"]) == 2
 
-    assert second_result["history"][0]["question"] == (
-        first_question
-    )
-    assert second_result["history"][1]["question"] == (
-        follow_up
-    )
+    assert second_result["history"][0]["question"] == (first_question)
+    assert second_result["history"][1]["question"] == (follow_up)
 
 
 def test_different_threads_have_isolated_history(
@@ -256,7 +241,5 @@ def test_different_threads_have_isolated_history(
     assert observed_histories[thread_a_question] == []
     assert observed_histories[thread_b_question] == []
 
-    assert thread_b_result["standalone_question"] == (
-        thread_b_question
-    )
+    assert thread_b_result["standalone_question"] == (thread_b_question)
     assert len(thread_b_result["history"]) == 1

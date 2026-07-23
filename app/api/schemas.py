@@ -18,9 +18,7 @@ class AskRequest(BaseModel):
         default_factory=lambda: str(uuid4()),
         min_length=1,
         max_length=128,
-        description=(
-            "Identifier used to continue an existing conversation."
-        ),
+        description=("Identifier used to continue an existing conversation."),
     )
 
     @field_validator("question", "conversation_id")
@@ -32,9 +30,7 @@ class AskRequest(BaseModel):
         stripped_value = value.strip()
 
         if not stripped_value:
-            raise ValueError(
-                "Value must not be blank."
-            )
+            raise ValueError("Value must not be blank.")
 
         return stripped_value
 
@@ -42,6 +38,7 @@ class AskRequest(BaseModel):
 class AskResponse(BaseModel):
     answer: str
     conversation_id: str
+
 
 class MetadataResponse(BaseModel):
     name: str

@@ -164,9 +164,7 @@ def seeded_database(
 def test_counts_open_critical_vpn_tickets(
     seeded_database,
 ) -> None:
-    result = search.search_database(
-        "How many open Critical VPN tickets are there?"
-    )
+    result = search.search_database("How many open Critical VPN tickets are there?")
 
     assert result["query_type"] == "ticket_count"
     assert result["filters"] == {
@@ -184,9 +182,7 @@ def test_counts_open_critical_vpn_tickets(
 def test_lists_users_with_open_vpn_tickets(
     seeded_database,
 ) -> None:
-    result = search.search_database(
-        "Which users have open VPN tickets?"
-    )
+    result = search.search_database("Which users have open VPN tickets?")
 
     assert result["query_type"] == "ticket_search"
     assert result["filters"] == {
@@ -198,10 +194,7 @@ def test_lists_users_with_open_vpn_tickets(
     rows = result["rows"]
 
     assert len(rows) == 3
-    assert {
-        row["user_name"]
-        for row in rows
-    } == {
+    assert {row["user_name"] for row in rows} == {
         "Alice Example",
         "Bob Example",
         "Carol Example",
@@ -211,9 +204,7 @@ def test_lists_users_with_open_vpn_tickets(
 def test_lists_only_unresolved_sev1_incidents(
     seeded_database,
 ) -> None:
-    result = search.search_database(
-        "List unresolved SEV1 incidents."
-    )
+    result = search.search_database("List unresolved SEV1 incidents.")
 
     assert result["query_type"] == "incident_search"
     assert result["rows"] == [
@@ -232,8 +223,7 @@ def test_follow_does_not_create_low_priority_filter(
     seeded_database,
 ) -> None:
     result = search.search_database(
-        "Which users have open VPN tickets "
-        "and what article should support follow?"
+        "Which users have open VPN tickets and what article should support follow?"
     )
 
     assert result["filters"]["priority"] is None
@@ -243,9 +233,7 @@ def test_follow_does_not_create_low_priority_filter(
 def test_unknown_category_returns_unfiltered_ticket_search(
     seeded_database,
 ) -> None:
-    result = search.search_database(
-        "Show payroll records."
-    )
+    result = search.search_database("Show payroll records.")
 
     assert result["query_type"] == "ticket_search"
     assert result["filters"] == {

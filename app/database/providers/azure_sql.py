@@ -5,9 +5,7 @@ from app.config import settings
 
 
 if not settings.azure_sql_connection_string:
-    raise RuntimeError(
-        "Azure SQL connection string is not configured"
-    )
+    raise RuntimeError("Azure SQL connection string is not configured")
 
 
 engine = create_engine(

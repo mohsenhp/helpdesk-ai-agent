@@ -22,9 +22,7 @@ def load_documents() -> list[Document]:
 
         documents.append(
             Document(
-                page_content=path.read_text(
-                    encoding="utf-8"
-                ),
+                page_content=path.read_text(encoding="utf-8"),
                 metadata={
                     "source": str(relative_path),
                     "file_name": path.name,
@@ -64,9 +62,7 @@ def load_to_local_vector_store(
         collection_name=COLLECTION_NAME,
     )
 
-    print(
-        f"Created local vector database: {VECTOR_DB_PATH}"
-    )
+    print(f"Created local vector database: {VECTOR_DB_PATH}")
     print(f"Documents: {len(documents)}")
     print(f"Chunks: {len(chunks)}")
 
@@ -86,9 +82,7 @@ def load_to_azure_vector_store(
         documents=chunks,
     )
 
-    print(
-        "Uploaded documents to Azure AI Search"
-    )
+    print("Uploaded documents to Azure AI Search")
     print(f"Documents: {len(documents)}")
     print(f"Chunks: {len(chunks)}")
 
@@ -97,9 +91,7 @@ def build_vector_database() -> None:
     documents = load_documents()
 
     if not documents:
-        raise RuntimeError(
-            "No documents found."
-        )
+        raise RuntimeError("No documents found.")
 
     if settings.vector_store_provider == "local":
         load_to_local_vector_store(documents)
@@ -109,16 +101,12 @@ def build_vector_database() -> None:
 
     else:
         raise RuntimeError(
-            f"Unsupported vector store provider: "
-            f"{settings.vector_store_provider}"
+            f"Unsupported vector store provider: {settings.vector_store_provider}"
         )
 
 
 def main() -> None:
-    print(
-        f"Vector store provider: "
-        f"{settings.vector_store_provider}"
-    )
+    print(f"Vector store provider: {settings.vector_store_provider}")
 
     build_vector_database()
 

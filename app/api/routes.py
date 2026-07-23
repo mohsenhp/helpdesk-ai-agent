@@ -36,9 +36,7 @@ def ask(request: AskRequest) -> AskResponse:
             conversation_id=request.conversation_id,
         )
     except Exception:
-        logger.exception(
-            "Unhandled exception while processing /ask"
-        )
+        logger.exception("Unhandled exception while processing /ask")
 
         raise HTTPException(
             status_code=503,
@@ -69,4 +67,3 @@ def metadata() -> MetadataResponse:
         ],
         environment=settings.environment,
     )
-

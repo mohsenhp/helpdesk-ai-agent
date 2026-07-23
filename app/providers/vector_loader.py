@@ -23,6 +23,5 @@ def load_vector_store() -> None:
         return
 
     raise RuntimeError(
-        f"Unsupported vector store provider: "
-        f"{settings.vector_store_provider}"
+        f"Unsupported vector store provider: {settings.vector_store_provider}"
     )
