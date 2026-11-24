@@ -95,7 +95,12 @@ def load_to_postgres_vector_store(
     chunks = split_documents(documents)
     vector_store = get_postgres_vector_store()
 
-    vector_store.add_documents(documents=chunks)
+    batch_size = 250
+
+    for start in range(0, len(chunks), batch_size):
+        batch = chunks[start : start + batch_size]
+        vector_store.add_documents(documents=batch)
+        print(f"Uploaded {min(start + batch_size, len(chunks))}/{len(chunks)} chunks")
 
     print("Uploaded documents to PostgreSQL (pgvector)")
     print(f"Documents: {len(documents)}")
