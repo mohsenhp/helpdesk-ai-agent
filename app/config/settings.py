@@ -1,3 +1,4 @@
+
 from functools import lru_cache
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -13,24 +14,28 @@ class Settings(BaseSettings):
     app_name: str = "Helpdesk AI Agent"
     environment: str = "local"
     debug: bool = False
-    initialize_local_data: bool = True
+    initialize_local_data: bool = False
+
+    # Database
     database_provider: str = "local"
+    database_url: str | None = None
 
-    # Current LLM provider
+    # LLM
     llm_provider: str = "google"
-
-    # Existing local LLM settings
     google_api_key: str | None = None
     gemini_model: str = "gemini-3.5-flash"
+    gcp_project_id: str | None = None
+    gcp_region: str = "europe-north1"
+    vertex_llm_location: str = "eu"
 
-    # Existing local embedding settings
+    # Embeddings and vector store
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
-
-    # Embedding provider
+    vertex_embedding_model: str = "text-embedding-005"
     embedding_provider: str = "local"
-    vector_store_provider: str = "azure"
+    vector_store_provider: str = "local"
+    vector_collection_name: str = "helpdesk_documents"
 
-    # Existing LangGraph/database settings
+    # LangGraph checkpoint storage
     checkpoint_database_url: str | None = None
     langgraph_strict_msgpack: bool = True
 
@@ -54,5 +59,4 @@ def get_settings() -> Settings:
     return Settings()
 
 
-# Backward compatibility
 settings = get_settings()

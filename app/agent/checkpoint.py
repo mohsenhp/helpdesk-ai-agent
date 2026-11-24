@@ -17,10 +17,15 @@ _postgres_checkpointer: PostgresSaver | None = None
 
 
 def get_checkpointer() -> Any:
-    if settings.checkpoint_database_url is None:
-        return _get_memory_checkpointer()
+    if settings.checkpoint_database_url:
+        return _get_postgres_checkpointer()
 
-    return _get_postgres_checkpointer()
+    if getattr(settings, "database_provider", "local") == "postgres" and getattr(
+        settings, "database_url", None
+    ):
+        return _get_postgres_checkpointer()
+
+    return _get_memory_checkpointer()
 
 
 def _get_memory_checkpointer() -> InMemorySaver:
@@ -41,7 +46,14 @@ def _get_postgres_checkpointer() -> PostgresSaver:
         if _postgres_checkpointer is not None:
             return _postgres_checkpointer
 
-        database_url = settings.checkpoint_database_url
+        database_url = settings.checkpoint_database_url or settings.database_url
+
+        if database_url and database_url.startswith("postgresql+psycopg://"):
+            database_url = database_url.replace(
+                "postgresql+psycopg://",
+                "postgresql://",
+                1,
+            )
 
         if database_url is None:
             raise RuntimeError("Checkpoint database URL is not configured.")

@@ -87,6 +87,22 @@ def load_to_azure_vector_store(
     print(f"Chunks: {len(chunks)}")
 
 
+def load_to_postgres_vector_store(
+    documents: list[Document],
+) -> None:
+    from app.providers.vector_store import get_postgres_vector_store
+
+    chunks = split_documents(documents)
+    vector_store = get_postgres_vector_store()
+
+    vector_store.add_documents(documents=chunks)
+
+    print("Uploaded documents to PostgreSQL (pgvector)")
+    print(f"Documents: {len(documents)}")
+    print(f"Chunks: {len(chunks)}")
+
+
+
 def build_vector_database() -> None:
     documents = load_documents()
 
@@ -98,6 +114,9 @@ def build_vector_database() -> None:
 
     elif settings.vector_store_provider == "azure":
         load_to_azure_vector_store(documents)
+
+    elif settings.vector_store_provider == "postgres":
+        load_to_postgres_vector_store(documents)
 
     else:
         raise RuntimeError(

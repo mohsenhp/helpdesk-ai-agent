@@ -20,6 +20,23 @@ def get_local_vector_store():
     )
 
 
+def get_postgres_vector_store():
+    if not settings.database_url:
+        raise RuntimeError(
+            "DATABASE_URL must be configured for PostgreSQL vector storage."
+        )
+
+    from langchain_postgres import PGVector
+
+    return PGVector(
+        embeddings=get_embeddings(),
+        collection_name=COLLECTION_NAME,
+        connection=settings.database_url,
+        embedding_length=768,
+        use_jsonb=True,
+    )
+
+
 def get_azure_vector_store():
     if not settings.azure_search_endpoint:
         raise RuntimeError("Azure Search endpoint is not configured")
@@ -106,6 +123,7 @@ def get_vector_store():
     providers = {
         "local": get_local_vector_store,
         "azure": get_azure_vector_store,
+        "postgres": get_postgres_vector_store,
     }
 
     try:
