@@ -1,0 +1,127 @@
+
+name: Deploy to Google Cloud Run
+
+on:
+  push:
+    branches:
+      - gcp-migration
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: gcp-deployment-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[test]"
+
+      - name: Run tests
+        run: python -m pytest -q
+
+  deploy:
+    name: Build and deploy to Cloud Run
+    needs: test
+    runs-on: ubuntu-latest
+
+    env:
+      PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+      REGION: ${{ vars.GCP_REGION }}
+      SERVICE: ${{ vars.GCP_CLOUD_RUN_SERVICE }}
+      REPOSITORY: ${{ vars.GCP_ARTIFACT_REPOSITORY }}
+      RUNTIME_SA: ${{ vars.GCP_RUNTIME_SERVICE_ACCOUNT }}
+      SQL_INSTANCE: ${{ vars.GCP_CLOUD_SQL_INSTANCE }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WIF_PROVIDER }}
+          service_account: ${{ vars.GCP_DEPLOYER_SERVICE_ACCOUNT }}
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker authentication
+        run: |
+          gcloud auth configure-docker "${REGION}-docker.pkg.dev" --quiet
+
+      - name: Build and push Docker image
+        run: |
+          IMAGE="${REGION}-docker.pkg.dev/${PROJECT_ID}/${REPOSITORY}/helpdesk-ai-agent:${GITHUB_SHA}"
+          docker build -t "$IMAGE" .
+          docker push "$IMAGE"
+          echo "IMAGE=$IMAGE" >> "$GITHUB_ENV"
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy "$SERVICE" \
+            --project "$PROJECT_ID" \
+            --region "$REGION" \
+            --platform managed \
+            --image "$IMAGE" \
+            --service-account "$RUNTIME_SA" \
+            --add-cloudsql-instances "$SQL_INSTANCE" \
+            --set-env-vars "APP_NAME=Helpdesk AI Agent,ENVIRONMENT=production,DEBUG=false,DATABASE_PROVIDER=postgres,LLM_PROVIDER=vertex,GEMINI_MODEL=gemini-3.5-flash,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},VERTEX_LLM_LOCATION=eu,EMBEDDING_PROVIDER=vertex,VERTEX_EMBEDDING_MODEL=text-embedding-005,VECTOR_STORE_PROVIDER=postgres,INITIALIZE_LOCAL_DATA=false" \
+            --set-secrets "DATABASE_URL=helpdesk-database-url:latest" \
+            --port 8080 \
+            --cpu 1 \
+            --memory 2Gi \
+            --min 0 \
+            --max 2 \
+            --timeout 300 \
+            --no-allow-unauthenticated \
+            --quiet
+
+      - name: Verify Cloud Run deployment
+        run: |
+          for attempt in $(seq 1 24); do
+            STATUS=$(gcloud run services describe "$SERVICE" \
+              --project "$PROJECT_ID" \
+              --region "$REGION" \
+              --format=json | jq -r \
+              '.status.conditions[] | select(.type=="Ready") | .status' \
+              | head -n 1)
+
+            if [ "$STATUS" = "True" ]; then
+              echo "Cloud Run service is ready."
+              gcloud run services describe "$SERVICE" \
+                --project "$PROJECT_ID" \
+                --region "$REGION" \
+                --format="value(status.url)"
+              exit 0
+            fi
+
+            echo "Waiting for Cloud Run service... attempt $attempt/24"
+            sleep 10
+          done
+
+          echo "Cloud Run deployment did not become ready."
+          gcloud run services describe "$SERVICE" \
+            --project "$PROJECT_ID" \
+            --region "$REGION" \
+            --format="yaml(status.conditions)"
+          exit 1
