@@ -95,7 +95,7 @@ def load_to_postgres_vector_store(
     chunks = split_documents(documents)
     vector_store = get_postgres_vector_store()
 
-    batch_size = 250
+    batch_size = 75
 
     for start in range(0, len(chunks), batch_size):
         batch = chunks[start : start + batch_size]
