@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     gemini_model: str = "gemini-3.5-flash"
     gcp_project_id: str | None = None
     gcp_region: str = "europe-north1"
-    vertex_llm_location: str = "eu"
+    vertex_llm_location: str = "europe-north1"
 
     # Embeddings and vector store
     embedding_model: str = "sentence-transformers/all-MiniLM-L6-v2"
