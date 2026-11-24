@@ -35,4 +35,4 @@ echo "Starting HelpDesk AI Agent API..."
 exec uvicorn app.api.application:create_application \
     --factory \
     --host 0.0.0.0 \
-    --port "${PORT:-8080}"
+    --port "${PORT:-8000}"
