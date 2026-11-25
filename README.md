@@ -8,9 +8,13 @@ The application is built with **Python**, **LangGraph**, **FastAPI**, **Azure AI
 
 ## 🌐 Live Demo
 
-The application is available at:
+The agent is deployed to Azure:
 
 **https://helpdesk-ai-agent.kindmoss-7afefc50.northeurope.azurecontainerapps.io/**
+
+and Google Cloud:
+
+**[https://helpdesk-ai-agent.kindmoss-7afefc50.northeurope.azurecontainerapps.io/](https://helpdesk-ai-agent-4584187534.europe-north1.run.app/)**
 
 ---
 
