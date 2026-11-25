@@ -14,8 +14,7 @@ The agent is deployed to Azure:
 
 and Google Cloud:
 
-**[https://helpdesk-ai-agent.kindmoss-7afefc50.northeurope.azurecontainerapps.io/](https://helpdesk-ai-agent-4584187534.europe-north1.run.app/)**
-
+**https://helpdesk-ai-agent-4584187534.europe-north1.run.app/**
 ---
 
 ## 🚀 Features
